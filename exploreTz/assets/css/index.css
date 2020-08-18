@@ -1,0 +1,56 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+
+/*=====================================
+#Header-Section
+======================================*/
+.navbar {
+	/* font-family: 'Lobster', cursive; */
+	font-family: 'Satisfy', cursive;
+	/* font-family: 'Srisakdi', cursive; */
+	font-size: 22px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.navbar #signin, .navbar #signup {
+	/* font-family: 'Srisakdi', cursive; */
+	/* font-family: 'Amita', cursive; */
+	font-family: 'Satisfy', cursive;
+	font-size: 18px;
+}
+
+.navbar #signup {
+	border-radius: 50px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-left: 10px;
+}
+
+/*=====================================
+#Hero-Section
+======================================*/
+#hero {
+	background: url('../img/Serengeti-National-Park-1.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 600px;
+}
+#hero .contents {
+	background: rgba(0, 0, 0, 0.7);
+	height: 600px;
+}
+
+#hero .hero-text {
+	display: flex;
+	align-items: center;
+	height: 70vh;
+	/* font-family: 'Srisakdi', cursive; */
+	font-family: 'Amita', cursive;
+	color: #f8f9fa;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Title -->
+	<title>EXploreTz</title>
+	<!-- Site-Icon-->
+	<link rel="shortcut icon" href="assets/site-icon/logo.png" type="image/x-icon">
+	<!-- Font Awesome CDN-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+		integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+	<!-- Bootstrap CSS CDN -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<!-- Google Fonts-->
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Satisfy&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Satisfy&family=Srisakdi:wght@700&display=swap"
+		rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Lobster&family=Satisfy&family=Srisakdi:wght@700&display=swap"
+		rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Lobster&family=Montez&family=Satisfy&family=Srisakdi:wght@700&display=swap"
+		rel="stylesheet">
+	<!-- Main CSS-->
+	<link rel="stylesheet" href="assets/css/index.css">
+</head>
+
+<body id="home">
+	<!-- Header Section -->
+	<header id="header">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+			<div class="container">
+				<a href="#home" class="navbar-brand mr-auto"><img src="assets/site-icon/logo.png" alt="logo"
+						width="50">EXploreTz</a>
+				<button class="navbar-toggler" data-toggle="collapse" data-target="#navCollapse">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navCollapse">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active">
+							<a href="#home" class="nav-link px-3">Home</a>
+						</li>
+						<li class="nav-item">
+							<a href="#about.html" class="nav-link px-3">About</a>
+						</li>
+						<li class="nav-item">
+							<a href="#tours.html" class="nav-link px-3">Tours</a>
+						</li>
+						<li class="nav-item">
+							<a href="#destinations.html" class="nav-link px-3">Destinations</a>
+						</li>
+						<li class="nav-item">
+							<a href="#reservation.html" class="nav-link px-3">Reservation</a>
+						</li>
+						<li class="nav-item">
+							<a href="#contact.html" class="nav-link px-3">Contact</a>
+						</li>
+					</ul>
+				</div>
+				<div class="collapse navbar-collapse" id="navCollapse">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a href="#signin.php" class="nav-link" id="signin">Sign In</a>
+						</li>
+						<li class="nav-item">
+							<a href="#signup.php" class="btn btn-warning" id="signup">Sign Up</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header><!-- End Header-->
+
+	<!-- Hero Section -->
+	<section id="hero">
+		<div class="contents">
+			<div class="container">
+				<div class="hero-text">
+					<h1 class="display-1">The Beauty of Tanzania, Let's explore it...</h1>
+				</div>
+			</div>
+		</div>
+	</section><!-- End Hero-->
+
+
+
+
+
+
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+		crossorigin="anonymous"></script>
+	<!-- Optional Javascripts -->
+	<script src="assets/js/index.js"></script>
+
+	<!-- Optional Jquery scripts -->
+	<script>
+		// Get the current year for the copyright
+		$('#year').text(new Date().getFullYear());
+
+		// Adding a smooth scroll
+		$('#main-header a, #Top').on('click', function (e) {
+			// Check for hash value
+			if (this.hash !== '') {
+				// Prevent the default behaviour of a tag
+				e.preventDefault();
+				// Store hash
+				const hash = this.hash;
+				// Animate smooth scroll
+				$('html, body').animate({
+					scrollTop: $(hash).offset().top
+				}, 900, function () {
+					// Add hash to url after scroll
+					window.location.hash = hash;
+				});
+			}
+		});
+
+		// Initiating tooltip
+		$('[data-toggle]').tooltip();
+
+	</script>
+	<!--End scripts-->
+
+</body>
+
+</html>
