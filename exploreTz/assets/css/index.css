@@ -3,11 +3,14 @@ body {
 	padding: 0px;
 	box-sizing: border-box;
 	overflow-x: hidden;
+	font-family: 'Amita', cursive;
+	/* font-family: 'Lobster', cursive; */
 }
 
 /*=====================================
 #Header-Section
 ======================================*/
+
 .navbar {
 	/* font-family: 'Lobster', cursive; */
 	font-family: 'Satisfy', cursive;
@@ -24,6 +27,12 @@ body {
 	font-size: 18px;
 }
 
+@media (max-width: 1024px) {
+	.navbar #signin {
+		margin-left: 16px;
+	}
+}
+
 .navbar #signup {
 	border-radius: 50px;
 	padding-left: 30px;
@@ -34,23 +43,87 @@ body {
 /*=====================================
 #Hero-Section
 ======================================*/
+
 #hero {
-	background: url('../img/Serengeti-National-Park-1.jpg');
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	height: 600px;
+	height: 700px;
+	animation: slider 20s infinite;
+	animation-timing-function: step-end;
+	animation-play-state: inherit;
 }
+
 #hero .contents {
 	background: rgba(0, 0, 0, 0.7);
-	height: 600px;
+	height: 700px;
+}
+
+@keyframes slider {
+	0% {
+		background: url('../img/tz5.jpg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+	}
+
+	25% {
+		background: url('../img/tz1.jpg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+	}
+	50% {
+		background: url('../img/tz.jpg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+	}
+	75% {
+		background: url('../img/tz40.jpg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+	}
 }
 
 #hero .hero-text {
 	display: flex;
 	align-items: center;
-	height: 70vh;
+	height: 98vh;
 	/* font-family: 'Srisakdi', cursive; */
 	font-family: 'Amita', cursive;
 	color: #f8f9fa;
+}
+
+/*=====================================
+#Main-Section
+======================================*/
+
+#main img#slider {
+	animation: slide 5s infinite;
+}
+
+@keyframes slide {
+	0% {
+		transform: scale(1.3);
+	}
+}
+
+#main h1 {
+	font-family: 'Lobster', cursive;
+}
+
+#main .card-img-top {
+	min-height: 250px;
+	max-height: 300px;
+}
+
+#main .card-img {
+	overflow: hidden;
+}
+
+#main .card-img img {
+	transition: all 1.5s ease;
+}
+
+#main .card-img:hover img {
+	transform: scale(1.3);
 }
