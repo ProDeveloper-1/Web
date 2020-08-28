@@ -199,8 +199,8 @@ body {
 	width: 150px;
 	height: 150px;
 	border-radius: 50%;
-  }
-  
+}
+
 #main .name {
 	/* font-size: 32px; */
 	/* font-weight: 600; */
@@ -208,7 +208,7 @@ body {
 	margin-bottom: 0px;
 	padding-bottom: 20px;
 	position: relative;
-  }
+}
 
 #main .name::before {
 	content: '';
@@ -244,4 +244,84 @@ body {
 		padding-right: 0px;
 		line-height: 1.8rem;
 	}
+}
+
+.slick-prev, .slick-next {
+	font-size: 0;
+	position: absolute;
+	bottom: 20px;
+	color: #d5122f;
+	border: 0;
+	background: none;
+	z-index: 1;
+}
+
+.slick-prev {
+	left: 20px;
+}
+
+@media (max-width: 768px) {
+	.slick-prev {
+		left: 0;
+		display: none;
+	}
+}
+
+.slick-prev::before {
+	content: "\f104";
+	font: 40px/1 'FontAwesome';
+}
+
+.slick-next {
+	right: 20px;
+	text-align: right;
+}
+
+@media (max-width: 768px) {
+	.slick-next {
+		right: 0;
+		display: none;
+	}
+}
+
+.slick-next::before {
+	content: "\f105";
+	font: 40px/1 'FontAwesome';
+}
+
+.slick-prev:hover::before, .slick-next:hover::before {
+	color: #7e7e7e;
+}
+
+/*=====================================
+#Footer
+======================================*/
+
+#footer {
+	margin-top: -50px;
+}
+
+footer .fab {
+	color: #808080;
+	transition: 0.5s;
+}
+
+footer .fa-facebook:hover {
+	color: silver;
+	opacity: 0.8;
+}
+
+footer .fa-twitter:hover {
+	color: silver;
+	opacity: 0.8;
+}
+
+footer .fa-instagram:hover {
+	color: silver;
+	opacity: 0.8;
+}
+
+footer .fa-pinterest:hover {
+	color: silver;
+	opacity: 0.8;
 }
