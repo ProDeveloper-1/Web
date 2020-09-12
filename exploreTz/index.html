@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<h ead>
+<head>
 	<!-- Required meta tags -->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,7 +33,7 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Lobster&family=Montez&family=Satisfy&family=Srisakdi:wght@700&display=swap"
 		rel="stylesheet">
-</h>
+</head>
 
 <body id="home">
 
@@ -52,7 +52,7 @@
 							<a href="#home" class="nav-link px-2">Home</a>
 						</li>
 						<li class="nav-item">
-							<a href="about.html" class="nav-link px-2">About</a>
+							<a href="assets/site/about.html" class="nav-link px-2">About</a>
 						</li>
 						<li class="nav-item">
 							<a href="#tours.html" class="nav-link px-2">Tours</a>
@@ -206,8 +206,8 @@
 			<div class="container">
 				<h1 class="text-center pb-5">Most Amazing Tours</h1>
 				<div class="row">
-					<div class="col-md-4">
-						<div class="card shadow" data-aos="fade-right" data-aos-delay="100">
+					<div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+						<div class="card shadow">
 							<div class="card-img">
 								<img src="assets/img/tz25.jpg" class="card-img-top img-fluid">
 							</div>
@@ -227,8 +227,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
-						<div class="card shadow" data-aos="fade-up" data-aos-delay="100">
+					<div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+						<div class="card shadow">
 							<div class="card-img">
 								<img src="assets/img/tz17.jpg" class="card-img-top img-fluid">
 							</div>
@@ -248,8 +248,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
-						<div class="card shadow" data-aos="fade-left" data-aos-delay="100">
+					<div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+						<div class="card shadow">
 							<div class="card-img">
 								<img src="assets/img/tz22.jpg" class="card-img-top img-fluid">
 							</div>
@@ -272,7 +272,7 @@
 				</div>
 				<div class="row py-5">
 					<div class="col-md-4">
-						<div class="card shadow" data-aos="fade-right" data-aos-delay="100">
+						<div class="card shadow" data-aos="fade-up" data-aos-delay="100">
 							<div class="card-img">
 								<img src="assets/img/tz51.jpg" class="card-img-top img-fluid">
 							</div>
@@ -314,7 +314,7 @@
 						</div>
 					</div>
 					<div class="col-md-4">
-						<div class="card shadow" data-aos="fade-left" data-aos-delay="100">
+						<div class="card shadow" data-aos="fade-up" data-aos-delay="100">
 							<div class="card-img">
 								<img src="assets/img/tz3.jpg" class="card-img-top img-fluid">
 							</div>
@@ -579,14 +579,13 @@
 				</div>
 				<div class="col-md-3">
 					<h4>Navigation</h4>
-					<ul class="navbar-nav ml-auto" id="main-header"> 
+					<ul class="navbar-nav ml-auto" id="main-header">
 						<li class="nav-item active">
 							<a href="#home" class="nav-link px-2 text-info"><i class="fas fa-angle-right mr-2"></i>
 								Home</a>
 						</li>
 						<li class="nav-item">
-							<a href="about.html" class="nav-link px-2 text-info"><i
-									class="fas fa-angle-right mr-2"></i>
+							<a href="about.html" class="nav-link px-2 text-info"><i class="fas fa-angle-right mr-2"></i>
 								About</a>
 						</li>
 						<li class="nav-item">
@@ -699,62 +698,9 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
 	<!-- AOS (Animation On Scroll JS) -->
 	<script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-	<script src="assets/vendor/php-email-form/validate.js"></script>
-	<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-	<script src="assets/vendor/venobox/venobox.min.js"></script>
 	<script src="assets/vendor/aos/aos.js"></script>
 	<!-- Optional Javascripts -->
 	<script src="assets/js/index.js"></script>
-
-	<!-- Optional Jquery scripts -->
-	<script>
-		// Get the current year for the copyright
-		$('#year').text(new Date().getFullYear());
-
-		// Adding a smooth scroll
-		$('#main-header a, #Top').on('click', function (e) {
-			// Check for hash value
-			if (this.hash !== '') {
-				// Prevent the default behaviour of a tag
-				e.preventDefault();
-				// Store hash
-				const hash = this.hash;
-				// Animate smooth scroll
-				$('html, body').animate({
-					scrollTop: $(hash).offset().top
-				}, 900, function () {
-					// Add hash to url after scroll
-					window.location.hash = hash;
-				});
-			}
-		});
-
-		// Initiating tooltip
-		$('[data-toggle]').tooltip();
-
-		// Testimonial slider
-		$(document).ready(function () {
-			$('.slider').slick({
-				infinite: true,
-				slideToShow: 1,
-				slideToScroll: 1,
-				autoplay: true,
-				autoplaySpeedy: 2000,
-				speed: 3000,
-				prevArrow: '<button type="button" class="slick-prev"></button>',
-				nextArrow: '<button type="button" class="slick-next"></button>',
-				// centerMode: true
-			});
-
-		});
-
-		// Initi AOS
-		AOS.init({
-			duration: 800,
-			easing: "ease-in-out"
-		});
-
-	</script>
 	<!--End scripts-->
 
 </body>
