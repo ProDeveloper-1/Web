@@ -1,0 +1,256 @@
+/*===================================
+# General
+===================================*/
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background-color: beige;
+}
+
+.page-container {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.content-wrap {
+    padding-bottom: 3rem;
+    /* footer height */
+}
+
+@media (max-width: 760px) {
+    .content-wrap {
+        padding-bottom: 9rem;
+    }
+}
+
+/*===================================
+# Navigation
+===================================*/
+
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav .logo {
+    padding-top: 10px;
+    transition: all 1s;
+}
+
+nav .logo:hover {
+    transform: rotate(360deg);
+}
+
+@media (max-width: 1024px) {
+    nav .logo {
+        margin-left: 20px;
+    }
+}
+
+nav img {
+    width: 86px;
+    filter: brightness(1) invert(1) saturate(50%);
+}
+
+nav ul {
+    margin: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.active {
+    /* background-color: rgb(34, 221, 221); */
+    background-color: rgb(85, 88, 88);
+    color: #fff;
+    border-radius: 5px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #fff;
+    padding: 18px 15px;
+    font-family: sans-serif;
+    transition: all 0.5s;
+    border-radius: 5px;
+}
+
+nav ul a:hover {
+    background-color: rgb(85, 88, 88);
+    color: #fff;
+    transition: all 0.5s;
+}
+
+/*===================================
+# Main
+===================================*/
+
+main {
+    display: grid;
+    justify-content: center;
+    flex-flow: row wrap;
+    position: relative;
+    top: 100;
+    margin-bottom: 200px;
+}
+
+.header-text h1 {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 70px;
+    text-align: center;
+    color: rgb(61, 175, 175);
+    margin-bottom: 0px;
+}
+
+@media (max-width: 1024px) {
+    .header-text h1 {
+        font-size: 50px;
+    }
+}
+
+.header-text h2 {
+    color: #767676;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.card {
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    border-radius: 0.25rem;
+}
+
+.card-body {
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+
+label {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #312f2f;
+}
+
+input {
+    padding: 12px 24px;
+    margin-bottom: 10px;
+    border: none;
+    border: 1px solid rgb(34, 221, 221);
+    border-radius: 3px;
+}
+
+textarea {
+    border: 1px solid rgb(34, 221, 221);
+    border-radius: 3px;
+}
+
+input[type=submit] {
+    border: none;
+    margin-top: 10px;
+    padding: 12px 151px;
+    border: none;
+    background: rgb(34, 221, 221);
+    border: 1px solid rgb(34, 221, 221);
+    transition: all 1s;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+    border: 1px solid rgb(34, 221, 221);
+    background: transparent;
+}
+
+input[type=reset] {
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 12px 151px;
+    border: none;
+    background: transparent;
+    border: 1px solid rgb(34, 221, 221);
+    transition: all 1s;
+}
+
+input[type=reset]:hover {
+    cursor: pointer;
+    border: 1px solid rgb(34, 221, 221);
+    background: rgb(34, 221, 221);
+}
+
+input[type=file] {
+    margin-top: 10px;
+    border: none;
+    background: transparent;
+    border: 1px solid rgb(34, 221, 221);
+    transition: all 1s;
+}
+
+input[type=file]:hover {
+    cursor: pointer;
+    border: 1px solid rgb(34, 221, 221);
+    background: rgb(34, 221, 221);
+}
+
+.button {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+/*===================================
+# Footer
+===================================*/
+
+footer {
+    background: #333232;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #908e8e;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-top: 6px;
+    padding-bottom: 2px;
+}
+
+@media (max-width: 760px) {
+    footer {
+        height: 9rem;
+    }
+}

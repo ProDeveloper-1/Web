@@ -1,0 +1,588 @@
+/*================================
+# General
+================================*/
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: #f8f9fa;
+}
+
+html {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+span {
+    color: #daae1f;
+}
+
+/*================================
+# Header
+================================*/
+
+.nav {
+    border-bottom: 1px solid #EAEAEB;
+    background: #fff;
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+}
+
+.nav .brand {
+    float: left;
+    text-align: left;
+    text-decoration: none;
+    margin-left: 100px;
+    font-size: 26px;
+    font-style: italic;
+    line-height: 70px;
+    color: #000;
+}
+
+.menu {
+    margin: 0 100px 0 0;
+}
+
+.menu .active {
+    color: #000;
+    border-left: #daae1f 3px solid;
+    border-width: 4px;
+}
+
+.menu a {
+    clear: right;
+    text-decoration: none;
+    color: gray;
+    padding-left: 8px;
+    margin: 0 10px;
+    line-height: 70px;
+    font-size: 17px;
+}
+
+label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+
+#toggle {
+    display: none;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 1024px) {
+    .nav .brand {
+        margin-left: 20px;
+    }
+    .menu {
+        margin: 0 20px 0 0;
+    }
+}
+
+@media only screen and (max-width: 668px) {
+    .nav .brand {
+        margin-left: 20px;
+        font-size: 26px;
+    }
+    label {
+        display: block;
+        cursor: pointer;
+        margin: 0 20px 0 0;
+    }
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+        margin: 0 20px 0 0;
+        background: #f8f9fa;
+    }
+    .menu a {
+        display: block;
+        border-bottom: 1px solid #EAEAEB;
+        margin: 0;
+    }
+    #toggle:checked+.menu {
+        display: block;
+    }
+}
+
+/* End Query */
+
+/*================================
+# Main
+================================*/
+
+main {
+    position: relative;
+}
+
+/* == Hero == */
+
+.contents {
+    background: url('../img/work11.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom;
+    height: 350px;
+}
+
+.hero {
+    background: rgba(0, 0, 0, 0.7);
+    height: 350px;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    color: #f8f9fa;
+}
+
+.hero h1 {
+    margin-top: 90px;
+    font-size: 50px;
+}
+
+.hero p {
+    text-align: center;
+    line-height: 1.8rem;
+    margin-top: -30px;
+    padding-left: 180px;
+    padding-right: 180px;
+    padding-bottom: 60px;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 768px) {
+    .hero p {
+        margin-top: 3px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .hero h1 {
+        margin-top: 55px;
+        font-size: 23px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .hero p {
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+}
+
+/* End Query */
+
+/* == Contact == */
+
+#contact {
+    background: #f0efef;
+    margin-top: 0px;
+}
+
+#contact .container {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+#contact h1 {
+    text-align: center;
+    font-size: 36px;
+}
+
+#contact .row {
+    padding-top: 80px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row-reverse wrap;
+    flex-basis: 100%;
+}
+
+#contact .card {
+    width: 40%;
+    height: auto;
+    padding: 50px 30px 80px 30px;
+    margin-bottom: 60px;
+    background: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    border-radius: 0.25rem;
+}
+
+#contact #address-card {
+    background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/work1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #f8f9fa;
+    /* margin-right: 10px; */
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 1400px) {
+    #contact .card {
+        width: 80%;
+    }
+    #contact #address-card {
+        margin-right: 0px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    #contact .card {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #contact .card {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #contact .card {
+        width: 90%;
+        padding: 50px 20px 80px 20px;
+    }
+}
+
+@media only screen and (max-width: 476px) {
+    #contact .card {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #contact .card {
+        width: 85%;
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    #contact .card {
+        width: 85%;
+        margin-top: 0px;
+        padding: 50px 15px 80px 15px;
+    }
+}
+
+/* End Query */
+
+#contact form {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+#contact form h4 {
+    text-align: center;
+    font-size: 20px;
+}
+
+#contact hr {
+    background: #daae1f;
+    width: 90%;
+}
+
+#contact input {
+    padding: 12px 24px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: none;
+    border: 2px solid #daae1f;
+    border-radius: 5px;
+}
+
+#contact textarea {
+    padding: 12px 24px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: none;
+    border: 2px solid #daae1f;
+    border-radius: 5px;
+}
+
+#contact input[type=submit] {
+    background: #daae1f;
+    font-size: 14px;
+    width: 88%;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 1400px) {
+    #contact input[type=submit] {
+        width: 85%
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    #contact input[type=submit] {
+        width: 86%
+    }
+}
+
+@media only screen and (max-width: 890px) {
+    #contact input[type=submit] {
+        width: 88%
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #contact input[type=submit] {
+        width: 88%
+    }
+}
+
+@media only screen and (max-width: 668px) {
+    #contact input[type=submit] {
+        width: 90%
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #contact input[type=submit] {
+        width: 94%
+    }
+}
+
+@media only screen and (max-width: 569px) {
+    #contact input[type=submit] {
+        width: 90%
+    }
+}
+
+@media only screen and (max-width: 476px) {
+    #contact input[type=submit] {
+        width: 94%
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    #contact input[type=submit] {
+        width: 96%
+    }
+}
+
+@media only screen and (max-width: 325px) {
+    #contact input[type=submit] {
+        width: 98%
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    #contact input[type=submit] {
+        width: 100%
+    }
+}
+
+/* End Query */
+
+#contact input[type=submit]:hover {
+    background: #caaa40;
+    cursor: pointer;
+}
+
+#contact .address {
+    text-align: justify;
+    line-height: 2.0rem;
+    margin-top: 50px;
+    padding-left: 60px;
+}
+
+.address h2 {
+    font-size: 25px;
+}
+
+.address p {
+    font-size: 20px;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 1400px) {
+    #contact .address {
+        margin-top: 0px;
+        padding-left: 115px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    #contact .address {
+        margin-top: 0px;
+        padding-left: 80px;
+    }
+}
+
+@media only screen and (max-width: 890px) {
+    #contact .address {
+        margin-top: 0px;
+        padding-left: 60px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #contact .address {
+        margin-top: 0px;
+        padding-left: 30px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    #contact .address {
+        margin-top: 0px;
+        padding-left: 20px;
+    }
+}
+
+/* End Query */
+
+/* == Quotes == */
+
+#quotes {
+    margin-top: 30px;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 768px) {
+    #quotes {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+/* End Query */
+
+#quotes .container {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+#quotes h1 {
+    text-align: center;
+    font-size: 36px;
+}
+
+#quotes .row {
+    padding-top: 50px;
+    padding-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+#quotes .card {
+    width: 80%;
+    height: auto;
+    margin: 0 0px;
+    background: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    border-radius: 0.25rem;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 768px) {
+    #quotes .row {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #quotes .card {
+        width: 90%;
+    }
+}
+
+/* End Query */
+
+#quotes .card-img {
+    width: 100%;
+    border-radius: calc(0.25rem - 1px);
+}
+
+#quotes .card-img-top {
+    width: 100%;
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+    margin-bottom: -10px;
+}
+
+#quotes .inner {
+    overflow: hidden;
+}
+
+#quotes .img-fluid {
+    max-width: 100%;
+    height: auto;
+    transition: linear 1s;
+}
+
+#quotes .img-fluid:hover {
+    filter: grayscale(80%);
+    transition: linear 1s;
+    transform: scale(1.3);
+}
+
+#quotes .card-body {
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 35px;
+}
+
+#quotes .card-body h3, p, a {
+    line-height: normal;
+}
+
+#quotes .card-body p {
+    line-height: 1.8rem;
+    text-align: justify;
+}
+
+#quotes .card-body a {
+    text-decoration: none;
+    color: #daae1f;
+}
+
+#quotes .card-body .dots {
+    font-size: 10px;
+}
+
+/*================================
+# Footer
+================================*/
+
+footer {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    background: #767676;
+}

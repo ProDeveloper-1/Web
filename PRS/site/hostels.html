@@ -1,0 +1,81 @@
+<!DOCTYPE hmtl>
+<html lang="en">
+
+<head>
+	<title>IFM | Problem Reporting System</title>
+	<link rel="shortcut icon" href="../assets/site-icon/Logo.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="../assets/css/hostels.css">
+</head>
+
+<body id="home">
+	<!-- Navigation -->
+	<nav>
+		<a href="#home" class="logo"><img src="../assets/site-icon/Logo.png" width="86" alt="IFM-logo"></a>
+		<ul>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="canteen.html">Canteen</a></li>
+			<li><a href="#home" class="active">Hostels</a></li>
+			<li><a href="library.html">Library</a></li>
+			<li><a href="labs.html">Computer Labs</a></li>
+			<li><a href="classrooms.html">Classrooms</a></li>
+			<li><a href="washrooms.html">Washrooms</a></li>
+		</ul>
+	</nav>
+	<!-- End Navigation -->
+
+	<div class="page-container">
+		<div class="content-wrap">
+			<!-- Main -->
+			<main>
+				<div class="header-text">
+					<h1>Report | Hostels</h1>
+					<h2>Please fill the form below to report the problem</h2>
+				</div>
+			
+
+				<div class="container">
+					<div class="card">
+						<div class="card-body">
+							<form action="#" method="post">
+								<label for="Username">Student Name:</label>
+								<input type="text" name="username" id="username" placeholder="Teshaki Nyakunga"
+									required>
+								<label for="Registration">Registration Number:</label>
+								<input type="text" name="username" id="username" placeholder="IMC/DCIT/xxxxxxx"
+									required>
+								<label for="Course">Course:</label>
+								<input type="text" name="username" id="username" placeholder="BCCS" required>
+								<label for="Username">Area of conduct:</label>
+								<input type="text" name="area" id="area" value="Hostel" disabled>
+								<label for="Title">Problem Title:</label>
+								<input type="text" name="title" id="title" placeholder="Rooms" required>
+								<label for="Description">Problem Description:</label>
+								<textarea name="textarea" id="" cols="30" rows="10"></textarea>
+								<br>
+								<label for="Pictures">Upload the picture(s) that shows the problem:</label>
+								<input type="file" name="img" id="img" multiple>
+								<div class="button">
+									<input type="submit" value="Report">
+									<input type="reset" value="Cancel">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</main>
+			<!-- End Main -->
+		</div>
+
+		<!-- Footer -->
+		<footer>
+			<p>
+				&copy 2020 IFM | Problem Reporting System (PRS)
+			</p>
+		</footer>
+		<!-- End Footer -->
+	</div>
+
+</body>
+
+</html>

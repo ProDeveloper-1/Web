@@ -1,0 +1,486 @@
+/*================================
+# General
+================================*/
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: #f8f9fa;
+}
+
+html {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+span {
+    color: #daae1f;
+}
+
+/*================================
+# Header
+================================*/
+
+.nav {
+    border-bottom: 1px solid #EAEAEB;
+    background: #fff;
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+}
+
+.nav .brand {
+    float: left;
+    text-align: left;
+    text-decoration: none;
+    margin-left: 100px;
+    font-size: 26px;
+    font-style: italic;
+    line-height: 70px;
+    color: #000;
+}
+
+.menu {
+    margin: 0 100px 0 0;
+}
+
+.menu .active {
+    color: #000;
+    border-left: #daae1f 3px solid;
+    border-width: 4px;
+}
+
+.menu a {
+    clear: right;
+    text-decoration: none;
+    color: gray;
+    padding-left: 8px;
+    margin: 0 10px;
+    line-height: 70px;
+    font-size: 17px;
+}
+
+label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+
+#toggle {
+    display: none;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 1024px) {
+    .nav .brand {
+        margin-left: 20px;
+    }
+    .menu {
+        margin: 0 20px 0 0;
+    }
+}
+
+@media only screen and (max-width: 668px) {
+    .nav .brand {
+        margin-left: 20px;
+        font-size: 26px;
+    }
+    label {
+        display: block;
+        cursor: pointer;
+        margin: 0 20px 0 0;
+    }
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+        margin: 0 20px 0 0;
+        background: #f8f9fa;
+    }
+    .menu a {
+        display: block;
+        border-bottom: 1px solid #EAEAEB;
+        margin: 0;
+    }
+    #toggle:checked+.menu {
+        display: block;
+    }
+}
+
+/* End Query */
+
+/*================================
+# Main
+================================*/
+
+main {
+    position: relative;
+}
+
+/* == Hero == */
+
+.contents {
+    background: url('../img/work4.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom;
+    height: 350px;
+}
+
+.hero {
+    background: rgba(0, 0, 0, 0.7);
+    height: 350px;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    color: #f8f9fa;
+}
+
+.hero h1 {
+    margin-top: 90px;
+    font-size: 50px;
+}
+
+.hero p {
+    text-align: center;
+    line-height: 1.8rem;
+    margin-top: -30px;
+    padding-left: 180px;
+    padding-right: 180px;
+    padding-bottom: 60px;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 768px) {
+    .hero p {
+        margin-top: 3px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .hero h1 {
+        margin-top: 55px;
+        font-size: 23px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .hero p {
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+}
+
+/* End Query */
+
+/* == About == */
+
+#about {
+    background: #f0efef;
+    margin-top: 0px;
+}
+
+#about .container {
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+
+#about h1 {
+    text-align: center;
+    font-size: 36px;
+}
+
+#about .row {
+    padding-top: 80px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+#about img {
+    width: 40%;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+}
+
+#about p {
+    width: 40%;
+    text-align: justify;
+    line-height: 2.3rem;
+    margin-top: 50px;
+    padding-left: 100px;
+    padding-bottom: 60px;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 1400px) {
+    #about img {
+        width: 80%;
+        padding-bottom: 20px;
+    }
+    #about p {
+        width: 100%;
+        margin-top: 0px;
+        padding-left: 140px;
+        padding-right: 140px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    #about p {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #about img {
+        width: 88%;
+        padding-top: 0px;
+        padding-bottom: 20px;
+    }
+    #about p {
+        width: 100%;
+        margin-top: 0px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #about img {
+        padding-top: 0px;
+        width: 88%;
+        padding-bottom: 20px;
+    }
+    #about p {
+        width: 100%;
+        margin-top: 0px;
+        padding-left: 23px;
+        padding-right: 23px;
+    }
+}
+
+/* End Query */
+
+/* == Mission == */
+
+#mission {
+    margin-top: 60px;
+}
+
+@media only screen and (max-width: 1024px) {
+    #mission {
+        margin-top: 30px;
+    }
+}
+
+#mission .container {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+#mission h1 {
+    text-align: center;
+    font-size: 36px;
+}
+
+#mission .row {
+    padding-top: 30px;
+    padding-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+#mission .card {
+    width: 23%;
+    height: auto;
+    margin: 0 10px;
+    background: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    border-radius: 0.25rem;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 1400px) {
+    #mission .card {
+        width: 30%;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 1060px) {
+    #mission .card {
+        width: 45%;
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #mission .card {
+        width: 80%;
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #mission .card {
+        width: 90%;
+        margin-bottom: 25px;
+    }
+}
+
+/* End Query */
+
+#mission .card-body {
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 35px;
+}
+
+#mission .card-body h3, p, a {
+    line-height: normal;
+}
+
+#mission .card-body p {
+    line-height: 1.8rem;
+    text-align: justify;
+}
+
+/* == Team == */
+
+#team {
+    margin-top: 20px;
+    margin-bottom: 90px;
+}
+
+#team .container {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+#team h1 {
+    text-align: center;
+    font-size: 36px;
+}
+
+#team .row {
+    padding-top: 30px;
+    padding-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+#team .card {
+    width: 20%;
+    height: auto;
+    margin: 0 15px;
+    background: #f0efef;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    border-radius: 0.25rem;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 1400px) {
+    #team .card {
+        width: 30%;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 1060px) {
+    #team .card {
+        width: 45%;
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #team .card {
+        width: 80%;
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #team .card {
+        width: 90%;
+        margin-bottom: 25px;
+    }
+}
+
+/* End Query */
+
+#team .card-img {
+    width: 100%;
+    border-radius: calc(0.25rem - 1px);
+}
+
+#team .card-img-top {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: -10px;
+}
+
+#team .img-fluid {
+    max-width: 100%;
+    height: auto;
+    filter: grayscale(80%);
+}
+
+#team .card-body {
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 35px;
+}
+
+#team .card-body h3, p, a {
+    line-height: normal;
+}
+
+#team .card-body p {
+    line-height: 1.8rem;
+    text-align: justify;
+}
+
+/*================================
+# Footer
+================================*/
+
+footer {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    background: #767676;
+}

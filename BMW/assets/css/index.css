@@ -1,0 +1,431 @@
+/* ==============================
+# General
+===============================*/
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+span {
+    color: #0082e6;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* ==============================
+# Header
+===============================*/
+
+/* Navigation */
+
+nav {
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+}
+
+label.logo {
+    color: #fff;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: lighter;
+}
+
+nav ul {
+    float: right;
+    margin-right: 50px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    font-weight: lighter;
+}
+
+a.active, a:hover {
+    background: hsl(206, 100%, 55%);
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: #fff;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    label.logo {
+        padding-left: 40px;
+    }
+}
+
+@media only screen and (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0px;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    a.active, a:hover {
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+/* End Query */
+
+/* End Nav */
+
+/* ==============================
+# Main
+===============================*/
+
+/* Hero */
+
+#hero {
+    background-image: linear-gradient(to right top, rgba(27, 155, 255, 0.1), rgba(27, 155, 255, 0.3)), url(../img/hero/hero1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: calc(100vh - 80px);
+    color: #fff;
+}
+
+#hero .row {
+    padding-top: calc(20vh - 20px);
+}
+
+.hero-left {
+    width: 45%;
+    margin-top: -30px;
+    margin-right: 500px;
+}
+
+.hero-left h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: lighter;
+}
+
+.hero-left h3 {
+    font-size: 7rem;
+    margin-bottom: 45px;
+    font-weight: 300;
+}
+
+.hero-left .btn:link, .hero-left .btn:visited {
+    color: #fff;
+    background: #0082e6;
+    padding: 15px 55px;
+    border-radius: 50px;
+    font-size: 20px;
+    transition: all .5s;
+    width: 100%;
+    font-weight: lighter;
+}
+
+.hero-left .btn:active, .hero-left .btn:hover {
+    background: rgba(36, 123, 190, 0.718);
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 1400px) {
+    .hero-left {
+        width: 100%;
+        margin-top: -30px;
+        margin-left: 80px;
+        margin-right: 0px;
+    }
+    .hero-left h1 {
+        font-size: 3rem;
+        margin-bottom: 30px;
+    }
+    .hero-left h3 {
+        font-size: 8rem;
+        margin-bottom: 60px;
+    }
+    .hero-left .btn:link, .hero-left .btn:visited {
+        padding: 18px 65px;
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .hero-left {
+        width: 100%;
+        margin-top: -30px;
+        margin-left: 60px;
+        margin-right: 0px;
+    }
+    .hero-left .btn:link, .hero-left .btn:visited {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 975px) {
+    .hero-left {
+        width: 100%;
+        margin-top: -15px;
+        margin-left: 30px;
+        margin-right: 0px;
+    }
+    .hero-left h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    .hero-left h3 {
+        font-size: 4rem;
+        margin-bottom: 40px;
+    }
+    .hero-left .btn:link, .hero-left .btn:visited {
+        padding: 14px 45px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .hero-left {
+        width: 100%;
+        margin-top: -0px;
+        margin-left: 30px;
+        margin-right: 0px;
+    }
+    .hero-left h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+    .hero-left h3 {
+        font-size: 6rem;
+        margin-bottom: 40px;
+    }
+    .hero-left .btn:link, .hero-left .btn:visited {
+        padding: 15px 55px;
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .hero-left {
+        width: 100%;
+        margin-top: -0px;
+        margin-left: 15px;
+        margin-right: 0px;
+    }
+    .hero-left h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    .hero-left h3 {
+        font-size: 4rem;
+        margin-bottom: 30px;
+    }
+    .hero-left .btn:link, .hero-left .btn:visited {
+        padding: 12px 38px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 676px) {
+    .hero-left {
+        width: 100%;
+        margin-top: -10px;
+        margin-left: 15px;
+        margin-right: 0px;
+    }
+    .hero-left h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    .hero-left h3 {
+        font-size: 3rem;
+        margin-bottom: 30px;
+    }
+    .hero-left .btn:link, .hero-left .btn:visited {
+        padding: 12px 38px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 655px) {
+    .hero-left {
+        width: 100%;
+        margin-top: -10px;
+        margin-left: 15px;
+        margin-right: 0px;
+    }
+    .hero-left h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    .hero-left h3 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+    .hero-left .btn:link, .hero-left .btn:visited {
+        padding: 12px 38px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 645px) {
+    .hero-left {
+        width: 100%;
+        margin-top: -10px;
+        margin-left: 15px;
+        margin-right: 0px;
+    }
+    .hero-left h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    .hero-left h3 {
+        font-size: 3rem;
+        margin-bottom: 30px;
+    }
+    .hero-left .btn:link, .hero-left .btn:visited {
+        padding: 12px 38px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .hero-left {
+        width: 100%;
+        margin-top: -10px;
+        margin-left: 15px;
+        margin-right: 0px;
+    }
+    .hero-left h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    .hero-left h3 {
+        font-size: 3rem;
+        margin-bottom: 30px;
+    }
+    .hero-left .btn:link, .hero-left .btn:visited {
+        padding: 15px 55px;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .hero-left {
+        width: 100%;
+        margin-top: -30px;
+        margin-left: 15px;
+        margin-right: 0px;
+    }
+    .hero-left h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    .hero-left h3 {
+        font-size: 4rem;
+        margin-bottom: 45px;
+    }
+    .hero-left .btn:link, .hero-left .btn:visited {
+        padding: 15px 50px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .hero-left {
+        width: 100%;
+        margin-top: -30px;
+        margin-left: 15px;
+        margin-right: 0px;
+    }
+    .hero-left h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    .hero-left h3 {
+        font-size: 3rem;
+        margin-bottom: 45px;
+    }
+    .hero-left .btn:link, .hero-left .btn:visited {
+        padding: 13px 30px;
+        font-size: 20px;
+    }
+}
+
+/* End Query */
+
+/* End Hero */
