@@ -455,7 +455,7 @@ main {
 #team .img-fluid {
     max-width: 100%;
     height: auto;
-    filter: grayscale(80%);
+    /* filter: grayscale(80%); */
 }
 
 #team .card-body {

@@ -406,55 +406,75 @@ main {
     cursor: pointer;
 }
 
+#contact p.in-touch {
+    padding-left: 30px;
+    line-height: 2.0rem;
+}
+
 #contact .address {
     text-align: justify;
     line-height: 2.0rem;
-    margin-top: 50px;
-    padding-left: 60px;
+    margin-top: 30px;
+    padding-left: 30px;
 }
 
 .address h2 {
-    font-size: 25px;
+    font-size: 22px;
 }
 
 .address p {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 /* Media Query */
 
 @media only screen and (max-width: 1400px) {
+    #contact p.in-touch {
+        padding-left: 55px;
+    }
     #contact .address {
         margin-top: 0px;
-        padding-left: 115px;
+        padding-left: 55px;
     }
 }
 
 @media only screen and (max-width: 1024px) {
+    #contact p.in-touch {
+        padding-left: 40px;
+    }
     #contact .address {
         margin-top: 0px;
-        padding-left: 80px;
+        padding-left: 40px;
     }
 }
 
 @media only screen and (max-width: 890px) {
-    #contact .address {
-        margin-top: 0px;
-        padding-left: 60px;
+    #contact p.in-touch {
+        padding-left: 30px;
     }
-}
-
-@media only screen and (max-width: 576px) {
     #contact .address {
         margin-top: 0px;
         padding-left: 30px;
     }
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 576px) {
+    #contact p.in-touch {
+        padding-left: 15px;
+    }
     #contact .address {
         margin-top: 0px;
-        padding-left: 20px;
+        padding-left: 15px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    #contact p.in-touch {
+        padding-left: 10px;
+    }
+    #contact .address {
+        margin-top: 0px;
+        padding-left: 10px;
     }
 }
 

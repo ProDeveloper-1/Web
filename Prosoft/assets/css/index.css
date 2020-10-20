@@ -722,14 +722,14 @@ main {
 #projects .img-fluid {
     max-width: 100%;
     height: auto;
-    transition: linear 1s;
-    transform: rotate(5deg)
+    transition: linear .5s;
+    transform: rotate(5deg);
 }
 
 #projects .img-fluid:hover {
     filter: grayscale(80%);
-    transition: linear 1s;
-    transform: rotate(0deg)
+    transition: linear .5s;
+    transform: rotate(0deg);
 }
 
 #projects .card-body {
@@ -757,34 +757,34 @@ main {
     font-size: 10px;
 }
 
-/* == Projects-4 == */
+/* == FAQ == */
 
-#projects-4 {
+#faq {
     margin-top: -10px;
 }
 
 /* Media Query */
 
 @media only screen and (max-width: 768px) {
-    #projects-4 {
+    #faq {
         margin-top: -50px;
     }
 }
 
 /* End Query */
 
-#projects-4 .container {
+#faq .container {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
 }
 
-#projects-4 h1 {
+#faq h1 {
     text-align: center;
     font-size: 36px;
 }
 
-#projects-4 .row {
+#faq .row {
     padding-top: 40px;
     padding-bottom: 70px;
     display: flex;
@@ -793,7 +793,7 @@ main {
     width: 100%;
 }
 
-#projects-4 .card {
+#faq .card {
     width: 60%;
     height: auto;
     margin: 0 0px;
@@ -808,35 +808,35 @@ main {
 /* Media Query */
 
 @media only screen and (max-width: 1400px) {
-    #projects-4 .card {
+    #faq .card {
         width: 30%;
         margin-bottom: 20px;
     }
 }
 
 @media only screen and (max-width: 1060px) {
-    #projects-4 .card {
+    #faq .card {
         width: 45%;
         margin-bottom: 30px;
     }
 }
 
 @media only screen and (max-width: 768px) {
-    #projects-4 .row {
+    #faq .row {
         padding-top: 30px;
     }
-    #projects-4 .card {
+    #faq .card {
         width: 80%;
         margin-bottom: 25px;
     }
-    #projects-4 #scale {
+    #faq #scale {
         z-index: 0;
         margin: 0px 0px 25px;
     }
 }
 
 @media only screen and (max-width: 576px) {
-    #projects-4 .card {
+    #faq .card {
         width: 90%;
         margin-bottom: 25px;
     }
@@ -844,56 +844,56 @@ main {
 
 /* End Query */
 
-#projects-4 .card-img {
+#faq .card-img {
     width: 100%;
     border-radius: calc(0.25rem - 1px);
 }
 
-#projects-4 .card-img-top {
+#faq .card-img-top {
     width: 100%;
     border-top-left-radius: calc(0.25rem - 1px);
     border-top-right-radius: calc(0.25rem - 1px);
     margin-bottom: -10px;
 }
 
-#projects-4 .inner {
+#faq .inner {
     overflow: hidden;
 }
 
-#projects-4 .img-fluid {
+#faq .img-fluid {
     max-width: 100%;
     height: auto;
     transition: linear 1s;
 }
 
-#projects-4 .img-fluid:hover {
+#faq .img-fluid:hover {
     filter: grayscale(80%);
     transition: linear 1s;
     /* transform: scale(1.3); */
 }
 
-#projects-4 .card-body {
+#faq .card-body {
     padding-top: 15px;
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 35px;
 }
 
-#projects-4 .card-body h3, p, a {
+#faq .card-body h3, p, a {
     line-height: normal;
 }
 
-#projects-4 .card-body p {
+#faq .card-body p {
     line-height: 1.8rem;
     text-align: justify;
 }
 
-#projects-4 .card-body a {
+#faq .card-body a {
     text-decoration: none;
     color: #daae1f;
 }
 
-#projects-4 .card-body .dots {
+#faq .card-body .dots {
     font-size: 10px;
 }
 
