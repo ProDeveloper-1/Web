@@ -613,10 +613,12 @@ main {
     font-size: 10px;
 }
 
+
 /* == Projects == */
 
 #projects {
     margin-top: -10px;
+    margin-bottom: 10px;
 }
 
 /* Media Query */
@@ -641,26 +643,25 @@ main {
 }
 
 #projects .row {
-    padding-top: 60px;
-    padding-bottom: 70px;
+    padding-top: 40px;
+    padding-bottom: 30px;
     display: flex;
     justify-content: center;
-    flex-flow: row wrap;
+    flex-flow: wrap row-reverse;
     width: 100%;
 }
 
+#projects #row-2 {
+    flex-flow: wrap row;
+}
+
 #projects .card {
-    width: 23%;
+    width: 38%;
     height: auto;
     margin: 0 0px;
     background: #fff;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
     border-radius: 0.25rem;
-}
-
-#projects #scale {
-    z-index: 1;
-    margin: -35px -0px -15px;
 }
 
 /* Media Query */
@@ -727,13 +728,13 @@ main {
 #projects .img-fluid:hover {
     filter: grayscale(80%);
     transition: linear 1s;
-    transform: scale(1.3);
+    /* transform: scale(1.3); */
 }
 
 #projects .card-body {
-    padding-top: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-top: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
     padding-bottom: 35px;
 }
 
@@ -754,6 +755,147 @@ main {
 #projects .card-body .dots {
     font-size: 10px;
 }
+
+/* == Projects-4 == */
+
+#projects-4 {
+    margin-top: -10px;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 768px) {
+    #projects-4 {
+        margin-top: -50px;
+    }
+}
+
+/* End Query */
+
+#projects-4 .container {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+#projects-4 h1 {
+    text-align: center;
+    font-size: 36px;
+}
+
+#projects-4 .row {
+    padding-top: 40px;
+    padding-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+#projects-4 .card {
+    width: 60%;
+    height: auto;
+    margin: 0 0px;
+    margin-bottom: 30px;
+    background: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    border-radius: 0.25rem;
+    border-left: 80px groove;
+    border-image: url(../img/work3.jpg) fill;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 1400px) {
+    #projects-4 .card {
+        width: 30%;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 1060px) {
+    #projects-4 .card {
+        width: 45%;
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #projects-4 .row {
+        padding-top: 30px;
+    }
+    #projects-4 .card {
+        width: 80%;
+        margin-bottom: 25px;
+    }
+    #projects-4 #scale {
+        z-index: 0;
+        margin: 0px 0px 25px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #projects-4 .card {
+        width: 90%;
+        margin-bottom: 25px;
+    }
+}
+
+/* End Query */
+
+#projects-4 .card-img {
+    width: 100%;
+    border-radius: calc(0.25rem - 1px);
+}
+
+#projects-4 .card-img-top {
+    width: 100%;
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+    margin-bottom: -10px;
+}
+
+#projects-4 .inner {
+    overflow: hidden;
+}
+
+#projects-4 .img-fluid {
+    max-width: 100%;
+    height: auto;
+    transition: linear 1s;
+}
+
+#projects-4 .img-fluid:hover {
+    filter: grayscale(80%);
+    transition: linear 1s;
+    /* transform: scale(1.3); */
+}
+
+#projects-4 .card-body {
+    padding-top: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 35px;
+}
+
+#projects-4 .card-body h3, p, a {
+    line-height: normal;
+}
+
+#projects-4 .card-body p {
+    line-height: 1.8rem;
+    text-align: justify;
+}
+
+#projects-4 .card-body a {
+    text-decoration: none;
+    color: #daae1f;
+}
+
+#projects-4 .card-body .dots {
+    font-size: 10px;
+}
+
 
 /*================================
 # Footer
