@@ -907,7 +907,7 @@ footer .get-year, #year {
 }
 
 #newsletter .row {
-    padding-top: 20px;
+    padding-top: 0px;
     padding-bottom: 70px;
     display: flex;
     justify-content: center;
@@ -919,7 +919,16 @@ footer .get-year, #year {
 
 @media only screen and (max-width: 768px) {
     #newsletter .row {
-        padding-top: 30px;
+        padding-top: 0px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #newsletter .row {
+        padding-top: 0px;
+    }
+    #newsletter h1 {
+        font-size: 30px;
     }
 }
 
@@ -927,28 +936,51 @@ footer .get-year, #year {
 
 #newsletter form {
     padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
 }
 
 #newsletter input {
-    margin: 0 auto;
-    margin: 5px;
+    margin: 8px;
     width: 25%;
     padding: 12px 24px;
     border: none;
     border-radius: 5px;
+}
+
+#newsletter input[type=submit] {
+    background: transparent;
+    color: #f8f9fa;
+    border: 1px solid #caaa40;
     transition: all .5s;
 }
 
-input:hover {
-    transition: all .5s;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-    transform: scale(1.1);
-}
-
-input[type=submit] {
-    background: #caaa40;
-}
-
-input[type=submit]:hover {
+#newsletter input[type=submit]:hover {
     cursor: pointer;
+    background: #caaa40;
+    color: #000;
+    transition: all .5s;
+    border: 1px solid #caaa40;
 }
+
+/* Media Query */
+
+@media only screen and (max-width: 576px) {
+    #newsletter form {
+        display: flex;
+        justify-content: center;
+        flex-flow: column wrap;
+        width: 100%;
+    }
+    #newsletter input {
+        margin: 0 auto;
+        margin-bottom: 15px;
+        width: 70%;
+    }
+    #newsletter input[type=submit] {
+        width: 82%;
+    }
+}
+
+/* End Query */
