@@ -11,8 +11,21 @@ body {
     background: #f8f9fa;
 }
 
-html {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+/* Smooth Scroll - The challenge with css smooth scroll is, it is not cross browser */
+/* html {
+    scroll-behavior: smooth;
+} */
+
+* {
+    font-family: 'Ruluko', sans-serif;
+}
+
+h1 {
+    font-family: 'Sirin Stencil', cursive;
+}
+
+h3 {
+    font-family: 'Expletus Sans', cursive;
 }
 
 span {
@@ -213,6 +226,7 @@ main {
 @media only screen and (max-width: 1024px) {
     .hero-text {
         width: 50%;
+        display: none;
     }
     .hero-text h1 {
         font-size: 45px;
@@ -260,9 +274,9 @@ main {
 
 @media only screen and (max-width: 1024px) {
     .hero .card {
-        width: 40%;
+        width: 70%;
         margin: 0px 0px;
-        margin-right: 40px;
+        margin-right: 0px;
         margin-top: 120px;
     }
 }
@@ -361,6 +375,36 @@ main {
 
 /* Media Query */
 
+@media only screen and (max-width: 1400px) {
+    .hero input[type=submit] {
+        width: 93%;
+    }
+    .hero .forgot {
+        display: flex;
+        justify-content: space-evenly;
+        flex-flow: wrap row;
+        margin-top: 35px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .hero form {
+        display: flex;
+        justify-content: center;
+        flex-flow: column wrap;
+        padding: 30px;
+    }
+    .hero input[type=submit] {
+        width: 88%;
+    }
+    .hero .forgot {
+        display: flex;
+        justify-content: space-evenly;
+        flex-flow: wrap row;
+        margin-top: 35px;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .hero form {
         display: flex;
@@ -368,11 +412,26 @@ main {
         flex-flow: column wrap;
         padding: 30px;
     }
+    .hero input[type=submit] {
+        width: 89%;
+    }
     .hero .forgot {
         display: flex;
         justify-content: space-evenly;
         flex-flow: wrap row;
         margin-top: 35px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .hero input[type=submit] {
+        width: 97%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .hero input[type=submit] {
+        width: 100%;
     }
 }
 
@@ -731,6 +790,12 @@ main {
     transform: rotate(5deg);
 }
 
+@media only screen and (min-width: 1024px) and (max-width: 1024px) {
+    #projects .img-fluid {
+        height: 450px;
+    }
+}
+
 #projects .img-fluid:hover {
     filter: grayscale(80%);
     transition: linear .5s;
@@ -908,7 +973,7 @@ footer .get-year, #year {
 
 #newsletter .row {
     padding-top: 0px;
-    padding-bottom: 70px;
+    padding-bottom: 50px;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -942,9 +1007,9 @@ footer .get-year, #year {
 }
 
 #newsletter input {
-    margin: 8px;
+    margin: 5px;
     width: 25%;
-    padding: 12px 24px;
+    padding: 12px 22px;
     border: none;
     border-radius: 5px;
 }
@@ -984,3 +1049,20 @@ footer .get-year, #year {
 }
 
 /* End Query */
+
+#newsletter .social {
+    padding-top: 0px;
+    padding-bottom: 50px;
+}
+
+#newsletter a {
+    font-size: 25px;
+    color: #767676;
+    margin: 0 10px;
+    transition: all .5s;
+}
+
+#newsletter a:hover {
+    transition: all .5s;
+    color: #caaa40;
+}
