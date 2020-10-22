@@ -627,7 +627,6 @@ main {
     font-size: 10px;
 }
 
-
 /* == Projects == */
 
 #projects {
@@ -792,7 +791,7 @@ main {
 
 #faq .row {
     padding-top: 40px;
-    padding-bottom: 70px;
+    padding-bottom: 50px;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -872,15 +871,84 @@ main {
     font-size: 10px;
 }
 
-
 /*================================
 # Footer
 ================================*/
 
 footer {
-    margin-top: 30px;
+    /* margin-top: 30px; */
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-    background: #767676;
+    background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/work5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+footer .get-year, #year {
+    color: #767676;
+    text-align: center;
+}
+
+/* == Newsletter == */
+
+#newsletter .container {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+#newsletter h1 {
+    text-align: center;
+    font-size: 36px;
+    padding-top: 50px;
+    color: #daae1f;
+}
+
+#newsletter .row {
+    padding-top: 20px;
+    padding-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 768px) {
+    #newsletter .row {
+        padding-top: 30px;
+    }
+}
+
+/* End Query */
+
+#newsletter form {
+    padding: 10px;
+}
+
+#newsletter input {
+    margin: 0 auto;
+    margin: 5px;
+    width: 25%;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    transition: all .5s;
+}
+
+input:hover {
+    transition: all .5s;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    transform: scale(1.1);
+}
+
+input[type=submit] {
+    background: #caaa40;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
 }
