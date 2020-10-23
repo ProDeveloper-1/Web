@@ -69,7 +69,7 @@
                                     onfocus="foCus_1();">
                                 <input type="submit" value="Sign In">
                                 <div class="forgot">
-                                    <a href="#" onclick="form1();">Forgot Password?</a>
+                                    <a href="#" onclick="form1();"><span>Forgot Password?</span></a>
                                     <a href="#" id="sign-in" onclick="form();">Sign Up</a>
                                 </div>
                             </form>
@@ -81,22 +81,30 @@
                                 <input type="email" name="email" id="email" placeholder="Email Address" required>
                                 <input type="submit" value="Recover Password">
                                 <div class="p-recovery">
-                                    <a href="#" id="sign-in" onclick="form2();">Sign In</a>
+                                    <a href="#" id="sign-in-2" onclick="form2();">Sign In</a>
                                 </div>
                             </form>
                         </div>
                         <div class="card" id="reg">
                             <form action="#" method="post">
-                                <h4>Create an account</h4>
+                                <h4>Create Account</h4>
                                 <hr>
                                 <input type="text" name="username" id="username" placeholder="Username" required
                                     onfocus="foCus();">
                                 <input type="email" name="email" id="email" placeholder="Email Address" required>
                                 <input type="password" name="password" id="password" placeholder="Password" required
                                     onfocus="foCus_1();">
-                                <input type="submit" value="Create Account">
+                                <input type="password" name="password2" id="password2" placeholder="Confirm Password"
+                                    required>
+                                <input type="checkbox" name="check" id="check">
+                                <p>
+                                    I agree the <a href="#" target="_blank" rel="noopener noreferrer"><span> Terms of
+                                            Use </span></a> &amp; <a href="#" target="_blank"
+                                        rel="noopener noreferrer"><span>Privacy Policy</span></a>
+                                </p>
+                                <input type="submit" value="Sign Up">
                                 <div class="account">
-                                    <a href="#" id="sign-up" onclick="form3();">Already have account?</a>
+                                    Already have an account ? <a href="#" id="sign-up" onclick="form3();">Sign In</a>
                                 </div>
                             </form>
                         </div>

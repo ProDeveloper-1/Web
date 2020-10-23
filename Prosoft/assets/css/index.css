@@ -276,10 +276,21 @@ main {
 }
 
 .hero #reg {
+    margin-top: 75px;
     display: none;
-    height: 480px;
+    height: 570px;
     animation: zoom 1s alternate;
 }
+
+/* Media Query */
+
+@media only screen and (max-width: 576px) {
+    .hero #reg {
+        margin-top: 55px;
+    }
+}
+
+/* End Query */
 
 @keyframes zoom {
     0% {
@@ -358,6 +369,10 @@ main {
     padding: 40px;
 }
 
+::placeholder {
+    font-size: 16px;
+}
+
 .hero form h4 {
     text-align: center;
     font-size: 20px;
@@ -367,7 +382,21 @@ main {
 .hero form a {
     text-decoration: none;
     color: #f8f9fa;
-    font-size: 14px;
+    font-size: 16px;
+}
+
+.hero #reg #check {
+    padding: 0px 0px;
+    margin: 0 8px;
+    margin-top: 20px;
+    border: none;
+}
+
+.hero #reg p {
+    font-size: 16px;
+    color: #f8f9fa;
+    margin-top: -15px;
+    margin-left: 30px;
 }
 
 .hero hr {
@@ -375,10 +404,71 @@ main {
     width: 100%;
 }
 
+/* Media Query */
+
+@media only screen and (max-width: 1400px) {
+    .hero #reg #check {
+        padding: 0px 0px;
+        margin: 0 18px;
+        margin-top: 20px;
+        border: none;
+    }
+    .hero #reg p {
+        font-size: 16px;
+        color: #f8f9fa;
+        margin-top: -15px;
+        margin-left: 40px;
+    }
+    .hero hr {
+        background: #daae1f;
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .hero #reg #check {
+        padding: 0px 0px;
+        margin: 0 43px;
+        margin-top: 20px;
+        border: none;
+    }
+    .hero #reg p {
+        font-size: 16px;
+        color: #f8f9fa;
+        margin-top: -15px;
+        margin-left: 65px;
+    }
+    .hero hr {
+        background: #daae1f;
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .hero #reg #check {
+        padding: 0px 0px;
+        margin: 0 8px;
+        margin-top: 20px;
+        border: none;
+    }
+    .hero #reg p {
+        font-size: 16px;
+        color: #f8f9fa;
+        margin-top: -15px;
+        margin-left: 30px;
+    }
+    .hero hr {
+        background: #daae1f;
+        width: 80%;
+    }
+}
+
+/* End Query */
+
 .hero input {
     padding: 12px 24px;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 15px;
     border: none;
     border: 1px solid #daae1f;
     border-radius: 5px;
@@ -393,7 +483,7 @@ main {
     background: transparent;
     color: #f8f9fa;
     border: 1px solid #daae1f;
-    font-size: 14px;
+    font-size: 16px;
     transition: all .5s;
 }
 
@@ -403,13 +493,22 @@ main {
     color: #000;
 }
 
+.hero #reg input[type=submit] {
+    margin-top: 5px;
+}
+
 .hero .forgot {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-flow: wrap row;
     margin-top: 20px;
 }
 
+.forgot a#sign-in {
+    margin: 0 15px;
+    color: #daae1f;
+    font-size: 16px;
+}
 
 .hero .p-recovery {
     display: flex;
@@ -418,11 +517,23 @@ main {
     margin-top: 20px;
 }
 
+.p-recovery a#sign-in-2 {
+    color: #daae1f;
+    font-size: 16px;
+}
+
 .hero .account {
     display: flex;
     justify-content: center;
     flex-flow: wrap row;
     margin-top: 20px;
+    color: #f8f9fa;
+}
+
+.account a#sign-up {
+    margin: 0 15px;
+    color: #daae1f;
+    font-size: 16px;
 }
 
 /* Media Query */
