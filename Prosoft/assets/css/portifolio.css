@@ -50,7 +50,7 @@ span {
     text-decoration: none;
     margin-left: 100px;
     font-size: 26px;
-    font-style: italic;
+    /* font-style: italic; */
     line-height: 70px;
     color: #000;
 }
@@ -673,6 +673,7 @@ footer .get-year, #year {
     padding: 12px 22px;
     border: none;
     border-radius: 5px;
+    font-size: 16px;
 }
 
 #newsletter input[type=submit] {
