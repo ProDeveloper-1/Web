@@ -1,11 +1,11 @@
 // OnFocus Event
 function foCus() {
-    document.getElementById('username').style.border = ' 2px solid #1e90ff';
+    document.getElementById('username').style.border = ' 1px solid #1e90ff';
 }
 
 // OnFocus Event
 function foCus_1() {
-    document.getElementById('password').style.border = ' 2px solid #1e90ff';
+    document.getElementById('password').style.border = ' 1px solid #1e90ff';
 }
 
 // Get Full Year
@@ -25,3 +25,14 @@ $('.nav a, .go-top a').on('click', function (e) {
         }, 800);
     }
 });
+
+// Changes forms
+function form() {
+    document.getElementById('reg').style.display = 'block';
+    document.getElementById('log').style.display = 'none';
+}
+
+function form1() {
+    document.getElementById('log').style.display = 'block';
+    document.getElementById('reg').style.display = 'none';
+}

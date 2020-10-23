@@ -59,7 +59,7 @@
                             </p>
                             <a href="#"><button class="btn">Get Started</button></a>
                         </div>
-                        <div class="card">
+                        <div class="card" id="log">
                             <form action="#" method="post">
                                 <h4>Sign in to continue</h4>
                                 <hr>
@@ -67,10 +67,27 @@
                                     onfocus="foCus();">
                                 <input type="password" name="password" id="password" placeholder="Password" required
                                     onfocus="foCus_1();">
-                                <input type="submit" value="SignIn">
+                                <input type="submit" value="Sign In">
                                 <div class="forgot">
                                     <a href="#">Forgot Password?</a>
-                                    <a href="#">SignUp</a>
+                                    <a href="#" id="sign-in" onclick="form();">SignUp</a>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="card" id="reg">
+                            <form action="#" method="post">
+                                <h4>Create an account</h4>
+                                <hr>
+                                <input type="text" name="username" id="username" placeholder="Username" required
+                                    onfocus="foCus();">
+                                <input type="email" name="email" id="email" placeholder="Email Address" required>
+                                <input type="password" name="password" id="password" placeholder="Password" required
+                                    onfocus="foCus_1();">
+                                <!-- <input type="password" name="password-2" id="password-2" placeholder="Confirm Password" required> -->
+                                <input type="submit" value="Create Account">
+                                <div class="account">
+                                    <!-- <a href="#">Forgot Password?</a> -->
+                                    <a href="#" id="sign-up" onclick="form1();">Already have account?</a>
                                 </div>
                             </form>
                         </div>

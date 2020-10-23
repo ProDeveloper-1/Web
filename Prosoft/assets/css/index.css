@@ -265,6 +265,16 @@ main {
     margin-right: 100px;
 }
 
+#log {
+    /* position: relative; */
+}
+
+#reg {
+    /* position: absolute; */
+    display: none;
+    height: 480px;
+}
+
 /* Media Query */
 
 @media only screen and (max-width: 1400px) {
@@ -356,7 +366,7 @@ main {
     border-radius: 5px;
 }
 
-.hero input[type=text], .hero input[type=password] {
+.hero input[type=text], .hero input[type=email], .hero input[type=password] {
     width: 80%;
 }
 
@@ -381,6 +391,14 @@ main {
     flex-flow: wrap row;
     margin-top: 20px;
 }
+
+.hero .account {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap row;
+    margin-top: 20px;
+}
+
 
 
 /* Media Query */
