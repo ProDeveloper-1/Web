@@ -32,8 +32,20 @@ function form() {
     document.getElementById('log').style.display = 'none';
 }
 
-// Get Login Form
+// Get Password Recovery Form
 function form1() {
+    document.getElementById('forgot-p').style.display = 'block';
+    document.getElementById('log').style.display = 'none';
+}
+
+// Get Login Form while at Recovery
+function form2() {
+    document.getElementById('log').style.display = 'block';
+    document.getElementById('forgot-p').style.display = 'none';
+}
+
+// Get Login Form while at Registration
+function form3() {
     document.getElementById('log').style.display = 'block';
     document.getElementById('reg').style.display = 'none';
 }

@@ -265,14 +265,32 @@ main {
     margin-right: 100px;
 }
 
-#log {
-    /* position: relative; */
+.hero #log {
+    animation: zoom 1s alternate;
 }
 
-#reg {
-    /* position: absolute; */
+.hero #forgot-p {
+    display: none;
+    height: 380px;
+    animation: zoom 1s alternate;
+}
+
+.hero #reg {
     display: none;
     height: 480px;
+    animation: zoom 1s alternate;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: scale(1.0);
+    }
 }
 
 /* Media Query */
@@ -392,14 +410,20 @@ main {
     margin-top: 20px;
 }
 
-.hero .account {
+
+.hero .p-recovery {
     display: flex;
     justify-content: center;
     flex-flow: wrap row;
     margin-top: 20px;
 }
 
-
+.hero .account {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap row;
+    margin-top: 20px;
+}
 
 /* Media Query */
 

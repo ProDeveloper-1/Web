@@ -69,8 +69,19 @@
                                     onfocus="foCus_1();">
                                 <input type="submit" value="Sign In">
                                 <div class="forgot">
-                                    <a href="#">Forgot Password?</a>
-                                    <a href="#" id="sign-in" onclick="form();">SignUp</a>
+                                    <a href="#" onclick="form1();">Forgot Password?</a>
+                                    <a href="#" id="sign-in" onclick="form();">Sign Up</a>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="card" id="forgot-p">
+                            <form action="#" method="post">
+                                <h4>Password Recovery</h4>
+                                <hr>
+                                <input type="email" name="email" id="email" placeholder="Email Address" required>
+                                <input type="submit" value="Recover Password">
+                                <div class="p-recovery">
+                                    <a href="#" id="sign-in" onclick="form2();">Sign In</a>
                                 </div>
                             </form>
                         </div>
@@ -83,11 +94,9 @@
                                 <input type="email" name="email" id="email" placeholder="Email Address" required>
                                 <input type="password" name="password" id="password" placeholder="Password" required
                                     onfocus="foCus_1();">
-                                <!-- <input type="password" name="password-2" id="password-2" placeholder="Confirm Password" required> -->
                                 <input type="submit" value="Create Account">
                                 <div class="account">
-                                    <!-- <a href="#">Forgot Password?</a> -->
-                                    <a href="#" id="sign-up" onclick="form1();">Already have account?</a>
+                                    <a href="#" id="sign-up" onclick="form3();">Already have account?</a>
                                 </div>
                             </form>
                         </div>
