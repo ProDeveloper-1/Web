@@ -15,3 +15,15 @@ $('.nav a, .go-top a').on('click', function (e) {
         }, 800);
     }
 });
+
+// Back To Top
+const toTop = document.querySelector('.go-top');
+
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 100) {
+        toTop.classList.add('active');
+    }
+    else {
+        toTop.classList.remove('active');
+    }
+})

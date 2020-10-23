@@ -49,3 +49,15 @@ function form3() {
     document.getElementById('log').style.display = 'block';
     document.getElementById('reg').style.display = 'none';
 }
+
+// Back To Top
+const toTop = document.querySelector('.go-top');
+
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 100) {
+        toTop.classList.add('active');
+    }
+    else {
+        toTop.classList.remove('active');
+    }
+})

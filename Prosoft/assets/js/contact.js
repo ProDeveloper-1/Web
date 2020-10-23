@@ -5,12 +5,12 @@ document.getElementById('year').innerHTML = year;
 
 // OnFocus Event
 function myFocus() {
-    document.getElementById('username').style.border = ' 2px solid #1e90ff';
+    document.getElementById('username').style.border = ' 1px solid #1e90ff';
 }
 
 // OnBlur Event
 function myBlur() {
-    document.getElementById('password').style.border = ' 2px solid #1e90ff';
+    document.getElementById('password').style.border = ' 1px solid #1e90ff';
 }
 
 // Smooth Scroll
@@ -25,3 +25,15 @@ $('.nav a, .go-top a').on('click', function (e) {
         }, 800);
     }
 });
+
+// Back To Top
+const toTop = document.querySelector('.go-top');
+
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 100) {
+        toTop.classList.add('active');
+    }
+    else {
+        toTop.classList.remove('active');
+    }
+})
