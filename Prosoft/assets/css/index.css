@@ -207,19 +207,22 @@ main {
 
 .hero-text .btn {
     border: none;
-    color: #000;
-    background: #daae1f;
-    width: 30%;
-    padding: 15px 10px;
+    color: #f8f9fa;
+    background: transparent;
+    width: 25%;
+    padding: 18px 10px;
     margin-top: 20px;
     margin-left: 100px;
     border-radius: 50px;
-    font-size: 17px;
+    font-size: 18px;
+    border: 1px solid #daae1f;
+    transition: all .5s;
 }
 
 .hero-text .btn:hover {
     cursor: pointer;
-    background: #caaa40;
+    background: #daae1f;
+    color: #000;
 }
 
 /* Media Query */
@@ -255,7 +258,7 @@ main {
     width: 25%;
     margin-top: 120px;
     height: 450px;
-    background: #fff;
+    background-image: linear-gradient(360deg, rgba(48, 44, 44, 0.6), rgba(129, 99, 42, 0.6));
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
     border-radius: 0.25rem;
     color: #000;
@@ -330,11 +333,12 @@ main {
 .hero form h4 {
     text-align: center;
     font-size: 20px;
+    color: #f8f9fa;
 }
 
 .hero form a {
     text-decoration: none;
-    color: #767676;
+    color: #f8f9fa;
     font-size: 14px;
 }
 
@@ -358,13 +362,17 @@ main {
 
 .hero input[type=submit] {
     width: 97%;
-    background: #daae1f;
+    background: transparent;
+    color: #f8f9fa;
+    border: 1px solid #daae1f;
     font-size: 14px;
+    transition: all .5s;
 }
 
 .hero input[type=submit]:hover {
-    background: #caaa40;
+    background: #daae1f;
     cursor: pointer;
+    color: #000;
 }
 
 .hero .forgot {
@@ -373,6 +381,7 @@ main {
     flex-flow: wrap row;
     margin-top: 20px;
 }
+
 
 /* Media Query */
 
