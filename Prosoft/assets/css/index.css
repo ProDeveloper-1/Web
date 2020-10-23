@@ -939,17 +939,21 @@ main {
 @media only screen and (max-width: 768px) {
     #projects .row {
         padding-top: 30px;
+        padding-bottom: 0px;
     }
     #projects .card {
         width: 90%;
-        margin-bottom: 25px;
+        margin-bottom: 0px;
     }
 }
 
 @media only screen and (max-width: 576px) {
     #projects .card {
         width: 90%;
-        margin-bottom: 25px;
+        margin-bottom: 0px;
+    }
+    #projects .row {
+        padding-bottom: 0px;
     }
 }
 
@@ -1050,6 +1054,28 @@ main {
     flex-flow: row wrap;
     width: 100%;
 }
+
+/* Media Query */
+
+@media only screen and (max-width: 768px) {
+    #faq .row {
+        margin-top: -20px;
+    }
+    #faq h1 {
+        padding-top: 60px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #faq .row {
+        margin-top: -25px;
+    }
+    #faq h1 {
+        padding-top: 50px;
+    }
+}
+
+/* End Query */
 
 #faq .card {
     width: 60%;
