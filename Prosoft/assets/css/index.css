@@ -309,6 +309,12 @@ main {
 }
 
 @media only screen and (max-width: 576px) {
+    .hero #log {
+        margin-top: 70px;
+    }
+    .hero #forgot-p {
+        margin-top: 70px;
+    }
     .hero #reg {
         margin-top: 55px;
     }
