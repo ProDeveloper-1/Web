@@ -225,7 +225,7 @@ main {
     flex-flow: row wrap;
 }
 
-#about img {
+#about #about-img {
     width: 40%;
     height: auto;
     padding-top: 30px;
@@ -246,7 +246,7 @@ main {
 /* Media Query */
 
 @media only screen and (max-width: 1400px) {
-    #about img {
+    #about #about-img {
         width: 80%;
         height: auto;
         padding-bottom: 20px;
@@ -260,7 +260,7 @@ main {
 }
 
 @media only screen and (max-width: 1024px) {
-    #about img {
+    #about #about-img {
         height: auto;
     }
     #about p {
@@ -270,7 +270,7 @@ main {
 }
 
 @media only screen and (max-width: 768px) {
-    #about img {
+    #about #about-img {
         width: 88%;
         height: auto;
         padding-top: 0px;
@@ -285,7 +285,7 @@ main {
 }
 
 @media only screen and (max-width: 576px) {
-    #about img {
+    #about #about-img{
         width: 88%;
         height: 88%;
         padding-top: 0px;
@@ -300,10 +300,25 @@ main {
 }
 
 @media only screen and (max-width: 500px) {
-    #about img {
+    #about #about-img {
         padding-top: 0px;
         width: 88%;
-        height: 88%;
+        height: 225px;
+        padding-bottom: 20px;
+    }
+    #about p {
+        width: 100%;
+        margin-top: 0px;
+        padding-left: 23px;
+        padding-right: 23px;
+    }
+}
+
+@media only screen and (max-width: 325px) {
+    #about #about-img {
+        padding-top: 0px;
+        width: 88%;
+        height: 180px;
         padding-bottom: 20px;
     }
     #about p {
