@@ -26,12 +26,13 @@ $('.nav a, .go-top a').on('click', function (e) {
     }
 });
 
-// Changes forms
+// Get Registration Form
 function form() {
     document.getElementById('reg').style.display = 'block';
     document.getElementById('log').style.display = 'none';
 }
 
+// Get Login Form
 function form1() {
     document.getElementById('log').style.display = 'block';
     document.getElementById('reg').style.display = 'none';
