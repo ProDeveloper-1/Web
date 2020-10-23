@@ -12,6 +12,7 @@ body {
 }
 
 /* Smooth Scroll - The challenge with css smooth scroll is, it is not cross browser */
+
 /* html {
     scroll-behavior: smooth;
 } */
@@ -1065,4 +1066,49 @@ footer .get-year, #year {
 #newsletter a:hover {
     transition: all .5s;
     color: #caaa40;
+}
+
+/* == Go-Top == */
+
+.go-top {
+    position: absolute;
+    margin-top: -20px;
+    z-index: 10;
+}
+
+.go-top a {
+    background: #daae1f;
+    border-radius: 50%;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 35px;
+    transition: all .5s;
+    animation: colur 1s infinite alternate;
+}
+
+@keyframes colur {
+    from {
+        color: #000;
+    }
+    to {
+        color: #f8f9fa;
+    }
+}
+
+.go-top a:hover {
+    background: #767676;
+    color: #daae1f;
+    transition: all .5s;
+    animation: colour 1s infinite alternate;
+}
+
+@keyframes colour {
+    from {
+        color: #000;
+    }
+    to {
+        color: #daae1f;
+    }
 }
