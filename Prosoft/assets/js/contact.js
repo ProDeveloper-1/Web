@@ -1,16 +1,16 @@
 // Get Full Year
 let date = new (Date);
 let year = date.getFullYear();
-document.getElementById('year').innerHTML = year;
+document.querySelector('#year').innerHTML = year;
 
 // OnFocus Event
 function myFocus() {
-    document.getElementById('username').style.border = ' 1px solid #1e90ff';
+    document.querySelector('#username').style.border = ' 1px solid #1e90ff';
 }
 
 // OnBlur Event
 function myBlur() {
-    document.getElementById('password').style.border = ' 1px solid #1e90ff';
+    document.querySelector('#password').style.border = ' 1px solid #1e90ff';
 }
 
 // Smooth Scroll
