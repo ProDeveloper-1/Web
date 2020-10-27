@@ -533,7 +533,7 @@ main {
     margin-top: 20px;
 }
 
-.forgot a#sign-in {
+.forgot a#sign-up {
     margin: 0 15px;
     color: #daae1f;
     font-size: 16px;
@@ -546,7 +546,7 @@ main {
     margin-top: 20px;
 }
 
-.p-recovery a#sign-in-2 {
+.p-recovery a#sign-in {
     color: #daae1f;
     font-size: 16px;
 }
@@ -559,7 +559,7 @@ main {
     color: #f8f9fa;
 }
 
-.account a#sign-up {
+.account a#sign-in_2 {
     margin: 0 15px;
     color: #daae1f;
     font-size: 16px;

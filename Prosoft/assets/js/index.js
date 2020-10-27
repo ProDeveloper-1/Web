@@ -11,7 +11,7 @@ function foCus_1() {
 // Get Full Year
 let date = new (Date);
 let year = date.getFullYear();
-document.querySelector('#year').innerHTML = year;
+document.querySelector('#year').innerText = year;
 
 // Smooth Scroll
 $('.nav a, .go-top a').on('click', function (e) {
@@ -27,28 +27,38 @@ $('.nav a, .go-top a').on('click', function (e) {
 });
 
 // Get Registration Form
+const getReg_Form = document.querySelector('#sign-up');
+
+getReg_Form.addEventListener('click', form);
+
 function form() {
     document.querySelector('#reg').style.display = 'block';
     document.querySelector('#log').style.display = 'none';
 }
 
 // Get Password Recovery Form
-function form1() {
+const getPass_Form = document.querySelector('#forg-p');
+
+getPass_Form.addEventListener('click', function () {
     document.querySelector('#forgot-p').style.display = 'block';
     document.querySelector('#log').style.display = 'none';
-}
+});
 
 // Get Login Form while at Recovery
-function form2() {
+const getlog_Form = document.querySelector('#sign-in');
+
+getlog_Form.addEventListener('click', (e) => {
     document.querySelector('#log').style.display = 'block';
     document.querySelector('#forgot-p').style.display = 'none';
-}
+});
 
 // Get Login Form while at Registration
-function form3() {
+const getlog_Form_2 = document.querySelector('#sign-in_2');
+
+getlog_Form_2.addEventListener('click', function () {
     document.querySelector('#log').style.display = 'block';
     document.querySelector('#reg').style.display = 'none';
-}
+});
 
 // Back To Top
 const toTop = document.querySelector('.go-top');
