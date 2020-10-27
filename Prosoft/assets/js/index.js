@@ -1,10 +1,17 @@
 // OnFocus Event
-function foCus() {
-    document.querySelector('#username').style.border = ' 1px solid #1e90ff';
-}
+const myFocus = document.querySelector('#username');
 
-// OnFocus Event
-function foCus_1() {
+myFocus.addEventListener('focus', (e) => {
+    e.preventDefault();
+    document.querySelector('#username').style.border = ' 1px solid #1e90ff';
+})
+
+// OnBlur Event
+const myBlur = document.querySelector('#password');
+
+myBlur.addEventListener('blur', myBlury);
+
+function myBlury() {
     document.querySelector('#password').style.border = ' 1px solid #1e90ff';
 }
 

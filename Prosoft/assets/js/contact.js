@@ -4,13 +4,20 @@ let year = date.getFullYear();
 document.querySelector('#year').innerHTML = year;
 
 // OnFocus Event
-function myFocus() {
+const myFocus = document.querySelector('#username');
+
+myFocus.addEventListener('focus', (e) => {
+    e.preventDefault();
     document.querySelector('#username').style.border = ' 1px solid #1e90ff';
-}
+})
 
 // OnBlur Event
-function myBlur() {
-    document.querySelector('#password').style.border = ' 1px solid #1e90ff';
+const myBlur = document.querySelector('#email');
+
+myBlur.addEventListener('blur', myBlury);
+
+function myBlury() {
+    document.querySelector('#email').style.border = ' 1px solid #1e90ff';
 }
 
 // Smooth Scroll
