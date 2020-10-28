@@ -485,7 +485,7 @@ main {
 
 #web .row {
     padding-top: 60px;
-    padding-bottom: 70px;
+    padding-bottom: 50px;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -540,6 +540,9 @@ main {
     #web .card {
         width: 90%;
         margin-bottom: 25px;
+    }
+    #web .row {
+        padding-bottom: 30px;
     }
 }
 

@@ -479,6 +479,9 @@ main {
         width: 90%;
         margin-bottom: 25px;
     }
+    #services-2 {
+        margin-bottom: 30px;
+    }
 }
 
 /* End Query */

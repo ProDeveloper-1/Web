@@ -1051,7 +1051,7 @@ main {
 
 #faq .row {
     padding-top: 40px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -1192,7 +1192,7 @@ main {
 
 #testimonials .row {
     padding-top: 30px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -1235,6 +1235,9 @@ main {
     #testimonials .card {
         width: 90%;
         margin-bottom: 25px;
+    }
+    #testimonials .row {
+        padding-bottom: 30px;
     }
 }
 
