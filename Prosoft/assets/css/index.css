@@ -714,13 +714,13 @@ main {
 #portifolio .img-fluid {
     max-width: 100%;
     height: auto;
-    transition: linear 1s;
+    transition: linear .5s;
 }
 
 #portifolio .img-fluid:hover {
-    filter: grayscale(80%);
+    /* filter: grayscale(80%); */
     transform: scale(1.3);
-    transition: linear 1s;
+    transition: linear .5s;
 }
 
 #portifolio .card-body {
@@ -848,7 +848,7 @@ main {
 }
 
 #services .img-fluid:hover {
-    filter: grayscale(80%);
+    /* filter: grayscale(80%); */
     transition: linear 1s;
     transform: scale(1.3);
 }
@@ -982,7 +982,7 @@ main {
 #projects .img-fluid {
     max-width: 100%;
     height: auto;
-    transition: linear .5s;
+    transition: linear .4s;
     transform: rotate(5deg);
 }
 
@@ -994,8 +994,7 @@ main {
 
 #projects .img-fluid:hover {
     filter: grayscale(80%);
-    transition: linear .5s;
-    transform: rotate(0deg);
+    /* transform: rotate(0deg); */
 }
 
 #projects .card-body {
