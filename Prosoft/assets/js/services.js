@@ -1,7 +1,7 @@
 // Get Full Year
 let date = new (Date);
-let year = date.getFullYear();
-document.querySelector('#year').innerHTML = year;
+date = date.getFullYear();
+document.querySelector('#year').textContent = date;
 
 // Smooth Scroll
 $('.nav a, .go-top a').on('click', function (e) {

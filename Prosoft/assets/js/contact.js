@@ -8,7 +8,7 @@ const myFocus = document.querySelector('#username');
 
 myFocus.addEventListener('focus', (e) => {
     e.preventDefault();
-    document.querySelector('#username').style.border = ' 1px solid #1e90ff';
+    myFocus.style.border = ' 1px solid #1e90ff';
 })
 
 // OnBlur Event
@@ -17,7 +17,7 @@ const myBlur = document.querySelector('#email');
 myBlur.addEventListener('blur', myBlury);
 
 function myBlury() {
-    document.querySelector('#email').style.border = ' 1px solid #1e90ff';
+    myBlur.style.border = ' 1px solid #1e90ff';
 }
 
 // Smooth Scroll

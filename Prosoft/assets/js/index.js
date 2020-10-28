@@ -3,7 +3,7 @@ const myFocus = document.querySelector('#username');
 
 myFocus.addEventListener('focus', (e) => {
     e.preventDefault();
-    document.querySelector('#username').style.border = ' 1px solid #1e90ff';
+    myFocus.style.border = ' 1px solid #1e90ff';
 })
 
 // OnBlur Event
@@ -12,11 +12,11 @@ const myBlur = document.querySelector('#password');
 myBlur.addEventListener('blur', myBlury);
 
 function myBlury() {
-    document.querySelector('#password').style.border = ' 1px solid #1e90ff';
+    myBlur.style.border = ' 1px solid #1e90ff';
 }
 
 // Get Full Year
-let date = new (Date);
+const date = new (Date);
 let year = date.getFullYear();
 document.querySelector('#year').innerText = year;
 

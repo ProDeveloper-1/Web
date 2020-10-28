@@ -1,6 +1,6 @@
 // Get Full Year
-let date = new (Date);
-let year = date.getFullYear();
+let year = new (Date);
+year = year.getFullYear();
 document.querySelector('#year').textContent = year;
 
 // Smooth Scroll
