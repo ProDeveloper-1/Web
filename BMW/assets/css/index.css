@@ -76,6 +76,25 @@ nav ul li a {
     padding: 7px 13px;
     border-radius: 3px;
     font-weight: lighter;
+    position: relative;
+}
+
+nav ul li a::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: #fff;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+}
+
+nav ul li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
 }
 
 a.active, a:hover {
@@ -83,8 +102,19 @@ a.active, a:hover {
     transition: .5s;
 }
 
-.checkbtn {
+label#checkbtn {
     font-size: 30px;
+    color: #fff;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+label#cancel {
+    font-size: 40px;
+    font-weight: 600;
     color: #fff;
     line-height: 80px;
     float: right;
@@ -95,6 +125,16 @@ a.active, a:hover {
 
 #check {
     display: none;
+}
+
+h1 {
+    animation: rotate 10s infinite alternate;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 /* Media Query */
@@ -116,7 +156,7 @@ a.active, a:hover {
 }
 
 @media only screen and (max-width: 858px) {
-    .checkbtn {
+    label#checkbtn {
         display: block;
     }
     ul {
@@ -143,6 +183,12 @@ a.active, a:hover {
     }
     #check:checked~ul {
         left: 0;
+    }
+    #check:checked~label#checkbtn {
+        display: none;
+    }
+    #check:checked~label#cancel {
+        display: block;
     }
 }
 
