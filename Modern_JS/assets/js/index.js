@@ -577,19 +577,6 @@ form.addEventListener('click', (e) => {
 
 });
 
-// Applying some animation to "Express  yourself" text
-const express = document.querySelector('.express');
-
-express.addEventListener('mouseover', (e) => {
-    e.preventDefault();
-    document.querySelector('.express').classList.add('scale');
-});
-
-express.addEventListener('mouseleave', (e) => {
-    e.preventDefault();
-    document.querySelector('.express').classList.add('scale');
-});
-
 // Multiple elements selectors
 
 // This below gives NodeList of which we can apply array methods on it
@@ -606,5 +593,17 @@ console.log(document.getElementsByTagName('section'));
 const inputs = document.querySelectorAll('input');
 
 inputs.forEach((input) => console.log(input));
+
+// Back To Top
+const Top = document.querySelector('.go_top');
+
+window.addEventListener('scroll', () => {
+    if(window.pageYOffset > 100) {
+        Top.classList.add('active');
+    }
+    else {
+        Top.classList.remove('active');
+    }
+});
 
 // ==== End DOM ==== //

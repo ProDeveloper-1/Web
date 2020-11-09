@@ -9,7 +9,7 @@ const myFocus = document.querySelector('#username');
 myFocus.addEventListener('focus', (e) => {
     e.preventDefault();
     myFocus.style.border = ' 1px solid #1e90ff';
-})
+});
 
 // OnBlur Event
 const myBlur = document.querySelector('#email');
@@ -43,4 +43,4 @@ window.addEventListener('scroll', () => {
     else {
         toTop.classList.remove('active');
     }
-})
+});

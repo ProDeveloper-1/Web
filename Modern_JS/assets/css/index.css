@@ -14,18 +14,6 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.order-0 {
-    order: 0;
-}
-
-.order-1 {
-    order: 1;
-}
-
-.order-2 {
-    order: 2;
-}
-
 :root {
     display: flex;
     justify-content: center;
@@ -38,33 +26,112 @@ html {
     scroll-behavior: smooth;
 }
 
+section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* Media Query */
-
-@media only screen and (max-width: 768px) {
-    .container {
-        display: grid;
-        place-content: center;
-        place-items: center;
-    }
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    flex-basis: 100%;
+    justify-content: center;
 }
 
-/* End Query */
+/* Columns */
+
+.col {
+    columns: 1;
+    margin: 0 15px 20px 15px;
+}
+
+.col-2 {
+    columns: 2;
+}
+
+.col-3 {
+    columns: 3;
+}
+
+.col-4 {
+    columns: 4;
+}
+
+.col-5 {
+    columns: 5;
+}
+
+.col-6 {
+    columns: 6;
+}
+
+.col-7 {
+    columns: 7;
+}
+
+.col-8 {
+    columns: 8;
+}
+
+.col-9 {
+    columns: 9;
+}
+
+.col-10 {
+    columns: 10;
+}
+
+.col-11 {
+    columns: 11;
+}
+
+.col-12 {
+    columns: 12;
+}
+
+/* Ordering */
+
+.order-0 {
+    order: 0;
+}
+
+.order-1 {
+    order: 1;
+}
+
+.order-2 {
+    order: 2;
+}
+
+.display-1 {
+    font-size: 195px;
+    font-weight: 360;
+}
+
+.display-2 {
+    font-size: 125px;
+    font-weight: 360;
+}
+
+.display-3 {
+    font-size: 95px;
+    font-weight: 360;
+}
+
+.display-4 {
+    font-size: 50px;
+    font-weight: 360;
+}
 
 ::selection {
     background: purple;
     color: cyan;
-}
-
-section {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background: gold;
 }
 
 /* Media Query */
@@ -73,6 +140,14 @@ section {
     section {
         padding-top: 30px;
         padding-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        display: grid;
+        place-content: center;
+        place-items: center;
     }
 }
 
@@ -88,11 +163,11 @@ section {
 # Add User
 ====================================*/
 
-.addUser {
+#addUser {
     padding-top: 120px;
 }
 
-.addUser form {
+#addUser form {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -133,19 +208,19 @@ section {
     }
 }
 
-.addUser form h3 {
+#addUser form h3 {
     margin: 0 auto;
     font-size: 21px;
     letter-spacing: 0px;
 }
 
-.addUser label {
+#addUser label {
     margin-left: 80px;
     font-weight: 600;
     margin-top: 15px;
 }
 
-.addUser input {
+#addUser input {
     margin: 0 auto;
     width: 80%;
     padding: 12px 24px;
@@ -155,7 +230,7 @@ section {
     background: #e3e3e3;
 }
 
-.addUser .msg {
+#addUser .msg {
     display: none;
     margin: 0 auto;
     width: 80%;
@@ -169,14 +244,14 @@ section {
     font-weight: 600;
 }
 
-.addUser input[type=submit] {
+#addUser input[type=submit] {
     width: 85%;
     background: gold;
     border: 2px solid gold;
     transition: all .5s;
 }
 
-.addUser input[type=submit]:hover {
+#addUser input[type=submit]:hover {
     cursor: pointer;
     background: transparent;
     border: 2px solid gold;
@@ -186,20 +261,20 @@ section {
 /* Media Query */
 
 @media only screen and (max-width: 1400px) {
-    .addUser h1 {
+    #addUser h1 {
         border-right-width: unset;
     }
-    .addUser p {
+    #addUser p {
         padding-left: 160px;
         padding-right: 160px;
     }
 }
 
 @media only screen and (max-width: 1024px) {
-    .addUser {
+    #addUser {
         padding-top: 100px;
     }
-    .addUser h1 {
+    #addUser h1 {
         font-size: 98px;
         padding-top: 50px;
         padding-bottom: 70px;
@@ -207,61 +282,61 @@ section {
         padding-right: 50px;
         margin-left: 20px;
     }
-    .addUser p {
+    #addUser p {
         margin-top: -40px;
         padding-left: 33px;
         padding-right: 33px;
     }
-    .addUser form {
+    #addUser form {
         width: 70%;
         padding-top: 60px;
         padding-left: 30px;
         padding-right: 30px;
         padding-bottom: 100px;
     }
-    .addUser input {
+    #addUser input {
         width: 70%;
     }
-    .addUser .msg {
+    #addUser .msg {
         width: 70%;
     }
-    .addUser input[type=submit] {
+    #addUser input[type=submit] {
         width: 76%;
     }
 }
 
 @media only screen and (max-width: 768px) {
-    .addUser h1 {
+    #addUser h1 {
         font-size: 68px;
     }
-    .addUser p {
+    #addUser p {
         margin-top: -22px;
         padding-left: 30px;
         padding-right: 30px;
     }
-    .addUser form {
+    #addUser form {
         width: 550px;
         height: auto;
     }
-    .addUser input[type=submit] {
+    #addUser input[type=submit] {
         width: 78%;
     }
 }
 
 @media only screen and (max-width: 725px) {
-    .addUser h1 {
+    #addUser h1 {
         font-size: 62px;
     }
 }
 
 @media only screen and (max-width: 676px) {
-    .addUser h1 {
+    #addUser h1 {
         font-size: 54px;
     }
 }
 
 @media only screen and (max-width: 576px) {
-    .addUser h1 {
+    #addUser h1 {
         font-size: 52px;
         padding-top: 30px;
         padding-bottom: 40px;
@@ -269,66 +344,66 @@ section {
         padding-right: 20px;
         margin-left: 0px;
     }
-    .addUser form {
+    #addUser form {
         width: 100%;
         height: auto;
     }
-    .addUser .msg {
+    #addUser .msg {
         font-size: 13px;
     }
-    .addUser label {
+    #addUser label {
         margin-left: 17px;
     }
-    .addUser input[type=submit] {
+    #addUser input[type=submit] {
         width: 88%;
     }
 }
 
 @media only screen and (max-width: 550px) {
-    .addUser h1 {
+    #addUser h1 {
         font-size: 48px;
     }
-    .addUser p {
+    #addUser p {
         margin-top: -15px;
     }
 }
 
 @media only screen and (max-width: 540px) and (min-width: 540px) {
-    .addUser form {
+    #addUser form {
         width: 300px;
     }
 }
 
 @media only screen and (max-width: 415px) {
-    .addUser h1 {
+    #addUser h1 {
         font-size: 32px;
     }
-    .addUser p {
+    #addUser p {
         margin-top: 0px;
     }
 }
 
 @media only screen and (max-width: 376px) {
-    .addUser h1 {
+    #addUser h1 {
         font-size: 30px;
     }
-    .addUser p {
+    #addUser p {
         padding-left: 23px;
         padding-right: 23px;
     }
 }
 
 @media only screen and (max-width: 360px) {
-    .addUser h1 {
+    #addUser h1 {
         font-size: 28px;
     }
 }
 
 @media only screen and (max-width: 325px) {
-    .addUser h1 {
+    #addUser h1 {
         font-size: 24px;
     }
-    .addUser form {
+    #addUser form {
         width: 82%;
         height: auto;
         margin-left: -0px;
@@ -337,23 +412,23 @@ section {
 }
 
 @media only screen and (max-width: 300px) {
-    .addUser h1 {
+    #addUser h1 {
         font-size: 20px;
     }
-    .addUser p {
+    #addUser p {
         padding-left: 18px;
         padding-right: 18px;
     }
-    .addUser form {
+    #addUser form {
         width: 75%;
         height: auto;
         margin-left: 0px;
         margin-right: 0px;
     }
-    .addUser label {
+    #addUser label {
         margin-left: 5px;
     }
-    .addUser input[type=submit] {
+    #addUser input[type=submit] {
         width: 92%;
     }
 }
@@ -361,33 +436,25 @@ section {
 /* End Query */
 
 /* ===================================
-# Modern Js
+# Just Text
 ====================================*/
 
-.modernJs P {
+#justText .lead {
     text-align: justify;
     padding-left: 268px;
     padding-right: 290px;
-    line-height: 1.8rem;
+    line-height: 2.3rem;
     font-weight: 350;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 18px;
     margin-top: 30px;
 }
 
-.modernJs p.express {
-    font-style: italic;
-    margin-top: -160px;
-    padding-left: 395px;
-    width: 100%;
-}
-
-.more {
+#justText .more {
     margin-top: 35px;
     margin-left: 270px;
 }
 
-.more .btn {
+#justText .more .btn {
     text-decoration: none;
     background: #7e15bb;
     padding: 12px 24px;
@@ -396,65 +463,99 @@ section {
     transition: all .5s;
 }
 
-.more .btn:hover {
+#justText .more .btn:hover {
     background: #120899;
 }
 
 /* Media Query */
 
 @media only screen and (max-width: 1400px) {
-    .modernJs .p_Js {
+    #justText .lead {
         padding-left: 250px;
         padding-right: 250px;
     }
-    .more {
+    #justText .more {
         margin-top: 35px;
         margin-left: 250px;
     }
 }
 
 @media only screen and (max-width: 1024px) {
-    .modernJs .p_Js {
+    #justText .lead {
         margin-top: 30px;
-        padding-left: 130px;
-        padding-right: 200px;
+        padding-left: 125px;
+        padding-right: 125px;
     }
-    .more {
+    #justText .more {
         margin-top: 35px;
         margin-left: 130px;
     }
 }
 
+@media only screen and (max-width: 900px) {
+    #justText .lead {
+        padding-left: 92px;
+        padding-right: 92px;
+    }
+    #justText .more {
+        margin-top: 35px;
+        margin-left: 92px;
+    }
+}
+
 @media only screen and (max-width: 768px) {
-    .modernJs .p_Js {
+    #justText .lead {
         margin-top: 30px;
         padding-left: 85px;
         padding-right: 100px;
     }
-    .more {
+    #justText .more {
         margin-top: 35px;
         margin-left: 85px;
     }
 }
 
+@media only screen and (max-width: 736px) {
+    #justText #justText .lead {
+        margin-top: 30px;
+        padding-left: 59px;
+        padding-right: 59px;
+    }
+    #justText .more {
+        margin-top: 35px;
+        margin-left: 59px;
+    }
+}
+
+@media only screen and (max-width: 676px) {
+    #justText .lead {
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+    #justText .more {
+        margin-top: 35px;
+        margin-left: 28px;
+    }
+}
+
 @media only screen and (max-width: 576px) {
-    .modernJs .p_Js {
+    #justText .lead {
         margin-top: 0px;
         padding-left: 30px;
         padding-right: 30px;
     }
-    .more {
+    #justText .more {
         margin-top: 35px;
         margin-left: 30px;
     }
 }
 
 @media only screen and (max-width: 300px) {
-    .modernJs .p_Js {
+    #justText .lead {
         padding-left: 20px;
         padding-right: 20px;
     }
-    .more {
+    #justText .more {
         margin-top: 35px;
         margin-left: 20px;
     }
@@ -463,20 +564,174 @@ section {
 /* End Query */
 
 /* ===================================
+# Phones
+====================================*/
+
+#phones {
+    margin-top: 60px;
+    padding-top: 50px;
+    padding-bottom: 90px;
+    background: #120899;
+    color: #f9f8f2;
+}
+
+#phones .row {
+    padding-top: 30px;
+    padding-bottom: 80px;
+}
+
+#phones h1 {
+    text-align: center;
+}
+
+#phones img {
+    width: 16%;
+    height: auto;
+    margin: 0 15px;
+}
+
+@media only screen and (max-width: 576px) {
+    #phones h1 {
+        font-size: 35px;
+    }
+    #phones img {
+        width: 25%;
+        margin: 0 5px;
+    }
+}
+
+/* ===================================
+# Exclusive
+====================================*/
+
+#exclusive {
+    margin-top: -45px;
+    padding-top: 50px;
+    padding-bottom: 90px;
+    background: #0984aa;
+    color: #f9f8f2;
+}
+
+#exclusive .row {
+    padding-top: 30px;
+    padding-bottom: 80px;
+}
+
+#exclusive h1 {
+    text-align: center;
+}
+
+#exclusive .img {
+    width: 33%;
+    height: auto;
+    margin-left: auto;
+}
+
+#exclusive img {
+    width: 100%;
+    height: auto;
+}
+
+#exclusive .text {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#exclusive .lead {
+    line-height: 2.3rem;
+    font-weight: 320;
+    font-size: 20px;
+}
+
+#exclusive .btn {
+    line-height: 3.0rem;
+    text-decoration: none;
+    color: #f9f8f2;
+    background: #ce2b6f;
+    padding: 12px 24px;
+    border-radius: 5px;
+    transition: all .5s;
+}
+
+#exclusive .btn:hover {
+    background: #7e15bb;
+}
+
+@media only screen and (max-width: 1024px) {
+    #exclusive .img {
+        width: 85%;
+        margin-left: 10px;
+    }
+    #exclusive .text {
+        width: 85%;
+        margin-left: 90px;
+        margin-right: 90px;
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #exclusive .img {
+        width: 85%;
+        margin-left: 10px;
+    }
+    #exclusive .text {
+        width: 85%;
+        margin-left: 70px;
+        margin-right: 70px;
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #exclusive .img {
+        width: 85%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    #exclusive .text {
+        width: 85%;
+        margin-left: 35px;
+        margin-right: 35px;
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width: 325px) {
+    #exclusive .img {
+        width: 85%;
+        margin-right: 10px;
+    }
+    #exclusive .text {
+        width: 85%;
+        margin-left: 25px;
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width: 285px) {
+    #exclusive .text {
+        margin-left: 20px;
+    }
+}
+
+/* ===================================
 # User List
 ====================================*/
 
-.userList {
+#userList {
     padding-bottom: 150px;
+    background: #000;
 }
 
-.userList h2 {
-    font-weight: 600;
+#userList h2 {
+    font-weight: 360;
     font-size: 40px;
-    color: #767676;
+    color: #e3e3e3;
 }
 
-.userList ul.users {
+#userList ul.users {
     padding-top: 90px;
     padding-left: 140px;
     padding-right: 140px;
@@ -487,8 +742,7 @@ section {
     border-radius: 5px;
 }
 
-.userList ul.users li {
-    background: #842db6;
+#userList ul.users li {
     margin-bottom: 30px;
     color: #f9f8f2;
     border-radius: 5px;
@@ -496,14 +750,14 @@ section {
 }
 
 @media only screen and (max-width: 768px) {
-    .userList ul.users {
+    #userList ul.users {
         padding-left: 100px;
         padding-right: 100px;
     }
 }
 
 @media only screen and (max-width: 576px) {
-    .userList ul.users {
+    #userList ul.users {
         padding-top: 50px;
         padding-left: 20px;
         padding-right: 20px;
@@ -513,10 +767,56 @@ section {
     }
 }
 
-.userList ul.users li {
+#userList ul.users li {
     text-align: center;
     margin-top: -10px;
     padding-left: 0px;
     padding-right: 0px;
     padding-bottom: 0px;
+}
+
+/* ===================================
+# Footer
+====================================*/
+
+footer {
+    padding-top: 30px;
+    padding-bottom: 90px;
+    background: #000;
+}
+
+/* == Go-Top == */
+
+.go_top {
+    background: #ce2b6f;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .5s;
+}
+
+.go_top:hover {
+    background: #7e15bb;
+}
+
+.active {
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.go_top .icon {
+    text-decoration: none;
+    font-size: 50px;
+    color: #f9f8f2;
+    margin-top: -6px;
+    margin-left: 0px;
 }
