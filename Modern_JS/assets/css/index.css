@@ -191,15 +191,15 @@ section {
         color: #f9f8f2;
     }
     25% {
-        background-color: rgb(9, 132, 170);
+        background-color: #0984aa;
         color: #f9f8f2;
     }
     50% {
-        background-color: rgb(206, 43, 111);
+        background-color: #ce2b6f;
         color: #f9f8f2;
     }
     75% {
-        background-color: rgb(18, 8, 153);
+        background-color: #120899;
         color: #f9f8f2;
     }
     100% {
@@ -717,6 +717,128 @@ section {
 }
 
 /* ===================================
+# Royalty
+====================================*/
+
+#royalty {
+    margin-top: -45px;
+    padding-top: 50px;
+    padding-bottom: 90px;
+    background: #120899;
+    color: #f9f8f2;
+}
+
+#royalty .row {
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+#royalty h1 {
+    text-align: center;
+}
+
+#royalty .img {
+    width: 33%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#royalty img {
+    width: 100%;
+    height: auto;
+}
+
+#royalty .text {
+    width: 40%;
+    margin-left: auto;
+}
+
+#royalty .lead {
+    line-height: 2.3rem;
+    font-weight: 320;
+    font-size: 20px;
+}
+
+#royalty .btn {
+    line-height: 3.0rem;
+    text-decoration: none;
+    color: #f9f8f2;
+    background: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    transition: all .5s;
+    border: 1px solid #f9f8f2;
+}
+
+#royalty .btn:hover {
+    background: #f9f8f2;
+    color: #120899;
+    border: 1px solid #f9f8f2;
+}
+
+@media only screen and (max-width: 1024px) {
+    #royalty .img {
+        width: 85%;
+        margin-left: 77px;
+        order: 0;
+    }
+    #royalty .text {
+        width: 85%;
+        margin-left: 90px;
+        margin-right: 90px;
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #royalty .img {
+        width: 85%;
+        margin-left: 60px;
+        order: 0;
+    }
+    #royalty .text {
+        width: 85%;
+        margin-left: 70px;
+        margin-right: 70px;
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #royalty .img {
+        width: 85%;
+        margin-left: 0px;
+        margin-right: 0px;
+        order: 0;
+    }
+    #royalty .text {
+        width: 85%;
+        margin-left: 35px;
+        margin-right: 35px;
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width: 325px) {
+    #royalty .img {
+        width: 85%;
+        margin-right: 10px;
+    }
+    #royalty .text {
+        width: 85%;
+        margin-left: 25px;
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width: 285px) {
+    #royalty .text {
+        margin-left: 20px;
+    }
+}
+
+/* ===================================
 # User List
 ====================================*/
 
@@ -801,6 +923,19 @@ footer {
     opacity: 0;
     pointer-events: none;
     transition: all .5s;
+    animation: animate 1s infinite ease-in-out;
+}
+
+@keyframes animate {
+    0% {
+        background: #ce2b6f;
+    }
+    50% {
+        background: #7e15bb;
+    }
+    100% {
+        background: #ce2b6f;
+    }
 }
 
 .go_top:hover {
