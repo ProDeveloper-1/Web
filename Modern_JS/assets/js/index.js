@@ -508,7 +508,7 @@ form.addEventListener('click', (e) => {
     }
     else if (userEmail.value === '') {
         msg.style.display = 'block';
-        msg.innerHTML = 'Please fill in the email address';
+        msg.innerHTML = 'Please fill in the email';
         msg.style.background = 'red';
 
         // SettTimeOut to remove the msg div
@@ -518,7 +518,7 @@ form.addEventListener('click', (e) => {
     }
     else {
         msg.style.display = 'block';
-        msg.innerHTML = 'User has been added successfully';
+        msg.innerHTML = 'Added successfully';
         msg.style.background = 'green';
 
         // SettTimeOut to remove the msg div

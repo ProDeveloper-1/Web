@@ -105,12 +105,12 @@ section {
     padding-right: 30px;
     padding-bottom: 100px;
     box-shadow: 0px 20px 20px 0px #646363;
-    animation: shake 10s infinite;
+    animation: changeBackground 10s infinite;
     animation-timing-function: ease-in-out;
     border-radius: 5px;
 }
 
-@keyframes shake {
+@keyframes changeBackground {
     0% {
         background: #842db6;
         color: #f9f8f2;
@@ -273,6 +273,9 @@ section {
         width: 100%;
         height: auto;
     }
+    .addUser .msg {
+        font-size: 13px;
+    }
     .addUser label {
         margin-left: 17px;
     }
@@ -361,23 +364,6 @@ section {
 # Modern Js
 ====================================*/
 
-@keyframes bottomcolor {
-    0% {
-        border-bottom-color: rgb(124, 116, 116);
-        color: #000;
-    }
-    50% {
-        border-bottom-color: #f9f8f2;
-        color: rgb(9, 132, 170);
-    }
-    75% {
-        color: rgb(206, 43, 111);
-    }
-    100% {
-        color: rgb(28, 102, 54);
-    }
-}
-
 .modernJs P {
     text-align: justify;
     padding-left: 268px;
@@ -403,7 +389,7 @@ section {
 
 .more .btn {
     text-decoration: none;
-    background: #842db6;
+    background: #7e15bb;
     padding: 12px 24px;
     border-radius: 5px;
     color: #f9f8f2;
@@ -411,7 +397,7 @@ section {
 }
 
 .more .btn:hover {
-    background: #ce2b6f;
+    background: #120899;
 }
 
 /* Media Query */
@@ -429,7 +415,7 @@ section {
 
 @media only screen and (max-width: 1024px) {
     .modernJs .p_Js {
-        margin-top: 60px;
+        margin-top: 30px;
         padding-left: 130px;
         padding-right: 200px;
     }
@@ -441,7 +427,7 @@ section {
 
 @media only screen and (max-width: 768px) {
     .modernJs .p_Js {
-        margin-top: 60px;
+        margin-top: 30px;
         padding-left: 85px;
         padding-right: 100px;
     }
@@ -453,7 +439,7 @@ section {
 
 @media only screen and (max-width: 576px) {
     .modernJs .p_Js {
-        margin-top: 30px;
+        margin-top: 0px;
         padding-left: 30px;
         padding-right: 30px;
     }
@@ -501,7 +487,7 @@ section {
     border-radius: 5px;
 }
 
-.userList li {
+.userList ul.users li {
     background: #842db6;
     margin-bottom: 30px;
     color: #f9f8f2;
