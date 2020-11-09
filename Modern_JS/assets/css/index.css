@@ -439,10 +439,18 @@ section {
 # Just Text
 ====================================*/
 
+#justText .text {
+    background: #f9f8f2;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    width: 65%;
+    border-radius: 5px;
+}
+
 #justText .lead {
     text-align: justify;
-    padding-left: 268px;
-    padding-right: 290px;
+    padding-left: 60px;
+    padding-right: 50px;
     line-height: 2.3rem;
     font-weight: 350;
     font-size: 18px;
@@ -451,7 +459,7 @@ section {
 
 #justText .more {
     margin-top: 35px;
-    margin-left: 270px;
+    margin-left: 60px;
 }
 
 #justText .more .btn {
@@ -471,82 +479,102 @@ section {
 
 @media only screen and (max-width: 1400px) {
     #justText .lead {
-        padding-left: 250px;
-        padding-right: 250px;
+        padding-left: 70px;
+        padding-right: 70px;
     }
     #justText .more {
         margin-top: 35px;
-        margin-left: 250px;
+        margin-left: 70px;
     }
 }
 
 @media only screen and (max-width: 1024px) {
+    #justText .text {
+        width: 76%;
+    }
     #justText .lead {
         margin-top: 30px;
-        padding-left: 125px;
-        padding-right: 125px;
+        padding-left: 55px;
+        padding-right: 55px;
     }
     #justText .more {
         margin-top: 35px;
-        margin-left: 130px;
+        margin-left: 55px;
     }
 }
 
 @media only screen and (max-width: 900px) {
+    #justText .text {
+        width: 78%;
+    }
     #justText .lead {
-        padding-left: 92px;
-        padding-right: 92px;
+        margin-top: 10px;
+        padding-left: 42px;
+        padding-right: 42px;
     }
     #justText .more {
         margin-top: 35px;
-        margin-left: 92px;
+        margin-left: 42px;
     }
 }
 
 @media only screen and (max-width: 768px) {
+    #justText .text {
+        width: 80%;
+    }
     #justText .lead {
         margin-top: 30px;
-        padding-left: 85px;
-        padding-right: 100px;
+        padding-left: 50px;
+        padding-right: 50px;
     }
     #justText .more {
         margin-top: 35px;
-        margin-left: 85px;
+        margin-left: 50px;
     }
 }
 
 @media only screen and (max-width: 736px) {
-    #justText #justText .lead {
+    #justText .text {
+        width: 85%;
+    }
+    #justText .lead {
         margin-top: 30px;
-        padding-left: 59px;
-        padding-right: 59px;
+        padding-left: 50px;
+        padding-right: 50px;
     }
     #justText .more {
         margin-top: 35px;
-        margin-left: 59px;
+        margin-left: 50px;
     }
 }
 
 @media only screen and (max-width: 676px) {
+    #justText .text {
+        width: 93%;
+    }
     #justText .lead {
-        padding-left: 28px;
-        padding-right: 28px;
+        margin-top: 10px;
+        padding-left: 38px;
+        padding-right: 38px;
     }
     #justText .more {
         margin-top: 35px;
-        margin-left: 28px;
+        margin-left: 38px;
     }
 }
 
 @media only screen and (max-width: 576px) {
+    #justText .text {
+        width: 90%;
+    }
     #justText .lead {
-        margin-top: 0px;
-        padding-left: 30px;
-        padding-right: 30px;
+        margin-top: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
     #justText .more {
         margin-top: 35px;
-        margin-left: 30px;
+        margin-left: 40px;
     }
 }
 
