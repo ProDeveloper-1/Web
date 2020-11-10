@@ -47,8 +47,11 @@ section {
 /* Columns */
 
 .col {
+    columns: 20em;
+}
+
+.col-1 {
     columns: 1;
-    margin: 0 15px 20px 15px;
 }
 
 .col-2 {
@@ -613,7 +616,7 @@ section {
 }
 
 #phones img {
-    width: 16%;
+    width: 17%;
     height: auto;
     margin: 0 15px;
 }
@@ -749,7 +752,7 @@ section {
 ====================================*/
 
 #royalty {
-    margin-top: -45px;
+    margin-top: 0px;
     padding-top: 50px;
     padding-bottom: 90px;
     background: #120899;
@@ -867,6 +870,157 @@ section {
 }
 
 /* ===================================
+# Pricing
+====================================*/
+
+#pricing {
+    margin-top: 0px;
+    padding-top: 50px;
+    padding-bottom: 90px;
+    background: none;
+    color: #000;
+}
+
+#pricing .pricing-items {
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+#pricing h1 {
+    text-align: center;
+}
+
+#pricing .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 380px);
+    place-content: center;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+}
+
+#pricing .gallery .card {
+    background: #fff;
+    color: #000;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    border-radius: 25rem;
+}
+
+#pricing .gallery .card-img-top {
+    border-top-left-radius: calc(25rem - 1px);
+    border-top-right-radius: calc(25rem - 1px);
+    border-bottom-right-radius: calc(25rem - 1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+#pricing .gallery img {
+    width: 100%;
+}
+
+#pricing .gallery .card-body {
+    position: relative;
+    z-index: 1030;
+    margin-top: -160px;
+    margin-bottom: 0px;
+    width: 50%;
+    padding-top: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 60px;
+    background: #fff;
+    color: #000;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    border-radius: 25rem;
+}
+
+#pricing .gallery .card-text {
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    text-align: justify;
+}
+
+#pricing .gallery .regural {
+    color: #0984aa;
+}
+
+#pricing .gallery .medium {
+    color: #7e15bb;
+}
+
+#pricing .gallery .premium {
+    color: #ce2b6f;
+}
+
+#pricing .gallery h1 {
+    line-height: 1.3rem;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+#pricing .gallery .lead {
+    line-height: 1.3rem;
+    font-weight: 360;
+    font-size: 17px;
+}
+
+#pricing .gallery .btn {
+    line-height: 3.0rem;
+    text-decoration: none;
+    color: #f9f8f2;
+    background: #120899;
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px;
+    width: 100%;
+    border-radius: 50px;
+    transition: all .5s;
+    border: 1px solid #120899;
+}
+
+#pricing .gallery .btn:hover {
+    background: #f9f8f2;
+    color: #120899;
+    border: 1px solid #120899;
+}
+
+#pricing .middle .btn {
+    background: #f9f8f2;
+    color: #120899;
+    border: 1px solid #120899;
+}
+
+#pricing .middle .btn:hover {
+    background: #120899;
+    color: #f9f8f2;
+    border: 1px solid #120899;
+}
+
+@media only screen and (max-width: 1024px) {
+    #pricing .gallery {
+        grid-template-columns: repeat(auto-fit, 300px);
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #pricing .gallery {
+        grid-template-columns: repeat(auto-fit, 85%);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #pricing .gallery {
+        grid-template-columns: repeat(auto-fit, 85%);
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #pricing .gallery {
+        grid-template-columns: repeat(auto-fit, 85%);
+    }
+}
+
+/* ===================================
 # User List
 ====================================*/
 
@@ -951,7 +1105,7 @@ footer {
     opacity: 0;
     pointer-events: none;
     transition: all .5s;
-    animation: animate 1s infinite ease-in-out;
+    animation: animate 2s infinite ease-in-out;
 }
 
 @keyframes animate {
