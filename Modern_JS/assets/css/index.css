@@ -621,6 +621,10 @@ section {
     margin: 0 15px;
 }
 
+#phones img:hover {
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 576px) {
     #phones h1 {
         font-size: 35px;
@@ -636,11 +640,10 @@ section {
 ====================================*/
 
 #exclusive {
-    margin-top: -45px;
+    margin-top: 0px;
     padding-top: 50px;
     padding-bottom: 90px;
-    background: #0984aa;
-    color: #f9f8f2;
+    background: none;
 }
 
 #exclusive .row {
@@ -671,7 +674,7 @@ section {
 
 #exclusive .lead {
     line-height: 2.3rem;
-    font-weight: 320;
+    font-weight: 360;
     font-size: 20px;
 }
 
@@ -679,14 +682,14 @@ section {
     line-height: 3.0rem;
     text-decoration: none;
     color: #f9f8f2;
-    background: #ce2b6f;
+    background: #1c0de9;
     padding: 12px 24px;
     border-radius: 5px;
     transition: all .5s;
 }
 
 #exclusive .btn:hover {
-    background: #7e15bb;
+    background: #190fa7;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -1105,7 +1108,7 @@ footer {
     opacity: 0;
     pointer-events: none;
     transition: all .5s;
-    animation: animate 2s infinite ease-in-out;
+    animation: animate 5s infinite ease-in-out;
 }
 
 @keyframes animate {
@@ -1136,4 +1139,14 @@ footer {
     color: #f9f8f2;
     margin-top: -6px;
     margin-left: 0px;
+    animation: rotate 5s infinite ease-in-out;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }

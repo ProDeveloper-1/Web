@@ -75,7 +75,17 @@ h1 {
 
 .text p {
     margin-top: 40px;
-    padding-left: 250px;
-    padding-right: 250px;
+    padding-left: 200px;
+    padding-right: 200px;
     line-height: 2.0em;
+    text-align: justify;
+}
+
+@media only screen and (max-width: 1024px) {
+    .text p {
+        margin-top: 50px;
+        padding-left: 60px;
+        padding-right: 60px;
+        margin-bottom: 50px;
+    }
 }

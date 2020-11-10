@@ -98,20 +98,16 @@ h1 {
     border-radius: 3px;
     margin: 12px;
     background: url('../img/laboratory2.jpg');
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    background-position: top;
     color: #f8f9fa;
 }
 
 .card-contents {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
     background: rgba(0, 0, 0, 0.6);
+    height: 100%;
 }
 
 .address {
@@ -144,6 +140,7 @@ h1 {
 
 .card-img img {
     width: 100%;
+    height: auto;
     /* height: 300px; */
     transition: linear 1s;
 }
@@ -170,7 +167,7 @@ h1 {
     flex-flow: column wrap;
     padding-top: 10px;
     padding-bottom: 60px;
-    padding-left: 50px;
+    padding-left: 30px;
     padding-right: 30px;
 }
 
@@ -182,14 +179,15 @@ h1 {
 .card-2 form hr {
     margin-left: 30px;
     margin-right: 30px;
-}   
-
-.card-2 form label {
-  font-weight: bold;
 }
 
-.card-2 input {
+.card-2 form label {
+    font-weight: bold;
+}
+
+.card-2 input, .card-2 textarea {
     padding: 12px 24px;
+    width: 100%;
 }
 
 .card-2 input[type=submit] {
@@ -198,13 +196,57 @@ h1 {
     background: #007bff;
     color: #f8f9fa;
     border: 1px solid #007bff;
-    font-size: 16px;    
+    font-size: 16px;
     transition: all 1s;
 }
 
 .card-2 input[type=submit]:hover {
-   cursor: pointer;
-   border: 1px solid #007bff;
-   background: transparent;
-   color: #000;
+    cursor: pointer;
+    border: 1px solid #007bff;
+    background: transparent;
+    color: #000;
+}
+
+@media only screen and (max-width: 768px) {
+    .card-1 {
+        width: 85%;
+        height: auto;
+    }
+    .card-2 {
+        margin-top: 30px;
+        width: 85%;
+        height: auto;
+    }
+    .address {
+        padding-top: 30px;
+        padding-left: 38px;
+        padding-bottom: 35px;
+    }
+    .card-2 form {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .card-1 {
+        width: 100%;
+        height: auto;
+    }
+    .card-2 {
+        margin-top: 30px;
+        width: 100%;
+        height: auto;
+    }
+    .address {
+        padding-top: 15px;
+        padding-left: 18px;
+    }
+    .card-2 form {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    h1 {
+        font-size: 30px;
+    }
 }

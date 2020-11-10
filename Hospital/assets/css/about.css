@@ -117,3 +117,53 @@ h1 {
   font-size: 17px;
   line-height: 1.6rem;
 }
+
+@media only screen and (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+  .card-1 {
+    width: 100%;
+  }
+  .texts {
+    margin-right: 50px;
+  }
+  .text {
+    padding-left: 25px;
+    text-align: justify;
+  }
+  .card-2 {
+    width: 100%;
+  }
+  .card-img {
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-right: 50px;
+  }
+  .card-img img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .card-1 {
+    width: 100%;
+  }
+  .texts {
+    margin-right: 25px;
+  }
+  .text {
+    padding-left: 0px;
+  }
+  .card-2 {
+    width: 100%;
+  }
+  .card-img {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 25px;
+  }
+  .card-img img {
+    width: 100%;
+  }
+}

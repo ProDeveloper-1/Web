@@ -1,4 +1,4 @@
-            /*===================================
+/*===================================
 # General
 ===================================*/
 
@@ -8,6 +8,10 @@ body {
     box-sizing: border-box;
     overflow-x: hidden;
     background-color: beige;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .page-container {
@@ -45,11 +49,18 @@ nav {
 nav .logo {
     padding-top: 10px;
     transition: all 1s;
+    animation: rotate 5s infinite ease-in-out;
 }
 
-nav .logo:hover {
-    transform: rotate(360deg);
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
+
 
 @media (max-width: 1024px) {
     nav .logo {

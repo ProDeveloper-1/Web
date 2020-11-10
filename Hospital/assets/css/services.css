@@ -114,13 +114,12 @@ h1 {
 }
 
 .card-img img {
-  width: 350px;
-  transition: linear 1s;
+  width: 100%;
+  transition: linear .5s;
 }
 
 .card-img img:hover {
   cursor: pointer;
-  /* transition: linear 1s; */
   transform: scale(1.2);
 }
 
@@ -153,4 +152,19 @@ h1 {
   border-radius: 3px;
   background: transparent;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+  .card {
+    width: 85%;
+  }
+  .card-img img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .card {
+    width: 100%;
+  }
 }

@@ -9,6 +9,10 @@ body {
     padding: 20px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .header {
     overflow: hidden;
     background-color: Khaki;
@@ -101,15 +105,15 @@ h1 {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: bottom;
     position: relative!important;
     color: #fff;
     box-shadow: 0px 3px 3px 0px #808080;
 }
 
 .card-2 form {
-	background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.6);
 }
-
 
 .card-2 form {
     display: flex;
@@ -118,7 +122,7 @@ h1 {
     padding-top: 10px;
     padding-bottom: 60px;
     padding-left: 50px;
-    padding-right: 30px;
+    padding-right: 50px;
 }
 
 .card-2 form h3 {
@@ -135,8 +139,11 @@ h1 {
     font-weight: bold;
 }
 
-.card-2 input {
+.card-2 input, .card-2 textarea {
     padding: 12px 24px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
 }
 
 .card-2 input[type=submit] {
@@ -154,4 +161,16 @@ h1 {
     border: 1px solid #007bff;
     background: transparent;
     color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+    .card-2 {
+        width: 88%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .card-2 {
+        width: 100%;
+    }
 }
