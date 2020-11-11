@@ -45,7 +45,9 @@ section {
 }
 
 .span {
-    color: #ce2b6f;
+    color: #0984aa;
+    font-weight: 400;
+    font-size: 20px;
 }
 
 /* Columns */
@@ -202,10 +204,34 @@ nav {
     margin: 0 15px;
 }
 
-.nav-links .nav-link-item .nav-link {
-    color: #f9f8f2;
+.nav-links .nav-link-item .nav-link:any-link {
+    color: gold;
     text-decoration: none;
     font-size: 16px;
+    position: relative;
+}
+
+.nav-links .nav-link-item .nav-link::before {
+    position: absolute;
+    content: '';
+    top: 50px;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: #f9f8f2;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+}
+
+.nav-links .nav-link-item .nav-link:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+#active {
+    color: #f9f8f2;
 }
 
 .burger {
@@ -465,9 +491,10 @@ nav {
 
 #hero .title .lead {
     margin-top: -65px;
-    line-height: 2.3rem;
+    line-height: 2.5rem;
     font-weight: 320;
     font-size: 18px;
+    color: #e3e3e3;
 }
 
 #hero .title .btn {
@@ -480,6 +507,7 @@ nav {
     line-height: 4.3rem;
     transition: all .5s;
     border: 1px solid #ce2b6f;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 
 #hero .title .btn:hover {
@@ -546,6 +574,7 @@ nav {
     }
     #hero .title {
         width: 80%;
+        text-align: justify;
     }
     #hero .img {
         width: 80%;
@@ -1404,7 +1433,6 @@ nav {
     border-radius: 25rem;
 }
 
-
 #pricing .gallery .card-img-top {
     border-top-left-radius: calc(25rem - 1px);
     border-top-right-radius: calc(25rem - 1px);
@@ -1426,7 +1454,6 @@ nav {
     cursor: pointer;
     border-radius: 50%;
 }
-
 
 #pricing .gallery .card-body {
     position: relative;
@@ -1636,7 +1663,7 @@ footer {
     background: #7e15bb;
 }
 
-.active {
+.go_top.active {
     bottom: 32px;
     pointer-events: auto;
     opacity: 1;
