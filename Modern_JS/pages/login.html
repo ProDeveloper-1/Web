@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- === Metadata === -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- === Title === -->
+    <title>Modern JS</title>
+    <!-- === Main CSS === -->
+    <link rel="stylesheet" href="../assets/css/login.css">
+</head>
+
+<body id="home">
+
+    <!-- === Header === -->
+    <!-- === Navigation === -->
+    <nav>
+        <div class="logo">
+            <a href="#home" class="nav-brand">Come on! &TRADE;</a>
+        </div>
+        <ul class="nav-links">
+            <li class="nav-link-item"><a href="../index.html" class="nav-link">Home</a></li>
+            <li class="nav-link-item"><a href="#pages/about.html" class="nav-link">About</a></li>
+            <li class="nav-link-item"><a href="#royalty" class="nav-link">Royalty</a></li>
+            <li class="nav-link-item"><a href="#userList" class="nav-link">Users</a></li>
+            <li class="nav-link-item"><a href="#pages/contact.html" class="nav-link" id="cont">Contact</a></li>
+            <div class="buttons">
+                <a href="#home" class="btn login">
+                    Login
+                </a>
+                <a href="#get" class="btn started">
+                    Get Started
+                </a>
+            </div>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+
+    </nav>
+    <!-- End Nav -->
+
+    <!-- End Header -->
+
+    <!-- === Main === -->
+    <main id="main">
+
+        <!-- === Add User === -->
+        <section id="addUser">
+            <div class="container">
+                <form action="#" method="post" id="myForm">
+                    <h3 class="add_user">Secured Login</h3>
+                    <div class="msg"></div>
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" id="username" placeholder="Prosper Mbuma" required value="">
+
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" placeholder="xxxxxxxx" required value="">
+
+                    <input type="submit" value="Save" id="btn" onk>
+                </form>
+            </div>
+        </section>
+        <!-- End Add User -->
+
+        <!-- === Royalty === -->
+        <section id="royalty">
+            <h1 class="display-4">Royalty</h1>
+            <div class="container">
+                <div class="row ">
+                    <div class="img order-1">
+                        <img src="../assets/img/phones/phone7.png" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="lead">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum odio temporibus quas sunt hic
+                            reprehenderit tenetur voluptatem tempore nostrum, iste dignissimos quod incidunt minus.
+                            Explicabo, excepturi. Facilis voluptate eveniet quos?
+                        </p>
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Royalty  -->
+
+        <!-- === User List === -->
+        <section id="userList">
+            <div class="container">
+                <h2>Users </h2>
+            </div>
+            <div class="container">
+                <ul class="users">
+                </ul>
+            </div>
+        </section>
+        <!-- End User List -->
+
+    </main>
+    <!-- End Main -->
+
+
+    <!-- === Footer === -->
+    <footer>
+        <div class="go_top">
+            <a href="#" class="icon">
+                &triangle;
+            </a>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- === Scripts === -->
+    <script src="../assets/js/index.js"></script>
+    <!-- End Scripts -->
+</body>
+
+</html>

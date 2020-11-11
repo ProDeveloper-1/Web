@@ -14,22 +14,79 @@
 <body id="home">
 
     <!-- === Header === -->
+    <!-- === Navigation === -->
+    <nav>
+        <div class="logo">
+            <a href="#home" class="nav-brand">Come on! &TRADE;</a>
+        </div>
+        <ul class="nav-links">
+            <li class="nav-link-item"><a href="#home" class="nav-link">Home</a></li>
+            <li class="nav-link-item"><a href="#pages/about.html" class="nav-link">About</a></li>
+            <li class="nav-link-item"><a href="#phones" class="nav-link">Smartphones</a></li>
+            <li class="nav-link-item"><a href="#exclusive" class="nav-link">Exclusive</a></li>
+            <li class="nav-link-item"><a href="#pricing" class="nav-link">Pricing</a></li>
+            <li class="nav-link-item"><a href="#pages/contact.html" class="nav-link" id="cont">Contact</a></li>
+            <div class="buttons">
+                <a href="pages/login.html" class="btn login">
+                    Login
+                </a>
+                <a href="#addUser" class="btn started">
+                    Get Started
+                </a>
+            </div>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+
+    </nav>
+    <!-- End Nav -->
 
     <!-- End Header -->
 
     <!-- === Main === -->
     <main id="main">
+        <!-- === Hero === -->
+        <section id="hero">
+            <div class="container">
+                <div class="row-grid">
+                    <div class="title order-0">
+                        <h1 class="display-3">Come On!</h1>
+                        <p class="lead">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi iste aperiam assumenda
+                            unde? Nemo vero blanditiis, ad nostrum reiciendis soluta voluptatem possimus minima ex modi
+                            ipsa. Hic quos similique animi?
+                        </p>
+                        <a href="#addUser" class="btn">Join us</a>
+                    </div>
+                    <div class="img">
+                        <img src="assets/img/phones/phone1.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- End Hero -->
+
         <!-- === Add User === -->
         <section id="addUser">
             <div class="container">
                 <form action="#" method="post" id="myForm">
-                    <h3 class="add_user">Add User</h3>
+                    <h3 class="add_user">Sign Up to get started</h3>
                     <div class="msg"></div>
                     <label for="username">Username:</label>
                     <input type="text" name="username" id="username" placeholder="Prosper Mbuma" required value="">
 
                     <label for="email">Email Address:</label>
                     <input type="email" name="email" id="email" placeholder="example@isp.com" required value="">
+
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" placeholder="xxxxxxxxxx" required value="">
+
+                    <label for="password">Confirm Password:</label>
+                    <input type="password" name="password" id="password" placeholder="xxxxxxxxxx" required value="">
 
                     <input type="submit" value="Save" id="btn" onk>
                 </form>

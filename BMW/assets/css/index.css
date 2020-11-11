@@ -114,13 +114,13 @@ label#checkbtn {
 
 label#cancel {
     font-size: 40px;
-    font-weight: 600;
     color: #fff;
     line-height: 80px;
     float: right;
     margin-right: 40px;
     cursor: pointer;
     display: none;
+    transition: all .5s ease;
 }
 
 #check {
@@ -168,7 +168,6 @@ h1 {
         left: -100%;
         text-align: center;
         transition: all .5s;
-        overflow-y: scroll;
     }
     nav ul li {
         display: block;
@@ -190,6 +189,12 @@ h1 {
     }
     #check:checked~label#cancel {
         display: block;
+    }
+}
+
+@media only screen and (max-width: 476px) {
+    ul {
+        overflow-y: scroll;
     }
 }
 

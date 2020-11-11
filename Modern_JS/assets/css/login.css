@@ -479,12 +479,11 @@ nav {
     font-size: 18px;
     line-height: 4.3rem;
     transition: all .5s;
-    border: 1px solid #ce2b6f;
 }
 
 #hero .title .btn:hover {
-    background: none;
-    border: 1px solid #ce2b6f;
+    color: #f9f8f2;
+    background: #0984aa;
 }
 
 #hero .img {
@@ -563,7 +562,8 @@ nav {
 ====================================*/
 
 #addUser {
-    padding-top: 120px;
+    padding-top: 160px;
+    padding-bottom: 90px;
     background: none;
     position: relative;
 }
