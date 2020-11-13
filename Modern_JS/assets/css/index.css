@@ -549,7 +549,7 @@ nav {
 
 @media only screen and (max-width: 768px) {
     #hero {
-        padding-top: 120px;
+        padding-top: 150px;
     }
     #hero .row-grid {
         grid-template-columns: 60% 40%;
@@ -1668,8 +1668,6 @@ nav {
     background: none;
 }
 
-@media only screen and (max-width: 1024px) {}
-
 @media only screen and (max-width: 768px) {
     #contact .leftContent {
         width: 100%;
@@ -1704,10 +1702,6 @@ nav {
         margin-left: 0px;
     }
 }
-
-@media only screen and (max-width: 325px) {}
-
-@media only screen and (max-width: 285px) {}
 
 /* ===================================
 # User List
