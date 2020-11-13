@@ -34,9 +34,9 @@ navSlide();
 
 // == Form Validation == //
 
-const form = document.querySelector('#myForm');
+const formSubmit = document.querySelector('#btn');
 
-form.addEventListener('click', (e) => {
+formSubmit.addEventListener('click', (e) => {
     e.preventDefault();
 
     const userName = document.querySelector('#username');
