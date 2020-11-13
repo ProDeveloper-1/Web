@@ -40,24 +40,12 @@ form.addEventListener('click', (e) => {
     e.preventDefault();
 
     const userName = document.querySelector('#username');
-    const userEmail = document.querySelector('#email');
-    const msg = document.querySelector('.msg');
     const userPass = document.querySelector('#password');
-    const userPass2 = document.querySelector('#password2');
+    const msg = document.querySelector('.msg');
 
     if (userName.value === '') {
         msg.style.display = 'block';
         msg.innerHTML = 'Please fill in the username';
-        msg.style.background = 'red';
-
-        // SettTimeOut to remove the msg div
-        setTimeout(function () {
-            msg.style.display = 'none';
-        }, 3000);
-    }
-    else if (userEmail.value === '') {
-        msg.style.display = 'block';
-        msg.innerHTML = 'Please fill in the email';
         msg.style.background = 'red';
 
         // SettTimeOut to remove the msg div
@@ -75,38 +63,18 @@ form.addEventListener('click', (e) => {
             msg.style.display = 'none';
         }, 3000);
     }
-    else if (userPass2.value === '') {
-        msg.style.display = 'block';
-        msg.innerHTML = 'Confirm the password';
-        msg.style.background = 'red';
-
-        // SettTimeOut to remove the msg div
-        setTimeout(function () {
-            msg.style.display = 'none';
-        }, 3000);
-    }
-    else if (userPass2.value != userPass.value) {
-        msg.style.display = 'block';
-        msg.innerHTML = 'Password mismatched';
-        msg.style.background = 'red';
-
-        // SettTimeOut to remove the msg div
-        setTimeout(function () {
-            msg.style.display = 'none';
-        }, 3000);
-    }
     else {
         // Redirect to
-        window.location = "pages/about.html";
+        window.location = "about.html";
 
         // clear fields
         userName.value = '';
-        userEmail.value = '';
         userPass.value = '';
-        userPass2.value = '';
     }
-
 });
+
+// --- End Form Validation --- //
+
 
 // == Back To Top == //
 
@@ -123,4 +91,3 @@ window.addEventListener('scroll', () => {
 });
 
 // --- End Back To Top --- //
-
