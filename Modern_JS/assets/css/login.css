@@ -179,6 +179,8 @@ nav {
     position: fixed;
     width: 100%;
     z-index: 1030;
+    left: 0;
+    right: 0;
     /* box-shadow: 0px 3px 3px 0px #120899; */
 }
 
@@ -202,10 +204,34 @@ nav {
     margin: 0 15px;
 }
 
-.nav-links .nav-link-item .nav-link {
-    color: #f9f8f2;
+.nav-links .nav-link-item .nav-link:any-link {
+    color: gold;
     text-decoration: none;
     font-size: 16px;
+    position: relative;
+}
+
+.nav-links .nav-link-item .nav-link::before {
+    position: absolute;
+    content: '';
+    top: 30px;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: #f9f8f2;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+}
+
+.nav-links .nav-link-item .nav-link:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+#active {
+    color: #f9f8f2;
 }
 
 .burger {
@@ -328,6 +354,7 @@ nav {
         align-items: center;
         width: 50%;
         padding-right: 30px;
+        padding-bottom: 30px;
         transform: translateX(100%);
         transition: transform .5s ease-in;
     }
@@ -573,7 +600,8 @@ nav {
     justify-content: center;
     align-items: flex-start;
     flex-flow: column wrap;
-    background: #f9f8f2;
+    background-color: #120899;
+    color: #f9f8f2;
     width: 60%;
     height: auto;
     padding-top: 60px;
@@ -581,8 +609,8 @@ nav {
     padding-right: 30px;
     padding-bottom: 100px;
     box-shadow: 0px 20px 20px 0px #646363;
-    animation: changeBackground 10s infinite;
-    animation-timing-function: ease-in-out;
+    /* animation: changeBackground 10s infinite;
+    animation-timing-function: ease-in-out; */
     border-radius: 5px;
 }
 
@@ -751,7 +779,7 @@ nav {
 
 @media only screen and (max-width: 768px) {
     #addUser {
-        padding-top: 140px;
+        padding-top: 180px;
     }
     #addUser h1 {
         font-size: 68px;
