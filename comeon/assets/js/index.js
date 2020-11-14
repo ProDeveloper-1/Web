@@ -97,7 +97,7 @@ formSubmit.addEventListener('click', (e) => {
     }
     else {
         // Redirect to
-        window.location = "pages/about.html";
+        window.location = "pages/congrats.html";
 
         // clear fields
         userName.value = '';
