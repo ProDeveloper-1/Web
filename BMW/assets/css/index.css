@@ -127,9 +127,9 @@ label#cancel {
     display: none;
 }
 
-h1 {
+/* h1 {
     animation: rotate 10s infinite alternate;
-}
+} */
 
 @keyframes rotate {
     100% {
