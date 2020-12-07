@@ -482,11 +482,11 @@ html {
     line-height: 2.3rem;
     font-family: 'Laila', serif;
     font-size: 17px;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 /* ========================================
-# Products
+# Bidhaa
 ==========================================*/
 
 #bidhaa {
@@ -639,56 +639,56 @@ html {
 /* End Query */
 
 /* ========================================
-# Bidhaa-2
+# Mafuta
 ==========================================*/
 
-#bidhaa-2 {
+#mafuta {
     padding-top: 60px;
     padding-bottom: 90px;
     background: #fff;
 }
 
-#bidhaa-2 .container {
+#mafuta .container {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
 }
 
-#bidhaa-2 h1 {
+#mafuta h1 {
     text-align: center;
     font-family: 'Merienda One', cursive;
     font-size: 30px;
     margin-bottom: 60px;
 }
 
-#bidhaa-2 .row {
+#mafuta .row {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row nowrap;
 }
 
-#bidhaa-2 .bidhaa-2-img {
+#mafuta .mafuta-img {
     width: 400px;
     margin-right: 180px;
 }
 
-#bidhaa-2 .bidhaa-2-img img {
+#mafuta .mafuta-img img {
     width: 450px;
 }
 
-#bidhaa-2 .bidhaa-2-text {
+#mafuta .mafuta-text {
     width: 100%;
 }
 
-#bidhaa-2 .bidhaa-2-text p {
+#mafuta .mafuta-text p {
     line-height: 2.0rem;
     font-family: 'Laila', serif;
     font-size: 17px;
     margin-top: -0px;
 }
 
-#bidhaa-2 .bidhaa-2-text .btn {
+#mafuta .mafuta-text .btn {
     line-height: 3.0;
     padding: 10px 24px;
     color: orangered;
@@ -699,7 +699,316 @@ html {
     transition: all .5s;
 }
 
-#bidhaa-2 .bidhaa-2-text .btn:hover {
+#mafuta .mafuta-text .btn:hover {
     background: orangered;
     color: #fff;
 }
+
+/* ========================================
+# Mafuta-2
+==========================================*/
+
+#mafuta-2 {
+    padding-top: 80px;
+    padding-bottom: 90px;
+    background: #f8f9fa;
+}
+
+#mafuta-2 .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+#mafuta-2 h1 {
+    text-align: center;
+    font-family: 'Merienda One', cursive;
+    font-size: 30px;
+    margin-bottom: 80px;
+}
+
+#mafuta-2 .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+}
+
+#mafuta-2 #mf-2 {
+    margin-top: 30px;
+}
+
+#mafuta-2 .mafuta-2-img {
+    width: 400px;
+    border-radius: 50%;
+    margin: 0 20px;
+}
+
+#mafuta-2 .mafuta-2-img img {
+    width: 400px;
+}
+
+#mafuta-2 .mafuta-2-text {
+    margin: 0 30px;
+    width: 100%;
+}
+
+#mafuta-2 .mafuta-2-text p {
+    line-height: 2.3rem;
+    font-family: 'Laila', serif;
+    font-size: 17px;
+}
+
+#mafuta-2 .card {
+    width: 45%;
+    height: auto;
+    margin: 0 15px;
+    background: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    border-radius: 0.25rem;
+}
+
+#mafuta-2 .card-img {
+    width: 100%;
+    border-radius: calc(0.25rem - 1px);
+}
+
+#mafuta-2 .card-img-top {
+    width: 100%;
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+    margin-bottom: -10px;
+}
+
+#mafuta-2 .inner {
+    overflow: hidden;
+}
+
+#mafuta-2 .img-fluid {
+    max-width: 100%;
+    height: auto;
+    transition: linear .5s;
+}
+
+#mafuta-2 .img-fluid:hover {
+    transform: scale(1.2);
+}
+
+#mafuta-2 .card-body {
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 35px;
+}
+
+#mafuta-2 .card-body h3, p, a {
+    line-height: normal;
+    font-family: 'Laila', serif;
+}
+
+#mafuta-2 .card-body p {
+    line-height: 1.8rem;
+    text-align: justify;
+}
+
+#mafuta-2 .card-body a {
+    text-decoration: none;
+    color: orangered;
+    border: 1px solid orangered;
+    border-radius: 5px;
+    padding: 9px 24px;
+    line-height: 3.0rem;
+    font-size: 15px;
+    transition: all .5s;
+}
+
+#mafuta-2 .card-body a:hover {
+    color: #fff;
+    background: orangered;
+    opacity: 0.9;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 1400px) {
+    #mafuta-2 .card {
+        width: 30%;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 1060px) {
+    #mafuta-2 .card {
+        width: 45%;
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #mafuta-2 .card {
+        width: 80%;
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #mafuta-2 .card {
+        width: 90%;
+        margin-bottom: 25px;
+    }
+}
+
+/* End Query */
+
+/* ========================================
+# Mimea
+==========================================*/
+
+#mimea {
+    padding-top: 60px;
+    padding-bottom: 90px;
+    background: #fff;
+}
+
+#mimea .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+#mimea h1 {
+    text-align: center;
+    font-family: 'Merienda One', cursive;
+    font-size: 30px;
+    /* color: #fff; */
+    margin-bottom: 60px;
+}
+
+#mimea .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+}
+
+#mimea .mimea-img {
+    width: 400px;
+    border-radius: 50%;
+    margin: 0 20px;
+}
+
+#mimea .mimea-img img {
+    width: 400px;
+}
+
+#mimea .mimea-text {
+    margin: 0 30px;
+    width: 100%;
+}
+
+#mimea .mimea-text p {
+    line-height: 2.3rem;
+    font-family: 'Laila', serif;
+    font-size: 17px;
+}
+
+#mimea .card {
+    width: 30%;
+    height: auto;
+    margin: 0 10px;
+    background: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    border-radius: 0.25rem;
+}
+
+#mimea .card-img {
+    width: 100%;
+    border-radius: calc(0.25rem - 1px);
+}
+
+#mimea .card-img-top {
+    width: 100%;
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+    margin-bottom: -10px;
+}
+
+#mimea .inner {
+    overflow: hidden;
+}
+
+#mimea .img-fluid {
+    max-width: 100%;
+    height: auto;
+    transition: linear .5s;
+}
+
+#mimea .img-fluid:hover {
+    transform: scale(1.2);
+}
+
+#mimea .card-body {
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 35px;
+}
+
+#mimea .card-body h3, p, a {
+    line-height: normal;
+    font-family: 'Laila', serif;
+}
+
+#mimea .card-body p {
+    line-height: 1.8rem;
+    text-align: justify;
+}
+
+#mimea .card-body a {
+    text-decoration: none;
+    color: orangered;
+    border: 1px solid orangered;
+    border-radius: 5px;
+    padding: 9px 24px;
+    line-height: 3.0rem;
+    font-size: 15px;
+    transition: all .5s;
+}
+
+#mimea .card-body a:hover {
+    color: #fff;
+    background: orangered;
+    opacity: 0.9;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 1400px) {
+    #mimea .card {
+        width: 30%;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 1060px) {
+    #mimea .card {
+        width: 45%;
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #mimea .card {
+        width: 80%;
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #mimea .card {
+        width: 90%;
+        margin-bottom: 25px;
+    }
+}
+
+/* End Query */
