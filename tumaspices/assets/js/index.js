@@ -1,18 +1,18 @@
 // Toggle Menu bars
-
-// const menu = document.querySelector('.menu-bars');
-// const nav = document.querySelector('.navbar-nav');
-
-// menu.addEventListener('click', () => {
-//         nav.style.display = 'block';
-// });
-
 $(document).ready(function () {
     $('.menu-bars').on('click', function () {
         $('.navbar-nav').slideToggle(500);
     });
 });
 
+// SlideUp Menu when navLink clicked
+// $(document).ready(function () {
+//     $('.nav-link').on('click', function () {
+//         $('.navbar-nav').slideUp(500);
+//     });
+// });
+
+// When kuhusu navLink clicked then paddingTop 120px about section
 const about = document.querySelector('#kuhusu');
 const section = document.querySelector('#about');
 
@@ -22,6 +22,17 @@ function section1() {
    
 }
 
-// section.style.paddingTop = '60px';
+// Back To Top
+const toTop = document.querySelector('.go-top');
+
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 100) {
+        toTop.classList.add('active');
+    }
+    else {
+        toTop.classList.remove('active');
+    }
+});
+
 
 
