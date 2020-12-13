@@ -6,11 +6,11 @@ $(document).ready(function () {
 });
 
 // SlideUp Menu when navLink clicked
-// $(document).ready(function () {
-//     $('.nav-link').on('click', function () {
-//         $('.navbar-nav').slideUp(500);
-//     });
-// });
+$(document).ready(function () {
+    $('.nav-link').on('click', function () {
+        $('.navbar-nav').slideUp(500);
+    });
+});
 
 // When kuhusu navLink clicked then paddingTop 120px about section
 const about = document.querySelector('#kuhusu');
