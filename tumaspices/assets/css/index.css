@@ -853,9 +853,14 @@ html {
 }
 
 @media only screen and (max-width: 1060px) {
+    #bidhaa .row {
+        display: flex;
+        justify-content: center;
+        flex-flow: column wrap;
+    }
     #bidhaa .card {
-        width: 45%;
-        margin-bottom: 30px;
+        width: 80%;
+        margin-bottom: 25px;
     }
 }
 
@@ -952,6 +957,29 @@ html {
 }
 
 /* Media Query */
+
+@media only screen and (max-width: 1024px) {
+    #mafuta .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column nowrap;
+    }
+    #mafuta .mafuta-img {
+        width: 550px;
+        margin-right: 0px;
+    }
+    #mafuta .mafuta-img img {
+        width: 100%;
+    }
+    #mafuta .mafuta-text h2 {
+        text-align: justify;
+    }
+    #mafuta .mafuta-text p {
+        text-align: justify;
+    }
+}
+
 
 @media only screen and (max-width: 768px) {
     #mafuta .row {
@@ -1305,22 +1333,19 @@ html {
     }
 }
 
-@media only screen and (max-width: 1060px) {
-    #mimea .card {
-        width: 45%;
-        margin-bottom: 30px;
+@media only screen and (max-width: 1024px) {
+    #mimea .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column nowrap;
     }
-    #mimea #mt-row .card {
-        width: 45%;
-    }
-}
-
-@media only screen and (max-width: 768px) {
     #mimea .card {
         width: 80%;
         margin-bottom: 25px;
     }
     #mimea #mt-row .card {
+        margin-top: -32px;
         width: 80%;
     }
 }
@@ -1490,6 +1515,52 @@ html {
 
 /* Media Query */
 
+@media only screen and (max-width: 1024px) {
+    #contact .container {
+        display: flex;
+        justify-content: center;
+        flex-flow: column wrap;
+    }
+    #contact .row {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 20px;
+        width: 100%;
+    }
+    #contact .contact-boxes {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 20px;
+        grid-template-areas: "box1" "box2" "box3";
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+    #contact .contact-boxes .grid-box-1 {
+        width: 100%;
+        height: 200px;
+    }
+    #contact .contact-boxes .grid-box-2 {
+        width: 100%;
+        height: 200px;
+    }
+    #contact .contact-boxes .grid-box-3 {
+        width: 100%;
+        height: 200px;
+        border-left: none;
+        border-top: 7px solid rgba(255, 68, 0, 0.87);
+    }
+    #contact .contact-form form {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     #contact .container {
         display: flex;
@@ -1513,7 +1584,7 @@ html {
         grid-template-areas: "box1" "box2" "box3";
         margin-left: auto;
         margin-right: auto;
-        width: 250px;
+        width: 80%;
     }
     #contact .contact-boxes .grid-box-1 {
         width: 100%;
@@ -1537,6 +1608,52 @@ html {
 }
 
 @media only screen and (max-width: 576px) {
+    #contact .container {
+        display: flex;
+        justify-content: center;
+        flex-flow: column wrap;
+    }
+    #contact .row {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 20px;
+        width: 100%;
+    }
+    #contact .contact-boxes {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 20px;
+        grid-template-areas: "box1" "box2" "box3";
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+    #contact .contact-boxes .grid-box-1 {
+        width: 100%;
+        height: 200px;
+    }
+    #contact .contact-boxes .grid-box-2 {
+        width: 100%;
+        height: 200px;
+    }
+    #contact .contact-boxes .grid-box-3 {
+        width: 100%;
+        height: 200px;
+        border-left: none;
+        border-top: 7px solid rgba(255, 68, 0, 0.87);
+    }
+    #contact .contact-form form {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 300px) {
     #contact .container {
         display: flex;
         justify-content: center;
@@ -1600,10 +1717,13 @@ footer .container {
 }
 
 footer .row {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    place-items: center;
+    place-items: center; */
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
 }
 
 footer .footer-img {
@@ -1738,17 +1858,72 @@ footer .footer-branding .footer-social a:hover {
 
 /* Media Query */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
     footer .row {
-        display: grid;
+        /* display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         grid-row-gap: 30px;
-        place-items: center;
+        place-items: center; */
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row wrap;
     }
     footer .footer-img {
-        width: 200px;
-        height: 200px;
+        width: 180px;
+        height: 180px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    footer .footer-img img {
+        width: 100%;
+        height: 100%;
+    }
+    footer .footer-details {
+        margin-left: auto;
+        margin-right: auto;
+        width: 230px;
+    }
+    footer .footer-details h2 {
+        text-align: justify;
+    }
+    footer .footer-details h4 {
+        text-align: justify;
+    }
+    footer .footer-details .footer-address {
+        width: 100%;
+    }
+    footer .footer-branding {
+        width: 230px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+    }
+    footer .footer-branding .footer-brand {
+        width: 100%;
+    }
+    footer .footer-branding .footer-social {
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    footer .row {
+        /* display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-row-gap: 30px;
+        place-items: center; */
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row wrap;
+    }
+    footer .footer-img {
+        width: 180px;
+        height: 180px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -1772,6 +1947,9 @@ footer .footer-branding .footer-social a:hover {
     }
     footer .footer-branding {
         width: 230px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
     }
     footer .footer-branding .footer-brand {
         width: 100%;
@@ -1817,12 +1995,13 @@ footer .footer-branding .footer-social a:hover {
     }
     footer .footer-branding {
         width: 230px;
+        margin-top: 0px;
     }
     footer .footer-branding .footer-brand {
         width: 100%;
     }
     footer .footer-branding .footer-social {
-        margin-top: 40px;
+        margin-top: 30px;
         margin-left: auto;
         margin-right: auto;
     }
