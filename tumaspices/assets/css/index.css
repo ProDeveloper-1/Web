@@ -500,6 +500,56 @@ html {
     #hero .hero-title {
         width: 85%;
         margin-left: 15px;
+        margin-top: -660px;
+        order: 1;
+        padding-bottom: 0px;
+    }
+    #hero .hero-title h1 {
+        font-size: 40px;
+        line-height: 2.5rem;
+        text-align: center;
+        margin-right: 18px;
+    }
+    #hero .hero-title p {
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 30px;
+    }
+    #hero .hero-title .btn {
+        line-height: 6.5rem;
+        padding: 18px 100px;
+        margin-left: 65px;
+        margin-right: 2px;
+    }
+}
+
+
+@media only screen and (max-width: 476px) {
+    #hero .container {
+        display: grid;
+        place-content: center;
+        place-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        height: 800px;
+    }
+    #hero .hero-illu {
+        text-align: center;
+        margin-top: -350px;
+        display: block;
+    }
+    #hero .hero-illu img {
+        width: 250px;
+    }
+    #hero .hero-illu img.ginger {
+        transform: rotate(-360deg);
+        margin-bottom: -20px;
+    }
+    #hero .hero-title {
+        width: 85%;
+        margin-left: 15px;
         margin-top: -560px;
         order: 1;
         padding-bottom: 0px;
@@ -507,10 +557,19 @@ html {
     #hero .hero-title h1 {
         font-size: 40px;
         line-height: 2.5rem;
+        text-align: center;
+        margin-right: 18px;
+    }
+    #hero .hero-title p {
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 30px;
     }
     #hero .hero-title .btn {
         line-height: 6.5rem;
         padding: 18px 100px;
+        margin-left: 14px;
+        margin-right: 10px;
     }
 }
 
@@ -536,10 +595,6 @@ html {
         transform: rotate(-360deg);
         margin-bottom: -20px;
     }
-    #hero .hero-title .btn {
-        line-height: 6.5rem;
-        padding: 18px 90px;
-    }
     #hero .hero-title {
         width: 85%;
         margin-left: 15px;
@@ -550,6 +605,13 @@ html {
     #hero .hero-title h1 {
         font-size: 40px;
         line-height: 2.5rem;
+        text-align: center;
+    }
+    #hero .hero-title .btn {
+        line-height: 6.5rem;
+        padding: 18px 90px;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 }
 
@@ -578,7 +640,7 @@ html {
     #hero .hero-title {
         width: 85%;
         margin-left: 15px;
-        margin-top: -600px;
+        margin-top: -520px;
         order: 1;
         padding-bottom: 0px;
     }
@@ -979,7 +1041,6 @@ html {
         text-align: justify;
     }
 }
-
 
 @media only screen and (max-width: 768px) {
     #mafuta .row {
@@ -1908,7 +1969,6 @@ footer .footer-branding .footer-social a:hover {
         margin-right: auto;
     }
 }
-
 
 @media only screen and (max-width: 768px) {
     footer .row {
