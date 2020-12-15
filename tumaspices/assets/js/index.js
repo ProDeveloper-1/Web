@@ -5,22 +5,63 @@ $(document).ready(function () {
     });
 });
 
-// SlideUp Menu when navLink clicked
-$(document).ready(function () {
+// SlideUp Menu when navLink clicked on mobile version
+// $(document).ready(function () {
+//     if ($(window).width() <= 768) {
+//         $('.nav-link').on('click', function () {
+//             $('.navbar-nav').slideUp(500);
+//         });
+//     }
+//     else if ($(window).width() > 768) {
+//         $('.navbar-nav').css('display', 'inline-flex');
+//     }
+// });
+
+if (screen && screen.width <= 768) {
     $('.nav-link').on('click', function () {
         $('.navbar-nav').slideUp(500);
     });
-});
-
-// When kuhusu navLink clicked then paddingTop 120px about section
-const about = document.querySelector('#kuhusu');
-const section = document.querySelector('#about');
-
-about.addEventListener('click' , section1);
-function section1() {
-   setTimeout(function() {section.style.paddingTop = '120px';}, 300);
-   
 }
+
+// When kuhusu navLink clicked then paddingTop 120px the about section
+const about = document.querySelector('#kuhusu');
+const sectional = document.querySelector('#about');
+
+about.addEventListener('click', section);
+function section() {
+    sectional.style.paddingTop = '100px';
+}
+
+// When bidhaa navLink clicked then paddingTop 120px the bidhaa section
+const products = document.querySelector('#products');
+const bidhaa = document.querySelector('#bidhaa');
+
+products.addEventListener('click', product);
+function product() {
+    bidhaa.style.paddingTop = '100px';
+}
+
+// When wasiliana nasi navLink clicked then paddingTop 120px the contact section
+const wasiliana = document.querySelector('#wasiliana');
+const contact = document.querySelector('#contact');
+
+wasiliana.addEventListener('click', contacts);
+function contacts() {
+    contact.style.paddingTop = '100px';
+}
+
+// Smooth Scroll
+$('.nav a, .go-top a').on('click', function (e) {
+    if (this.hash !== '') {
+        e.preventDefault();
+
+        const hash = this.hash;
+
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 100);
+    }
+});
 
 // Back To Top
 const toTop = document.querySelector('.go-top');
@@ -34,5 +75,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-
-
+// Get Full Year
+const date = new (Date);
+let year = date.getFullYear();
+document.querySelector('#year').innerText = year;

@@ -25,7 +25,7 @@ html {
 .nav {
     display: flex;
     justify-content: space-around;
-    height: 80px;
+    height: 75px;
     background: orangered;
     position: fixed;
     left: 0;
@@ -699,7 +699,7 @@ html {
 ==========================================*/
 
 #about {
-    padding-top: 60px;
+    padding-top: 30px;
     padding-bottom: 90px;
 }
 
@@ -713,7 +713,7 @@ html {
     text-align: center;
     font-family: 'Merienda One', cursive;
     font-size: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
 }
 
 #about .row {
@@ -790,8 +790,8 @@ html {
 ==========================================*/
 
 #bidhaa {
-    padding-top: 120px;
-    padding-bottom: 90px;
+    padding-top: 30px;
+    padding-bottom: 60px;
     background: #f8f9fa;
 }
 
@@ -804,7 +804,7 @@ html {
     text-align: center;
     font-family: 'Merienda One', cursive;
     font-size: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 45px;
 }
 
 #bidhaa .row {
@@ -956,7 +956,7 @@ html {
 ==========================================*/
 
 #mafuta {
-    padding-top: 60px;
+    padding-top: 30px;
     padding-bottom: 90px;
     background: #fff;
 }
@@ -971,7 +971,7 @@ html {
     text-align: center;
     font-family: 'Merienda One', cursive;
     font-size: 30px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 #mafuta .row {
@@ -1092,7 +1092,7 @@ html {
 ==========================================*/
 
 #mafuta-2 {
-    padding-top: 80px;
+    padding-top: 30px;
     padding-bottom: 60px;
     background: #f8f9fa;
 }
@@ -1117,7 +1117,7 @@ html {
 }
 
 #mafuta-2 #mf-2 {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 #mafuta-2 .mafuta-2-img {
@@ -1271,7 +1271,7 @@ html {
 
 #mimea {
     padding-top: 30px;
-    padding-bottom: 90px;
+    padding-bottom: 60px;
     background: #fff;
 }
 
@@ -1284,7 +1284,7 @@ html {
     text-align: center;
     font-family: 'Merienda One', cursive;
     font-size: 30px;
-    margin-bottom: 60px;
+    margin-bottom: 45px;
 }
 
 #mimea .row {
@@ -1462,8 +1462,8 @@ html {
 ==========================================*/
 
 #contact {
-    padding-top: 120px;
-    padding-bottom: 90px;
+    padding-top: 30px;
+    padding-bottom: 60px;
     background: #f8f9fa;
 }
 
