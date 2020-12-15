@@ -6,22 +6,16 @@ $(document).ready(function () {
 });
 
 // SlideUp Menu when navLink clicked on mobile version
-// $(document).ready(function () {
-//     if ($(window).width() <= 768) {
-//         $('.nav-link').on('click', function () {
-//             $('.navbar-nav').slideUp(500);
-//         });
-//     }
-//     else if ($(window).width() > 768) {
-//         $('.navbar-nav').css('display', 'inline-flex');
-//     }
-// });
-
-if (screen && screen.width <= 768) {
-    $('.nav-link').on('click', function () {
-        $('.navbar-nav').slideUp(500);
-    });
-}
+$(document).ready(function () {
+    if ($(window).width() <= 768) {
+        $('.nav-link').on('click', function () {
+            $('.navbar-nav').slideUp(500);
+        });
+    }
+    else if ($(window).width() > 768) {
+        // $('.navbar-nav').css('display', 'inline-flex');
+    }
+});
 
 // When kuhusu navLink clicked then paddingTop 120px the about section
 const about = document.querySelector('#kuhusu');
