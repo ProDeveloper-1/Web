@@ -523,7 +523,6 @@ html {
     }
 }
 
-
 @media only screen and (max-width: 476px) {
     #hero .container {
         display: grid;
@@ -1094,7 +1093,7 @@ html {
 
 #mafuta-2 {
     padding-top: 80px;
-    padding-bottom: 90px;
+    padding-bottom: 60px;
     background: #f8f9fa;
 }
 
@@ -1228,11 +1227,18 @@ html {
 }
 
 @media only screen and (max-width: 768px) {
+    #mafuta-2 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
     #mafuta-2 .row {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-flow: column nowrap;
+    }
+    #mafuta-2 #mf-2 {
+        margin-top: 0px;
     }
     #mafuta-2 .card {
         width: 90%;
@@ -1241,6 +1247,10 @@ html {
 }
 
 @media only screen and (max-width: 576px) {
+    #mafuta-2 {
+        padding-top: 80px;
+        padding-bottom: 30px;
+    }
     #mafuta-2 .row {
         display: flex;
         justify-content: center;
@@ -1260,7 +1270,7 @@ html {
 ==========================================*/
 
 #mimea {
-    padding-top: 60px;
+    padding-top: 30px;
     padding-bottom: 90px;
     background: #fff;
 }
