@@ -130,6 +130,10 @@ html {
     .nav .navbar-nav .nav-item {
         margin: 60px 0px;
     }
+    .nav .menu-bars {
+        display: block;
+        margin-right: 30px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
