@@ -11,6 +11,10 @@ body {
     background: #f8f9fa;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     font-family: 'Ruluko', sans-serif;
 }

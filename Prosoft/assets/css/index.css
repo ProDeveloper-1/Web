@@ -13,9 +13,9 @@ body {
 
 /* Smooth Scroll - The challenge with css smooth scroll is, it is not cross browser */
 
-/* html {
+html {
     scroll-behavior: smooth;
-} */
+}
 
 * {
     font-family: 'Ruluko', sans-serif;
