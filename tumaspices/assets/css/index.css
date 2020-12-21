@@ -1300,6 +1300,11 @@ html {
         width: 40%;
         margin-bottom: 20px;
     }
+    #mafuta-2 #mf-2 .card {
+        width: 26.5%;
+        margin: 0 10px;
+        margin-bottom: 20px;
+    }
 }
 
 @media only screen and (max-width: 1400px) {
