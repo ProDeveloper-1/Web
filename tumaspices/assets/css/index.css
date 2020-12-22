@@ -377,19 +377,19 @@ html {
         place-items: center;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
-        grid-column-gap: 0px;
+        grid-column-gap: 60px;
         grid-row-gap: 0px;
         height: 800px;
     }
     #hero .hero-title {
-        width: 60%;
+        width: 70%;
         margin-left: auto;
-        margin-top: 0px;
+        margin-top: -60px;
         padding-bottom: 0px;
     }
     #hero .hero-title h1 {
-        font-size: 40px;
-        line-height: 2.5rem;
+        font-size: 75px;
+        line-height: 1.0rem;
     }
     #hero .hero-title .btn {
         line-height: 6.5rem;
@@ -397,9 +397,9 @@ html {
     }
     #hero .hero-illu {
         text-align: center;
-        margin-top: 0px;
+        margin-top: -60px;
         display: block;
-        width: 100%;
+        width: 30%;
         margin-right: auto;
     }
     #hero .hero-illu img {
@@ -978,6 +978,7 @@ html {
     #bidhaa .card {
         width: 24%;
         margin-bottom: 20px;
+        height: 540px;
     }
 }
 
@@ -994,6 +995,7 @@ html {
     #bidhaa .card {
         width: 80%;
         margin-bottom: 25px;
+        height: auto;
     }
 }
 
