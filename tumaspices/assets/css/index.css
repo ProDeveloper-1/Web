@@ -967,6 +967,7 @@ html {
     #bidhaa .card {
         width: 24%;
         margin-bottom: 20px;
+        height: 540px;
     }
 }
 
@@ -1221,11 +1222,18 @@ html {
 
 #mafuta-2 .card {
     width: 35%;
-    height: auto;
+    height: 575px;
     margin: 0 10px;
     background: #fff;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
     border-radius: 0.25rem;
+}
+
+#mafuta-2 #mf-2 .card {
+    width: 26.2%;
+    margin: 0 10px;
+    margin-bottom: 20px;
+    height: 555px;
 }
 
 #mafuta-2 .card-img {
@@ -1301,11 +1309,13 @@ html {
     #mafuta-2 .card {
         width: 40%;
         margin-bottom: 20px;
+        height: 575px;
     }
     #mafuta-2 #mf-2 .card {
         width: 26.2%;
         margin: 0 10px;
         margin-bottom: 20px;
+        height: 555px;
     }
 }
 

@@ -18,6 +18,10 @@ html {
     font-family: 'Laila', serif;
 }
 
+span {
+    color: #636262;
+}
+
 /* ========================================
 # Header - Navigation
 ==========================================*/
@@ -496,51 +500,51 @@ html {
 /* End Query */
 
 /* ========================================
-# About
+# Asali
 ==========================================*/
 
-#about {
-    padding-top: 30px;
+#asali {
+    padding-top: 100px;
     padding-bottom: 90px;
 }
 
-#about .container {
+#asali .container {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
 }
 
-#about h1 {
+#asali h1 {
     text-align: center;
     font-family: 'Merienda One', cursive;
     font-size: 30px;
     margin-bottom: 0px;
 }
 
-#about .row {
+#asali .row {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row nowrap;
 }
 
-#about .about-img {
+#asali .asali-img {
     width: 400px;
     margin: 0 60px;
 }
 
-#about .about-img img {
+#asali .asali-img img {
     width: 300px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
-#about .about-text {
+#asali .asali-text {
     margin: 0 30px;
     width: 100%;
 }
 
-#about .about-text p {
+#asali .asali-text p {
     line-height: 2.3rem;
     font-family: 'Laila', serif;
     font-size: 17px;
@@ -550,46 +554,46 @@ html {
 /* Media Query */
 
 @media only screen and (min-width: 1024px) {
-    #about {
-        padding-top: 30px;
+    #asali {
+        padding-top: 100px;
         padding-bottom: 50px;
     }
 }
 
 @media only screen and (max-width: 1024px) {
-    #about {
+    #asali {
         padding-top: 30px;
         padding-bottom: 30px;
     }
 }
 
 @media only screen and (max-width: 768px) {
-    #about {
+    #asali {
         padding-top: 30px;
         padding-bottom: 30px;
     }
-    #about h1 {
+    #asali h1 {
         margin-bottom: 50px;
     }
-    #about .row {
+    #asali .row {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
     }
-    #about .about-img {
+    #asali .asali-img {
         width: 100%;
         margin: 0 auto;
     }
-    #about .about-img img {
+    #asali .asali-img img {
         width: 100%;
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
     }
-    #about .about-text {
+    #asali .asali-text {
         margin: 0 auto;
         width: 100%;
     }
-    #about .about-text p {
+    #asali .asali-text p {
         line-height: 2.1rem;
         font-family: 'Laila', serif;
         font-size: 17px;
@@ -599,32 +603,32 @@ html {
 }
 
 @media only screen and (max-width: 576px) {
-    #about {
+    #asali {
         padding-top: 30px;
         padding-bottom: 20px;
     }
-    #about h1 {
+    #asali h1 {
         margin-bottom: 50px;
     }
-    #about .row {
+    #asali .row {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
     }
-    #about .about-img {
+    #asali .asali-img {
         width: 100%;
         margin: 0 auto;
     }
-    #about .about-img img {
+    #asali .asali-img img {
         width: 100%;
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
     }
-    #about .about-text {
+    #asali .asali-text {
         margin: 0 auto;
         width: 100%;
     }
-    #about .about-text p {
+    #asali .asali-text p {
         line-height: 2.1rem;
         font-family: 'Laila', serif;
         font-size: 17px;
@@ -636,56 +640,56 @@ html {
 /* End Query */
 
 /* ========================================
-# Bidhaa
+# Asali-2
 ==========================================*/
 
-#bidhaa {
+#asali-2 {
     padding-top: 30px;
     padding-bottom: 60px;
     background: #f8f9fa;
 }
 
-#bidhaa .container {
+#asali-2 .container {
     margin-left: auto;
     margin-right: auto;
 }
 
-#bidhaa h1 {
+#asali-2 h1 {
     text-align: center;
     font-family: 'Merienda One', cursive;
     font-size: 30px;
     margin-bottom: 45px;
 }
 
-#bidhaa .row {
+#asali-2 .row {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row nowrap;
 }
 
-#bidhaa .bidhaa-img {
+#asali-2 .asali-2-img {
     width: 400px;
     border-radius: 50%;
     margin: 0 20px;
 }
 
-#bidhaa .bidhaa-img img {
+#asali-2 .asali-2-img img {
     width: 400px;
 }
 
-#bidhaa .bidhaa-text {
+#asali-2 .asali-2-text {
     margin: 0 30px;
     width: 100%;
 }
 
-#bidhaa .bidhaa-text p {
+#asali-2 .asali-2-text p {
     line-height: 2.3rem;
     font-family: 'Laila', serif;
     font-size: 17px;
 }
 
-#bidhaa .card {
+#asali-2 .card {
     width: 24%;
     height: auto;
     margin: 0 10px;
@@ -694,50 +698,50 @@ html {
     border-radius: 0.25rem;
 }
 
-#bidhaa .card-img {
+#asali-2 .card-img {
     width: 100%;
     border-radius: calc(0.25rem - 1px);
 }
 
-#bidhaa .card-img-top {
+#asali-2 .card-img-top {
     width: 100%;
     border-top-left-radius: calc(0.25rem - 1px);
     border-top-right-radius: calc(0.25rem - 1px);
     margin-bottom: -10px;
 }
 
-#bidhaa .inner {
+#asali-2 .inner {
     overflow: hidden;
 }
 
-#bidhaa .img-fluid {
+#asali-2 .img-fluid {
     max-width: 100%;
     height: auto;
     transition: linear .5s;
 }
 
-#bidhaa .img-fluid:hover {
+#asali-2 .img-fluid:hover {
     transform: scale(1.2);
 }
 
-#bidhaa .card-body {
+#asali-2 .card-body {
     padding-top: 10px;
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 35px;
 }
 
-#bidhaa .card-body h3, p, a {
+#asali-2 .card-body h3, p, a {
     line-height: normal;
     font-family: 'Laila', serif;
 }
 
-#bidhaa .card-body p {
+#asali-2 .card-body p {
     line-height: 1.8rem;
     text-align: justify;
 }
 
-#bidhaa .card-body a {
+#asali-2 .card-body a {
     text-decoration: none;
     color: orangered;
     border: 1px solid orangered;
@@ -748,81 +752,825 @@ html {
     transition: all .5s;
 }
 
-#bidhaa .card-body a:hover {
+#asali-2 .card-body a:hover {
     color: #fff;
     background: orangered;
     opacity: 0.9;
 }
 
+#asali-2 .card-body .asali-kubwa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#asali-2 .card-body .asali-kubwa .asali-img {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    border: 4px solid #767676;
+    padding: 3px;
+}
+
+#asali-2 .card-body .asali-kubwa img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#asali-2 .card-body .asali-dogo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#asali-2 .card-body .asali-dogo .asali-img {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    border: 4px solid orangered;
+    padding: 3px;
+}
+
+#asali-2 .card-body .asali-dogo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
 /* Media Query */
 
 @media only screen and (min-width: 1400px) {
-    #bidhaa {
+    #asali-2 {
         padding-top: 30px;
-        padding-bottom: 20px;
+        padding-bottom: 40px;
     }
-    #bidhaa .card {
-        width: 24%;
+    #asali-2 .card {
+        width: 34%;
         margin-bottom: 20px;
     }
 }
 
 @media only screen and (max-width: 1400px) {
-    #bidhaa {
+    #asali-2 {
         padding-top: 30px;
         padding-bottom: 20px;
     }
-    #bidhaa .card {
+    #asali-2 .card {
         width: 24%;
         margin-bottom: 20px;
     }
 }
 
 @media only screen and (max-width: 1060px) {
-    #bidhaa {
+    #asali-2 {
         padding-top: 30px;
         padding-bottom: 20px;
     }
-    #bidhaa .row {
+    #asali-2 .row {
         display: flex;
         justify-content: center;
         flex-flow: column wrap;
     }
-    #bidhaa .card {
+    #asali-2 .card {
         width: 80%;
         margin-bottom: 25px;
     }
 }
 
 @media only screen and (max-width: 768px) {
-    #bidhaa {
+    #asali-2 {
         padding-top: 30px;
         padding-bottom: 20px;
     }
-    #bidhaa .row {
+    #asali-2 .row {
         display: flex;
         justify-content: center;
         flex-flow: column wrap;
     }
-    #bidhaa .card {
+    #asali-2 .card {
         width: 90%;
         margin-bottom: 25px;
     }
 }
 
 @media only screen and (max-width: 576px) {
-    #bidhaa .row {
+    #asali-2 .row {
         display: flex;
         justify-content: center;
         flex-flow: column wrap;
     }
-    #bidhaa .card {
+    #asali-2 .card {
         width: 90%;
         margin-bottom: 25px;
     }
 }
 
 /* End Query */
+
+/* ========================================
+# Mdalasini
+==========================================*/
+
+#mdalasini {
+    padding-top: 100px;
+    padding-bottom: 90px;
+}
+
+#mdalasini .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+#mdalasini h1 {
+    text-align: center;
+    font-family: 'Merienda One', cursive;
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+
+#mdalasini .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+}
+
+#mdalasini .mdalasini-img {
+    width: 400px;
+    margin: 0 60px;
+}
+
+#mdalasini .mdalasini-img img {
+    width: 300px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#mdalasini .mdalasini-text {
+    margin: 0 30px;
+    width: 100%;
+}
+
+#mdalasini .mdalasini-text p {
+    line-height: 2.3rem;
+    font-family: 'Laila', serif;
+    font-size: 17px;
+    margin-top: 30px;
+}
+
+/* Media Query */
+
+@media only screen and (min-width: 1024px) {
+    #mdalasini {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    #mdalasini {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #mdalasini {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    #mdalasini h1 {
+        margin-bottom: 50px;
+    }
+    #mdalasini .row {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    #mdalasini .mdalasini-img {
+        width: 100%;
+        margin: 0 auto;
+    }
+    #mdalasini .mdalasini-img img {
+        width: 100%;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    #mdalasini .mdalasini-text {
+        margin: 0 auto;
+        width: 100%;
+    }
+    #mdalasini .mdalasini-text p {
+        line-height: 2.1rem;
+        font-family: 'Laila', serif;
+        font-size: 17px;
+        margin-top: 30px;
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #mdalasini {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    #mdalasini h1 {
+        margin-bottom: 50px;
+    }
+    #mdalasini .row {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    #mdalasini .mdalasini-img {
+        width: 100%;
+        margin: 0 auto;
+    }
+    #mdalasini .mdalasini-img img {
+        width: 100%;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    #mdalasini .mdalasini-text {
+        margin: 0 auto;
+        width: 100%;
+    }
+    #mdalasini .mdalasini-text p {
+        line-height: 2.1rem;
+        font-family: 'Laila', serif;
+        font-size: 17px;
+        margin-top: 30px;
+        text-align: justify;
+    }
+}
+
+/* End Query */
+
+/* ========================================
+# mdalasini-2
+==========================================*/
+
+#mdalasini-2 {
+    padding-top: 30px;
+    padding-bottom: 60px;
+    background: #f8f9fa;
+}
+
+#mdalasini-2 .container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#mdalasini-2 h1 {
+    text-align: center;
+    font-family: 'Merienda One', cursive;
+    font-size: 30px;
+    margin-bottom: 45px;
+}
+
+#mdalasini-2 .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+}
+
+#mdalasini-2 .mdalasini-2-img {
+    width: 400px;
+    border-radius: 50%;
+    margin: 0 20px;
+}
+
+#mdalasini-2 .mdalasini-2-img img {
+    width: 400px;
+}
+
+#mdalasini-2 .mdalasini-2-text {
+    margin: 0 30px;
+    width: 100%;
+}
+
+#mdalasini-2 .mdalasini-2-text p {
+    line-height: 2.3rem;
+    font-family: 'Laila', serif;
+    font-size: 17px;
+}
+
+#mdalasini-2 .card {
+    width: 24%;
+    height: auto;
+    margin: 0 10px;
+    background: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    border-radius: 0.25rem;
+}
+
+#mdalasini-2 .card-img {
+    width: 100%;
+    border-radius: calc(0.25rem - 1px);
+}
+
+#mdalasini-2 .card-img-top {
+    width: 100%;
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+    margin-bottom: -10px;
+}
+
+#mdalasini-2 .inner {
+    overflow: hidden;
+}
+
+#mdalasini-2 .img-fluid {
+    max-width: 100%;
+    height: auto;
+    transition: linear .5s;
+}
+
+#mdalasini-2 .img-fluid:hover {
+    transform: scale(1.2);
+}
+
+#mdalasini-2 .card-body {
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 35px;
+}
+
+#mdalasini-2 .card-body h3, p, a {
+    line-height: normal;
+    font-family: 'Laila', serif;
+}
+
+#mdalasini-2 .card-body p {
+    line-height: 1.8rem;
+    text-align: justify;
+}
+
+#mdalasini-2 .card-body a {
+    text-decoration: none;
+    color: orangered;
+    border: 1px solid orangered;
+    border-radius: 5px;
+    padding: 9px 24px;
+    line-height: 3.0rem;
+    font-size: 15px;
+    transition: all .5s;
+}
+
+#mdalasini-2 .card-body a:hover {
+    color: #fff;
+    background: orangered;
+    opacity: 0.9;
+}
+
+#mdalasini-2 .card-body .mdalasini-kubwa {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#mdalasini-2 .card-body .mdalasini-kubwa .mdalasini-img {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    border: 4px solid #767676;
+    padding: 3px;
+}
+
+#mdalasini-2 .card-body .mdalasini-kubwa img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Media Query */
+
+@media only screen and (min-width: 1400px) {
+    #mdalasini-2 {
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+    #mdalasini-2 .card {
+        width: 64%;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    #mdalasini-2 {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    #mdalasini-2 .card {
+        width: 24%;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 1060px) {
+    #mdalasini-2 {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    #mdalasini-2 .row {
+        display: flex;
+        justify-content: center;
+        flex-flow: column wrap;
+    }
+    #mdalasini-2 .card {
+        width: 80%;
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #mdalasini-2 {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    #mdalasini-2 .row {
+        display: flex;
+        justify-content: center;
+        flex-flow: column wrap;
+    }
+    #mdalasini-2 .card {
+        width: 90%;
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #mdalasini-2 .row {
+        display: flex;
+        justify-content: center;
+        flex-flow: column wrap;
+    }
+    #mdalasini-2 .card {
+        width: 90%;
+        margin-bottom: 25px;
+    }
+}
+
+/* End Query */
+
+
+/* ========================================
+# Tangawizi
+==========================================*/
+
+#tangawizi {
+    padding-top: 100px;
+    padding-bottom: 90px;
+}
+
+#tangawizi .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+#tangawizi h1 {
+    text-align: center;
+    font-family: 'Merienda One', cursive;
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+
+#tangawizi .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+}
+
+#tangawizi .tangawizi-img {
+    width: 400px;
+    margin: 0 60px;
+}
+
+#tangawizi .tangawizi-img img {
+    width: 300px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#tangawizi .tangawizi-text {
+    margin: 0 30px;
+    width: 100%;
+}
+
+#tangawizi .tangawizi-text p {
+    line-height: 2.3rem;
+    font-family: 'Laila', serif;
+    font-size: 17px;
+    margin-top: 30px;
+}
+
+/* Media Query */
+
+@media only screen and (min-width: 1024px) {
+    #tangawizi {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    #tangawizi {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #tangawizi {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    #tangawizi h1 {
+        margin-bottom: 50px;
+    }
+    #tangawizi .row {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    #tangawizi .tangawizi-img {
+        width: 100%;
+        margin: 0 auto;
+    }
+    #tangawizi .tangawizi-img img {
+        width: 100%;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    #tangawizi .tangawizi-text {
+        margin: 0 auto;
+        width: 100%;
+    }
+    #tangawizi .tangawizi-text p {
+        line-height: 2.1rem;
+        font-family: 'Laila', serif;
+        font-size: 17px;
+        margin-top: 30px;
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #tangawizi {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    #tangawizi h1 {
+        margin-bottom: 50px;
+    }
+    #tangawizi .row {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    #tangawizi .tangawizi-img {
+        width: 100%;
+        margin: 0 auto;
+    }
+    #tangawizi .tangawizi-img img {
+        width: 100%;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    #tangawizi .tangawizi-text {
+        margin: 0 auto;
+        width: 100%;
+    }
+    #tangawizi .tangawizi-text p {
+        line-height: 2.1rem;
+        font-family: 'Laila', serif;
+        font-size: 17px;
+        margin-top: 30px;
+        text-align: justify;
+    }
+}
+
+/* End Query */
+
+/* ========================================
+# tangawizi-2
+==========================================*/
+
+#tangawizi-2 {
+    padding-top: 30px;
+    padding-bottom: 60px;
+    background: #f8f9fa;
+}
+
+#tangawizi-2 .container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#tangawizi-2 h1 {
+    text-align: center;
+    font-family: 'Merienda One', cursive;
+    font-size: 30px;
+    margin-bottom: 45px;
+}
+
+#tangawizi-2 .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+}
+
+#tangawizi-2 .tangawizi-2-img {
+    width: 400px;
+    border-radius: 50%;
+    margin: 0 20px;
+}
+
+#tangawizi-2 .tangawizi-2-img img {
+    width: 400px;
+}
+
+#tangawizi-2 .tangawizi-2-text {
+    margin: 0 30px;
+    width: 100%;
+}
+
+#tangawizi-2 .tangawizi-2-text p {
+    line-height: 2.3rem;
+    font-family: 'Laila', serif;
+    font-size: 17px;
+}
+
+#tangawizi-2 .card {
+    width: 24%;
+    height: auto;
+    margin: 0 10px;
+    background: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    border-radius: 0.25rem;
+}
+
+#tangawizi-2 .card-img {
+    width: 100%;
+    border-radius: calc(0.25rem - 1px);
+}
+
+#tangawizi-2 .card-img-top {
+    width: 100%;
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+    margin-bottom: -10px;
+}
+
+#tangawizi-2 .inner {
+    overflow: hidden;
+}
+
+#tangawizi-2 .img-fluid {
+    max-width: 100%;
+    height: auto;
+    transition: linear .5s;
+}
+
+#tangawizi-2 .img-fluid:hover {
+    transform: scale(1.2);
+}
+
+#tangawizi-2 .card-body {
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 35px;
+}
+
+#tangawizi-2 .card-body h3, p, a {
+    line-height: normal;
+    font-family: 'Laila', serif;
+}
+
+#tangawizi-2 .card-body p {
+    line-height: 1.8rem;
+    text-align: justify;
+}
+
+#tangawizi-2 .card-body a {
+    text-decoration: none;
+    color: orangered;
+    border: 1px solid orangered;
+    border-radius: 5px;
+    padding: 9px 24px;
+    line-height: 3.0rem;
+    font-size: 15px;
+    transition: all .5s;
+}
+
+#tangawizi-2 .card-body a:hover {
+    color: #fff;
+    background: orangered;
+    opacity: 0.9;
+}
+
+#tangawizi-2 .card-body .tangawizi-kubwa {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#tangawizi-2 .card-body .tangawizi-kubwa .tangawizi-img {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    border: 4px solid orangered;
+    padding: 3px;
+}
+
+#tangawizi-2 .card-body .tangawizi-kubwa img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Media Query */
+
+@media only screen and (min-width: 1400px) {
+    #tangawizi-2 {
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+    #tangawizi-2 .card {
+        width: 64%;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    #tangawizi-2 {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    #tangawizi-2 .card {
+        width: 24%;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 1060px) {
+    #tangawizi-2 {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    #tangawizi-2 .row {
+        display: flex;
+        justify-content: center;
+        flex-flow: column wrap;
+    }
+    #tangawizi-2 .card {
+        width: 80%;
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #tangawizi-2 {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    #tangawizi-2 .row {
+        display: flex;
+        justify-content: center;
+        flex-flow: column wrap;
+    }
+    #tangawizi-2 .card {
+        width: 90%;
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #tangawizi-2 .row {
+        display: flex;
+        justify-content: center;
+        flex-flow: column wrap;
+    }
+    #tangawizi-2 .card {
+        width: 90%;
+        margin-bottom: 25px;
+    }
+}
+
+/* End Query */
+
 
 /* ========================================
 # Mafuta
