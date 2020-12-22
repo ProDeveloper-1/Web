@@ -18,10 +18,6 @@ html {
     font-family: 'Laila', serif;
 }
 
-span {
-    color: #636262;
-}
-
 /* ========================================
 # Header - Navigation
 ==========================================*/
@@ -661,6 +657,11 @@ span {
     margin-bottom: 45px;
 }
 
+#asali-2 span {
+    color: #636262;
+}
+
+
 #asali-2 .row {
     display: flex;
     justify-content: center;
@@ -1220,7 +1221,6 @@ span {
 
 /* End Query */
 
-
 /* ========================================
 # Tangawizi
 ==========================================*/
@@ -1570,7 +1570,6 @@ span {
 }
 
 /* End Query */
-
 
 /* ========================================
 # Mafuta
