@@ -1319,6 +1319,11 @@ html {
         width: 40%;
         margin-bottom: 20px;
     }
+    #mafuta-2 #mf-2 .card {
+        width: 26.2%;
+        margin: 0 10px;
+        margin-bottom: 20px;
+    }
 }
 
 @media only screen and (max-width: 1060px) {
@@ -1332,6 +1337,11 @@ html {
     #mafuta-2 .card {
         width: 45%;
         margin-bottom: 30px;
+    }
+    #mafuta-2 #mf-2 .card {
+        width: 29.2%;
+        margin: 0 10px;
+        margin-bottom: 20px;
     }
 }
 
@@ -1352,6 +1362,11 @@ html {
     #mafuta-2 .card {
         width: 90%;
         margin-bottom: 25px;
+    }
+    #mafuta-2 #mf-2 .card {
+        width: 90%;
+        margin: 0 0px;
+        margin-bottom: 20px;
     }
 }
 
