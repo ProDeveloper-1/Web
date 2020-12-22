@@ -375,30 +375,16 @@ html {
         display: grid;
         place-content: center;
         place-items: center;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
         grid-column-gap: 0px;
         grid-row-gap: 0px;
         height: 800px;
     }
-    #hero .hero-illu {
-        text-align: center;
-        margin-top: -300px;
-        display: block;
-        width: 100%;
-    }
-    #hero .hero-illu img {
-        width: 450px;
-    }
-    #hero .hero-illu img.ginger {
-        transform: rotate(-360deg);
-        margin-bottom: -20px;
-    }
     #hero .hero-title {
         width: 60%;
-        margin-left: 15px;
-        margin-top: -520px;
-        order: 1;
+        margin-left: auto;
+        margin-top: 0px;
         padding-bottom: 0px;
     }
     #hero .hero-title h1 {
@@ -408,6 +394,20 @@ html {
     #hero .hero-title .btn {
         line-height: 6.5rem;
         padding: 18px 100px;
+    }
+    #hero .hero-illu {
+        text-align: center;
+        margin-top: 0px;
+        display: block;
+        width: 100%;
+        margin-right: auto;
+    }
+    #hero .hero-illu img {
+        width: 450px;
+    }
+    #hero .hero-illu img.ginger {
+        transform: rotate(-360deg);
+        margin-bottom: -20px;
     }
 }
 
@@ -1318,10 +1318,12 @@ html {
     #mafuta-2 .card {
         width: 40%;
         margin-bottom: 20px;
+        height: 545px;
     }
     #mafuta-2 #mf-2 .card {
         width: 26.2%;
         margin: 0 10px;
+        height: 555px;
         margin-bottom: 20px;
     }
 }
@@ -1337,11 +1339,13 @@ html {
     #mafuta-2 .card {
         width: 45%;
         margin-bottom: 30px;
+        height: 515px;
     }
     #mafuta-2 #mf-2 .card {
         width: 29.2%;
         margin: 0 10px;
         margin-bottom: 20px;
+        height: 545px;
     }
 }
 
@@ -1362,11 +1366,13 @@ html {
     #mafuta-2 .card {
         width: 90%;
         margin-bottom: 25px;
+        height: auto;
     }
     #mafuta-2 #mf-2 .card {
         width: 90%;
         margin: 0 0px;
         margin-bottom: 20px;
+        height: auto;
     }
 }
 
@@ -1546,9 +1552,11 @@ html {
     #mimea .card {
         width: 24%;
         margin-bottom: 20px;
+        height: 535px;
     }
     #mimea #mt-row .card {
         width: 75%;
+        height: auto;
     }
 }
 
@@ -1569,10 +1577,12 @@ html {
     #mimea .card {
         width: 80%;
         margin-bottom: 25px;
+        height: auto;
     }
     #mimea #mt-row .card {
         margin-top: -32px;
         width: 80%;
+        height: auto;
     }
 }
 
@@ -1594,10 +1604,12 @@ html {
     #mimea .card {
         width: 90%;
         margin-bottom: 25px;
+        height: auto;
     }
     #mimea #mt-row .card {
         margin-top: -32px;
         width: 90%;
+        height: auto;
     }
 }
 
