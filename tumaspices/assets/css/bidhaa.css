@@ -301,7 +301,7 @@ html {
 ==========================================*/
 
 #hero {
-    background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/asali/asali2.jpg);
+    background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/chia/chia.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -312,17 +312,17 @@ html {
     display: grid;
     place-content: center;
     place-items: center;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 20px;
-    grid-column-gap: 60px;
-    grid-row-gap: 20px;
-    height: 800px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 500px;
 }
 
 #hero .hero-title {
-    width: 70%;
+    margin-top: 35px;
     color: #fff;
-    margin-left: auto;
+    text-align: center;
 }
 
 #hero .hero-title h1 {
@@ -330,42 +330,14 @@ html {
     font-weight: 600;
     font-family: 'Merienda One', cursive;
     line-height: 0px;
+    text-align: center;
 }
 
 #hero .hero-title p {
     font-size: 17px;
     line-height: 1.8em;
     font-family: 'Laila', serif;
-}
-
-#hero .hero-title .btn {
-    text-decoration: none;
-    background: rgba(255, 69, 0, 0.9);
-    border: 1px solid orangered;
-    color: #fff;
-    padding: 18px 60px;
-    line-height: 5.3rem;
-    border-radius: 50px;
-    font-family: 'Laila', serif;
-    transition: all .5s;
-}
-
-#hero .hero-title .btn:hover {
-    border: 1px solid orangered;
-    background: none;
-}
-
-#hero .hero-illu {
-    margin-right: auto;
-}
-
-#hero .hero-illu img {
-    width: 480px;
-}
-
-#hero .hero-illu img.ginger {
-    transform: rotate(-20deg);
-    margin-bottom: -40px;
+    opacity: 0.8;
 }
 
 /* Media Query */
@@ -379,35 +351,18 @@ html {
         grid-template-rows: 1fr;
         grid-column-gap: 0px;
         grid-row-gap: 0px;
-        height: 800px;
-    }
-    #hero .hero-illu {
-        text-align: center;
-        margin-top: -300px;
-        display: block;
-        width: 100%;
-    }
-    #hero .hero-illu img {
-        width: 450px;
-    }
-    #hero .hero-illu img.ginger {
-        transform: rotate(-360deg);
-        margin-bottom: -20px;
+        height: 500px;
     }
     #hero .hero-title {
         width: 60%;
         margin-left: 15px;
-        margin-top: -520px;
+        margin-top: 35px;
         order: 1;
         padding-bottom: 0px;
     }
     #hero .hero-title h1 {
         font-size: 40px;
         line-height: 2.5rem;
-    }
-    #hero .hero-title .btn {
-        line-height: 6.5rem;
-        padding: 18px 100px;
     }
 }
 
@@ -422,32 +377,16 @@ html {
         grid-row-gap: 0px;
         height: 800px;
     }
-    #hero .hero-illu {
-        margin-top: -300px;
-        display: block;
-        width: 98%;
-    }
-    #hero .hero-illu img {
-        width: 450px;
-    }
-    #hero .hero-illu img.ginger {
-        transform: rotate(-360deg);
-        margin-bottom: -20px;
-    }
     #hero .hero-title {
         width: 75%;
         margin-left: 15px;
-        margin-top: -520px;
+        margin-top: -150px;
         order: 1;
         padding-bottom: 0px;
     }
     #hero .hero-title h1 {
         font-size: 40px;
         line-height: 2.5rem;
-    }
-    #hero .hero-title .btn {
-        line-height: 6.5rem;
-        padding: 18px 100px;
     }
 }
 
@@ -460,16 +399,10 @@ html {
         grid-template-rows: 1fr;
         height: 1200px;
     }
-    #hero .hero-illu {
-        text-align: center;
-        margin-top: -500px;
-        display: block;
-        width: 100%;
-    }
     #hero .hero-title {
         width: 80%;
         margin-left: 15px;
-        margin-top: -890px;
+        margin-top: -280px;
         padding-bottom: 0px;
     }
     #hero .hero-title h1 {
@@ -489,22 +422,10 @@ html {
         grid-row-gap: 0px;
         height: 800px;
     }
-    #hero .hero-illu {
-        text-align: center;
-        margin-top: -350px;
-        display: block;
-    }
-    #hero .hero-illu img {
-        width: 250px;
-    }
-    #hero .hero-illu img.ginger {
-        transform: rotate(-360deg);
-        margin-bottom: -20px;
-    }
     #hero .hero-title {
         width: 85%;
         margin-left: 15px;
-        margin-top: -660px;
+        margin-top: -150px;
         order: 1;
         padding-bottom: 0px;
     }
@@ -518,44 +439,14 @@ html {
         text-align: center;
         padding-left: 20px;
         padding-right: 30px;
-    }
-    #hero .hero-title .btn {
-        line-height: 6.5rem;
-        padding: 18px 100px;
-        margin-left: 65px;
-        margin-right: 2px;
     }
 }
 
 @media only screen and (max-width: 476px) {
-    #hero .container {
-        display: grid;
-        place-content: center;
-        place-items: center;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-        height: 800px;
-    }
-    #hero .hero-illu {
-        text-align: center;
-        margin-top: -350px;
-        display: block;
-    }
-    #hero .hero-illu img {
-        width: 250px;
-    }
-    #hero .hero-illu img.ginger {
-        transform: rotate(-360deg);
-        margin-bottom: -20px;
-    }
     #hero .hero-title {
         width: 85%;
         margin-left: 15px;
-        margin-top: -560px;
-        order: 1;
-        padding-bottom: 0px;
+        margin-top: -150px;
     }
     #hero .hero-title h1 {
         font-size: 40px;
@@ -568,41 +459,13 @@ html {
         padding-left: 20px;
         padding-right: 30px;
     }
-    #hero .hero-title .btn {
-        line-height: 6.5rem;
-        padding: 18px 100px;
-        margin-left: 14px;
-        margin-right: 10px;
-    }
 }
 
 @media only screen and (max-width: 376px) {
-    #hero .container {
-        display: grid;
-        place-content: center;
-        place-items: center;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-        height: 800px;
-    }
-    #hero .hero-illu {
-        text-align: center;
-        margin-top: -350px;
-    }
-    #hero .hero-illu img {
-        width: 250px;
-    }
-    #hero .hero-illu img.ginger {
-        transform: rotate(-360deg);
-        margin-bottom: -20px;
-    }
     #hero .hero-title {
         width: 85%;
         margin-left: 15px;
-        margin-top: -560px;
-        order: 1;
+        margin-top: -150px;
         padding-bottom: 0px;
     }
     #hero .hero-title h1 {
@@ -610,89 +473,23 @@ html {
         line-height: 2.5rem;
         text-align: center;
     }
-    #hero .hero-title .btn {
-        line-height: 6.5rem;
-        padding: 18px 90px;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
 }
 
 @media only screen and (max-width: 325px) {
-    #hero .container {
-        display: grid;
-        place-content: center;
-        place-items: center;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-        height: 800px;
-    }
-    #hero .hero-illu {
-        text-align: center;
-        margin-top: -360px;
-    }
-    #hero .hero-illu img {
-        width: 250px;
-    }
-    #hero .hero-illu img.ginger {
-        transform: rotate(-360deg);
-        margin-bottom: -20px;
-    }
-    #hero .hero-title {
-        width: 85%;
-        margin-left: 15px;
-        margin-top: -520px;
-        order: 1;
-        padding-bottom: 0px;
-    }
     #hero .hero-title h1 {
-        font-size: 40px;
         line-height: 2.0rem;
-    }
-    #hero .hero-title .btn {
-        line-height: 6.5rem;
-        padding: 18px 75px;
     }
 }
 
 @media only screen and (max-width: 300px) {
-    #hero .container {
-        display: grid;
-        place-content: center;
-        place-items: center;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-        height: 800px;
-    }
-    #hero .hero-illu {
-        text-align: center;
-        margin-top: -365px;
-    }
-    #hero .hero-illu img {
-        width: 250px;
-    }
-    #hero .hero-illu img.ginger {
-        transform: rotate(-360deg);
-        margin-bottom: -20px;
-    }
     #hero .hero-title {
         width: 85%;
         margin-left: 15px;
-        margin-top: -600px;
-        order: 1;
-        padding-bottom: 0px;
+        margin-top: -150px;
     }
     #hero .hero-title h1 {
         font-size: 30px;
         line-height: 1.8rem;
-    }
-    #hero .hero-title .btn {
-        line-height: 4.8rem;
-        padding: 16px 55px;
     }
 }
 

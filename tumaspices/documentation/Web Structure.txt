@@ -6,17 +6,15 @@ index.html
 
 Pages:
 
-1. about.html
-
-2. products.html
-
-3. contact.html
+1. bidhaa.html
 
 Assets:
 
 1. css folder
 
 2. img folder
+
+3. js folder
 
 
 Kuhusu Sisi:
