@@ -17,35 +17,8 @@ $(document).ready(function () {
     }
 });
 
-// When kuhusu navLink clicked then paddingTop 120px the about section
-const about = document.querySelector('#kuhusu');
-const sectional = document.querySelector('#about');
-
-about.addEventListener('click', section);
-function section() {
-    sectional.style.paddingTop = '100px';
-}
-
-// When bidhaa navLink clicked then paddingTop 120px the bidhaa section
-const products = document.querySelector('#products');
-const bidhaa = document.querySelector('#bidhaa');
-
-products.addEventListener('click', product);
-function product() {
-    bidhaa.style.paddingTop = '100px';
-}
-
-// When wasiliana nasi navLink clicked then paddingTop 120px the contact section
-const wasiliana = document.querySelector('#wasiliana');
-const contact = document.querySelector('#contact');
-
-wasiliana.addEventListener('click', contacts);
-function contacts() {
-    contact.style.paddingTop = '100px';
-}
-
 // Smooth Scroll
-$('.nav a, .go-top a').on('click', function (e) {
+$('.go-top a').on('click', function (e) {
     if (this.hash !== '') {
         e.preventDefault();
 

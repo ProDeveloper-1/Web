@@ -754,21 +754,21 @@ html {
 
 @media only screen and (min-width: 1024px) {
     #about {
-        padding-top: 30px;
+        padding-top: 100px;
         padding-bottom: 50px;
     }
 }
 
 @media only screen and (max-width: 1024px) {
     #about {
-        padding-top: 30px;
+        padding-top: 100px;
         padding-bottom: 30px;
     }
 }
 
 @media only screen and (max-width: 768px) {
     #about {
-        padding-top: 30px;
+        padding-top: 100px;
         padding-bottom: 30px;
     }
     #about h1 {
@@ -803,7 +803,7 @@ html {
 
 @media only screen and (max-width: 576px) {
     #about {
-        padding-top: 30px;
+        padding-top: 100px;
         padding-bottom: 20px;
     }
     #about h1 {
@@ -961,7 +961,7 @@ html {
 
 @media only screen and (min-width: 1400px) {
     #bidhaa {
-        padding-top: 30px;
+        padding-top: 100px;
         padding-bottom: 20px;
     }
     #bidhaa .card {
@@ -973,7 +973,7 @@ html {
 
 @media only screen and (max-width: 1400px) {
     #bidhaa {
-        padding-top: 30px;
+        padding-top: 100px;
         padding-bottom: 20px;
     }
     #bidhaa .card {
@@ -985,7 +985,7 @@ html {
 
 @media only screen and (max-width: 1060px) {
     #bidhaa {
-        padding-top: 30px;
+        padding-top: 100px;
         padding-bottom: 20px;
     }
     #bidhaa .row {
@@ -1002,7 +1002,7 @@ html {
 
 @media only screen and (max-width: 768px) {
     #bidhaa {
-        padding-top: 30px;
+        padding-top: 100px;
         padding-bottom: 20px;
     }
     #bidhaa .row {
@@ -1804,7 +1804,7 @@ html {
 
 @media only screen and (min-width: 1400px) {
     #contact {
-        padding-top: 30px;
+        padding-top: 100px;
         padding-bottom: 50px;
     }
     #contact .container {
@@ -1861,7 +1861,7 @@ html {
 
 @media only screen and (max-width: 1400px) {
     #contact {
-        padding-top: 30px;
+        padding-top: 100px;
         padding-bottom: 50px;
     }
     #contact .container {
@@ -1918,7 +1918,7 @@ html {
 
 @media only screen and (max-width: 1024px) {
     #contact {
-        padding-top: 30px;
+        padding-top: 100px;
         padding-bottom: 20px;
     }
     #contact .container {
@@ -1974,7 +1974,7 @@ html {
 
 @media only screen and (max-width: 768px) {
     #contact {
-        padding-top: 30px;
+        padding-top: 100px;
         padding-bottom: 20px;
     }
     #contact .container {
@@ -2030,7 +2030,7 @@ html {
 
 @media only screen and (max-width: 576px) {
     #contact {
-        padding-top: 30px;
+        padding-top: 100px;
         padding-bottom: 20px;
     }
     #contact .container {

@@ -558,14 +558,14 @@ html {
 
 @media only screen and (max-width: 1024px) {
     #asali {
-        padding-top: 30px;
+        padding-top: 100px;
         padding-bottom: 30px;
     }
 }
 
 @media only screen and (max-width: 768px) {
     #asali {
-        padding-top: 30px;
+        padding-top: 100px;
         padding-bottom: 30px;
     }
     #asali h1 {
@@ -600,7 +600,7 @@ html {
 
 @media only screen and (max-width: 576px) {
     #asali {
-        padding-top: 30px;
+        padding-top: 100px;
         padding-bottom: 20px;
     }
     #asali h1 {
@@ -851,7 +851,7 @@ html {
         flex-flow: column wrap;
     }
     #asali-2 .card {
-        width: 90%;
+        width: 80%;
         margin-bottom: 25px;
     }
 }
@@ -863,8 +863,14 @@ html {
         flex-flow: column wrap;
     }
     #asali-2 .card {
-        width: 90%;
+        width: 85%;
         margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 476px) {
+    #asali-2 .card {
+        width: 90%;
     }
 }
 
@@ -933,14 +939,14 @@ html {
 
 @media only screen and (max-width: 1024px) {
     #mdalasini {
-        padding-top: 30px;
+        padding-top: 100px;
         padding-bottom: 30px;
     }
 }
 
 @media only screen and (max-width: 768px) {
     #mdalasini {
-        padding-top: 30px;
+        padding-top: 100px;
         padding-bottom: 30px;
     }
     #mdalasini h1 {
@@ -975,7 +981,7 @@ html {
 
 @media only screen and (max-width: 576px) {
     #mdalasini {
-        padding-top: 30px;
+        padding-top: 100px;
         padding-bottom: 20px;
     }
     #mdalasini h1 {
@@ -1201,7 +1207,7 @@ html {
         flex-flow: column wrap;
     }
     #mdalasini-2 .card {
-        width: 90%;
+        width: 80%;
         margin-bottom: 25px;
     }
 }
@@ -1213,8 +1219,14 @@ html {
         flex-flow: column wrap;
     }
     #mdalasini-2 .card {
-        width: 90%;
+        width: 85%;
         margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 476px) {
+    #mdalasini-2 .card {
+        width: 90%;
     }
 }
 
@@ -1283,14 +1295,14 @@ html {
 
 @media only screen and (max-width: 1024px) {
     #tangawizi {
-        padding-top: 30px;
+        padding-top: 100px;
         padding-bottom: 30px;
     }
 }
 
 @media only screen and (max-width: 768px) {
     #tangawizi {
-        padding-top: 30px;
+        padding-top: 100px;
         padding-bottom: 30px;
     }
     #tangawizi h1 {
@@ -1325,7 +1337,7 @@ html {
 
 @media only screen and (max-width: 576px) {
     #tangawizi {
-        padding-top: 30px;
+        padding-top: 100px;
         padding-bottom: 20px;
     }
     #tangawizi h1 {
@@ -1551,12 +1563,24 @@ html {
         flex-flow: column wrap;
     }
     #tangawizi-2 .card {
-        width: 90%;
+        width: 80%;
         margin-bottom: 25px;
     }
 }
 
 @media only screen and (max-width: 576px) {
+    #tangawizi-2 .row {
+        display: flex;
+        justify-content: center;
+        flex-flow: column wrap;
+    }
+    #tangawizi-2 .card {
+        width: 85%;
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 476px) {
     #tangawizi-2 .row {
         display: flex;
         justify-content: center;
@@ -1633,14 +1657,14 @@ html {
 
 @media only screen and (max-width: 1024px) {
     #mnyonyo {
-        padding-top: 30px;
+        padding-top: 100px;
         padding-bottom: 30px;
     }
 }
 
 @media only screen and (max-width: 768px) {
     #mnyonyo {
-        padding-top: 30px;
+        padding-top: 100px;
         padding-bottom: 30px;
     }
     #mnyonyo h1 {
@@ -1675,7 +1699,7 @@ html {
 
 @media only screen and (max-width: 576px) {
     #mnyonyo {
-        padding-top: 30px;
+        padding-top: 100px;
         padding-bottom: 20px;
     }
     #mnyonyo h1 {
@@ -1901,12 +1925,24 @@ html {
         flex-flow: column wrap;
     }
     #mnyonyo-2 .card {
-        width: 90%;
+        width: 80%;
         margin-bottom: 25px;
     }
 }
 
 @media only screen and (max-width: 576px) {
+    #mnyonyo-2 .row {
+        display: flex;
+        justify-content: center;
+        flex-flow: column wrap;
+    }
+    #mnyonyo-2 .card {
+        width: 85%;
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 476px) {
     #mnyonyo-2 .row {
         display: flex;
         justify-content: center;
@@ -1983,14 +2019,14 @@ html {
 
 @media only screen and (max-width: 1024px) {
     #swaumu {
-        padding-top: 30px;
+        padding-top: 100px;
         padding-bottom: 30px;
     }
 }
 
 @media only screen and (max-width: 768px) {
     #swaumu {
-        padding-top: 30px;
+        padding-top: 100px;
         padding-bottom: 30px;
     }
     #swaumu h1 {
@@ -2025,7 +2061,7 @@ html {
 
 @media only screen and (max-width: 576px) {
     #swaumu {
-        padding-top: 30px;
+        padding-top: 100px;
         padding-bottom: 20px;
     }
     #swaumu h1 {
@@ -2251,12 +2287,24 @@ html {
         flex-flow: column wrap;
     }
     #swaumu-2 .card {
-        width: 90%;
+        width: 80%;
         margin-bottom: 25px;
     }
 }
 
 @media only screen and (max-width: 576px) {
+    #swaumu-2 .row {
+        display: flex;
+        justify-content: center;
+        flex-flow: column wrap;
+    }
+    #swaumu-2 .card {
+        width: 85%;
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 476px) {
     #swaumu-2 .row {
         display: flex;
         justify-content: center;
@@ -2333,14 +2381,14 @@ html {
 
 @media only screen and (max-width: 1024px) {
     #parachichi {
-        padding-top: 30px;
+        padding-top: 100px;
         padding-bottom: 30px;
     }
 }
 
 @media only screen and (max-width: 768px) {
     #parachichi {
-        padding-top: 30px;
+        padding-top: 100px;
         padding-bottom: 30px;
     }
     #parachichi h1 {
@@ -2375,7 +2423,7 @@ html {
 
 @media only screen and (max-width: 576px) {
     #parachichi {
-        padding-top: 30px;
+        padding-top: 100px;
         padding-bottom: 20px;
     }
     #parachichi h1 {
@@ -2601,12 +2649,24 @@ html {
         flex-flow: column wrap;
     }
     #parachichi-2 .card {
-        width: 90%;
+        width: 80%;
         margin-bottom: 25px;
     }
 }
 
 @media only screen and (max-width: 576px) {
+    #parachichi-2 .row {
+        display: flex;
+        justify-content: center;
+        flex-flow: column wrap;
+    }
+    #parachichi-2 .card {
+        width: 85%;
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 476px) {
     #parachichi-2 .row {
         display: flex;
         justify-content: center;
@@ -2687,7 +2747,7 @@ html {
 
 @media only screen and (max-width: 1024px) {
     #karafuu {
-        padding-top: 30px;
+        padding-top: 100px;
         padding-bottom: 30px;
     }
     #karafuu .karafuu-img {
@@ -2698,7 +2758,7 @@ html {
 
 @media only screen and (max-width: 768px) {
     #karafuu {
-        padding-top: 30px;
+        padding-top: 100px;
         padding-bottom: 30px;
     }
     #karafuu h1 {
@@ -2734,7 +2794,7 @@ html {
 
 @media only screen and (max-width: 576px) {
     #karafuu {
-        padding-top: 30px;
+        padding-top: 100px;
         padding-bottom: 20px;
     }
     #karafuu h1 {
@@ -2959,12 +3019,24 @@ html {
         flex-flow: column wrap;
     }
     #karafuu-2 .card {
-        width: 90%;
+        width: 80%;
         margin-bottom: 25px;
     }
 }
 
 @media only screen and (max-width: 576px) {
+    #karafuu-2 .row {
+        display: flex;
+        justify-content: center;
+        flex-flow: column wrap;
+    }
+    #karafuu-2 .card {
+        width: 85%;
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 476px) {
     #karafuu-2 .row {
         display: flex;
         justify-content: center;
@@ -3041,14 +3113,14 @@ html {
 
 @media only screen and (max-width: 1024px) {
     #mzaituni {
-        padding-top: 30px;
+        padding-top: 100px;
         padding-bottom: 30px;
     }
 }
 
 @media only screen and (max-width: 768px) {
     #mzaituni {
-        padding-top: 30px;
+        padding-top: 100px;
         padding-bottom: 30px;
     }
     #mzaituni h1 {
@@ -3083,7 +3155,7 @@ html {
 
 @media only screen and (max-width: 576px) {
     #mzaituni {
-        padding-top: 30px;
+        padding-top: 100px;
         padding-bottom: 20px;
     }
     #mzaituni h1 {
@@ -3309,12 +3381,24 @@ html {
         flex-flow: column wrap;
     }
     #mzaituni-2 .card {
-        width: 90%;
+        width: 80%;
         margin-bottom: 25px;
     }
 }
 
 @media only screen and (max-width: 576px) {
+    #mzaituni-2 .row {
+        display: flex;
+        justify-content: center;
+        flex-flow: column wrap;
+    }
+    #mzaituni-2 .card {
+        width: 85%;
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 476px) {
     #mzaituni-2 .row {
         display: flex;
         justify-content: center;
@@ -3391,14 +3475,14 @@ html {
 
 @media only screen and (max-width: 1024px) {
     #nazi {
-        padding-top: 30px;
+        padding-top: 100px;
         padding-bottom: 30px;
     }
 }
 
 @media only screen and (max-width: 768px) {
     #nazi {
-        padding-top: 30px;
+        padding-top: 100px;
         padding-bottom: 30px;
     }
     #nazi h1 {
@@ -3433,7 +3517,7 @@ html {
 
 @media only screen and (max-width: 576px) {
     #nazi {
-        padding-top: 30px;
+        padding-top: 100px;
         padding-bottom: 20px;
     }
     #nazi h1 {
@@ -3659,12 +3743,24 @@ html {
         flex-flow: column wrap;
     }
     #nazi-2 .card {
-        width: 90%;
+        width: 80%;
         margin-bottom: 25px;
     }
 }
 
 @media only screen and (max-width: 576px) {
+    #nazi-2 .row {
+        display: flex;
+        justify-content: center;
+        flex-flow: column wrap;
+    }
+    #nazi-2 .card {
+        width: 85%;
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 476px) {
     #nazi-2 .row {
         display: flex;
         justify-content: center;
@@ -3745,7 +3841,7 @@ html {
 
 @media only screen and (max-width: 1024px) {
     #mbilimbi {
-        padding-top: 30px;
+        padding-top: 100px;
         padding-bottom: 30px;
     }
     #mbilimbi .mbilimbi-img {
@@ -3756,7 +3852,7 @@ html {
 
 @media only screen and (max-width: 768px) {
     #mbilimbi {
-        padding-top: 30px;
+        padding-top: 100px;
         padding-bottom: 30px;
     }
     #mbilimbi h1 {
@@ -3792,7 +3888,7 @@ html {
 
 @media only screen and (max-width: 576px) {
     #mbilimbi {
-        padding-top: 30px;
+        padding-top: 100px;
         padding-bottom: 20px;
     }
     #mbilimbi h1 {
@@ -4017,12 +4113,24 @@ html {
         flex-flow: column wrap;
     }
     #mbilimbi-2 .card {
-        width: 90%;
+        width: 80%;
         margin-bottom: 25px;
     }
 }
 
 @media only screen and (max-width: 576px) {
+    #mbilimbi-2 .row {
+        display: flex;
+        justify-content: center;
+        flex-flow: column wrap;
+    }
+    #mbilimbi-2 .card {
+        width: 85%;
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 476px) {
     #mbilimbi-2 .row {
         display: flex;
         justify-content: center;
@@ -4103,7 +4211,7 @@ html {
 
 @media only screen and (max-width: 1024px) {
     #chia {
-        padding-top: 30px;
+        padding-top: 100px;
         padding-bottom: 30px;
     }
     #chia .chia-img {
@@ -4114,7 +4222,7 @@ html {
 
 @media only screen and (max-width: 768px) {
     #chia {
-        padding-top: 30px;
+        padding-top: 100px;
         padding-bottom: 30px;
     }
     #chia h1 {
@@ -4150,7 +4258,7 @@ html {
 
 @media only screen and (max-width: 576px) {
     #chia {
-        padding-top: 30px;
+        padding-top: 100px;
         padding-bottom: 20px;
     }
     #chia h1 {
@@ -4375,12 +4483,24 @@ html {
         flex-flow: column wrap;
     }
     #chia-2 .card {
-        width: 90%;
+        width: 80%;
         margin-bottom: 25px;
     }
 }
 
 @media only screen and (max-width: 576px) {
+    #chia-2 .row {
+        display: flex;
+        justify-content: center;
+        flex-flow: column wrap;
+    }
+    #chia-2 .card {
+        width: 85%;
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 476px) {
     #chia-2 .row {
         display: flex;
         justify-content: center;
@@ -4461,7 +4581,7 @@ html {
 
 @media only screen and (max-width: 1024px) {
     #mlonge {
-        padding-top: 30px;
+        padding-top: 100px;
         padding-bottom: 30px;
     }
     #mlonge .mlonge-img {
@@ -4472,7 +4592,7 @@ html {
 
 @media only screen and (max-width: 768px) {
     #mlonge {
-        padding-top: 30px;
+        padding-top: 100px;
         padding-bottom: 30px;
     }
     #mlonge h1 {
@@ -4508,7 +4628,7 @@ html {
 
 @media only screen and (max-width: 576px) {
     #mlonge {
-        padding-top: 30px;
+        padding-top: 100px;
         padding-bottom: 20px;
     }
     #mlonge h1 {
@@ -4733,12 +4853,24 @@ html {
         flex-flow: column wrap;
     }
     #mlonge-2 .card {
-        width: 90%;
+        width: 80%;
         margin-bottom: 25px;
     }
 }
 
 @media only screen and (max-width: 576px) {
+    #mlonge-2 .row {
+        display: flex;
+        justify-content: center;
+        flex-flow: column wrap;
+    }
+    #mlonge-2 .card {
+        width: 85%;
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 476px) {
     #mlonge-2 .row {
         display: flex;
         justify-content: center;
@@ -4819,7 +4951,7 @@ html {
 
 @media only screen and (max-width: 1024px) {
     #mtundula {
-        padding-top: 30px;
+        padding-top: 100px;
         padding-bottom: 30px;
     }
     #mtundula .mtundula-img {
@@ -4830,7 +4962,7 @@ html {
 
 @media only screen and (max-width: 768px) {
     #mtundula {
-        padding-top: 30px;
+        padding-top: 100px;
         padding-bottom: 30px;
     }
     #mtundula h1 {
@@ -4866,7 +4998,7 @@ html {
 
 @media only screen and (max-width: 576px) {
     #mtundula {
-        padding-top: 30px;
+        padding-top: 100px;
         padding-bottom: 20px;
     }
     #mtundula h1 {
@@ -5091,12 +5223,24 @@ html {
         flex-flow: column wrap;
     }
     #mtundula-2 .card {
-        width: 90%;
+        width: 80%;
         margin-bottom: 25px;
     }
 }
 
 @media only screen and (max-width: 576px) {
+    #mtundula-2 .row {
+        display: flex;
+        justify-content: center;
+        flex-flow: column wrap;
+    }
+    #mtundula-2 .card {
+        width: 85%;
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 476px) {
     #mtundula-2 .row {
         display: flex;
         justify-content: center;
