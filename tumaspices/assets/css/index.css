@@ -1706,8 +1706,11 @@ html {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    grid-column-gap: 60px;
+    grid-column-gap: 40px;
     grid-row-gap: 20px;
+    place-content: center;
+    align-items: center;
+    width: 80%;
 }
 
 #contact .contact-boxes {
@@ -1786,6 +1789,51 @@ html {
     margin-bottom: 20px;
 }
 
+#contact .contact-form form .msg {
+    color: rgb(255, 30, 0);
+    padding: 0px 24px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    animation: 0.5s slideDown;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-8px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
+#contact .contact-form form .effect {
+    animation: 0.5s slideUp;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-8px);
+    }
+}
+
+
+#contact .contact-form form .success {
+    color: rgb(8, 158, 58);
+    background: #fff;
+    border-left: 7px solid rgb(8, 158, 58);
+    padding: 12px 24px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 5px;
+    transition: all .3s;
+}
+
 #contact .contact-form form #submit {
     background-color: transparent;
     border: 1px solid orangered;
@@ -1819,6 +1867,7 @@ html {
         grid-column-gap: 40px;
         grid-row-gap: 20px;
         place-content: center;
+        align-items: center;
         width: 80%;
     }
     #contact h1 {
@@ -1834,8 +1883,6 @@ html {
         grid-column-gap: 20px;
         grid-row-gap: 10px;
         grid-template-areas: "box1 box2" "box3 box3";
-        margin-left: auto;
-        margin-right: auto;
         width: 100%;
     }
     #contact .contact-boxes .grid-box-1 {
@@ -1854,8 +1901,6 @@ html {
     }
     #contact .contact-form form {
         width: 100%;
-        margin-left: auto;
-        margin-right: auto;
     }
 }
 
@@ -1876,6 +1921,7 @@ html {
         grid-column-gap: 40px;
         grid-row-gap: 20px;
         place-content: center;
+        align-items: center;
         width: 80%;
     }
     #contact h1 {
@@ -1891,8 +1937,6 @@ html {
         grid-column-gap: 20px;
         grid-row-gap: 10px;
         grid-template-areas: "box1 box2" "box3 box3";
-        margin-left: auto;
-        margin-right: auto;
         width: 100%;
     }
     #contact .contact-boxes .grid-box-1 {
@@ -1911,8 +1955,6 @@ html {
     }
     #contact .contact-form form {
         width: 100%;
-        margin-left: auto;
-        margin-right: auto;
     }
 }
 

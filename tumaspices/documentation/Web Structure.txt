@@ -8,6 +8,9 @@ Pages:
 
 1. bidhaa.html
 
+2. emailsSender.php
+
+
 Assets:
 
 1. css folder
@@ -15,6 +18,8 @@ Assets:
 2. img folder
 
 3. js folder
+
+4. vendor folder
 
 
 Kuhusu Sisi:

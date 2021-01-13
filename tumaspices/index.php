@@ -11,9 +11,7 @@
     <link rel="shortcut icon" href="assets/img/ginger/ginger2.png" type="image/x-icon">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Abel&family=Arima+Madurai:wght@500&family=Courgette&family=Laila&family=Nunito&family=Spinnaker&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Arima+Madurai:wght@500&family=Courgette&family=Laila&family=Nunito&family=Spinnaker&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <!-- Main CSS -->
@@ -24,8 +22,7 @@
     <!-- === Header === -->
     <!-- Navigation -->
     <nav class="nav">
-        <a href="#home" class="navbar-brand">tumaSpices <img src="assets/img/ginger/ginger5.png" alt="" width="100"
-                class="logo"></a>
+        <a href="#home" class="navbar-brand">tumaSpices <img src="assets/img/ginger/ginger5.png" alt="" width="100" class="logo"></a>
         <ul class="navbar-nav">
             <li class="nav-item">
                 <a href="#home" class="nav-link" id="active">Nyumbani</a>
@@ -105,8 +102,7 @@
                 <div class="card">
                     <div class="card-img">
                         <div class="inner">
-                            <a href="#"><img src="assets/img/asali/asali7.jpg" alt=""
-                                    class="card-img-top img-fluid"></a>
+                            <a href="#"><img src="assets/img/asali/asali7.jpg" alt="" class="card-img-top img-fluid"></a>
                         </div>
                     </div>
                     <div class="card-body">
@@ -115,7 +111,7 @@
                             Asali za nyuki wakubwa na wadogo ni asilia kabisa
                             ambazo hupatikana katika hifadhi ya misitu ya miyombo kutoka ngwara mkoani songwe.
                         </p>
-                        <a href="pages/bidhaa.html#asali">
+                        <a href="pages/bidhaa.php#asali">
                             Soma zaidi
                         </a>
                     </div>
@@ -123,8 +119,7 @@
                 <div class="card">
                     <div class="card-img">
                         <div class="inner">
-                            <a href="#"><img src="assets/img/cinnamon/mdalasini13.jpeg" alt=""
-                                    class="card-img-top img-fluid"></a>
+                            <a href="#"><img src="assets/img/cinnamon/mdalasini13.jpeg" alt="" class="card-img-top img-fluid"></a>
                         </div>
                     </div>
                     <div class="card-body">
@@ -133,7 +128,7 @@
                             Mdalasini ni aina ya kiungo chenye harufu nzuri kilichokaushwa kutoka katika gome la ndani
                             la spishi 6 za mti za jenasi.
                         </p>
-                        <a href="pages/bidhaa.html#mdalasini">
+                        <a href="pages/bidhaa.php#mdalasini">
                             Soma zaidi
                         </a>
                     </div>
@@ -141,8 +136,7 @@
                 <div class="card">
                     <div class="card-img">
                         <div class="inner">
-                            <a href="#"><img src="assets/img/ginger/ginger13.jpg" alt=""
-                                    class="card-img-top img-fluid"></a>
+                            <a href="#"><img src="assets/img/ginger/ginger13.jpg" alt="" class="card-img-top img-fluid"></a>
                         </div>
                     </div>
                     <div class="card-body">
@@ -151,7 +145,7 @@
                             Tangawizi ni kiungo kinachotokana na mizizi ya mmea wa tangawizi, Mmea huu unafanana na
                             binzari ikiwa bado haijamenywa maganda yake.
                         </p>
-                        <a href="pages/bidhaa.html#tangawizi">
+                        <a href="pages/bidhaa.php#tangawizi">
                             Soma zaidi
                         </a>
                     </div>
@@ -177,7 +171,7 @@
                         Ni mafuta ya asili yaliyoshika umaarufu mkubwa duniani kutokana na nguvu yake kubwa inayofanya
                         kazi katika mwili wa binadamu kuliko mafuta mengine yeyote duniani.
                     </p>
-                    <a href="pages/bidhaa.html#mnyonyo" class="btn">Soma zaidi</a>
+                    <a href="pages/bidhaa.php#mnyonyo" class="btn">Soma zaidi</a>
                 </div>
             </div>
         </div>
@@ -191,8 +185,7 @@
                 <div class="card">
                     <div class="card-img">
                         <div class="inner">
-                            <a href="#"><img src="assets/img/swaumu/swaumu5.jpg" alt=""
-                                    class="card-img-top img-fluid"></a>
+                            <a href="#"><img src="assets/img/swaumu/swaumu5.jpg" alt="" class="card-img-top img-fluid"></a>
                         </div>
                     </div>
                     <div class="card-body">
@@ -201,7 +194,7 @@
                             Mafuta ya kitunguu swaumu ni tiba ingawa si watu wengi wanafahamu, mafuta haya ukiyatumia
                             vyema yana uwezo wa kutibu magonjwa mbalimbali.
                         </p>
-                        <a href="pages/bidhaa.html#swaumu">
+                        <a href="pages/bidhaa.php#swaumu">
                             Soma zaidi
                         </a>
                     </div>
@@ -209,8 +202,7 @@
                 <div class="card">
                     <div class="card-img">
                         <div class="inner">
-                            <a href="#"><img src="assets/img/parachichi/parachichi6.jpg" alt=""
-                                    class="card-img-top img-fluid"></a>
+                            <a href="#"><img src="assets/img/parachichi/parachichi6.jpg" alt="" class="card-img-top img-fluid"></a>
                         </div>
                     </div>
                     <div class="card-body">
@@ -220,7 +212,7 @@
                             kama vile protini, mafuta, vitamini, wanga na
                             madini mbalimbali.
                         </p>
-                        <a href="pages/bidhaa.html#parachichi">
+                        <a href="pages/bidhaa.php#parachichi">
                             Soma zaidi
                         </a>
                     </div>
@@ -230,8 +222,7 @@
                 <div class="card">
                     <div class="card-img">
                         <div class="inner">
-                            <a href="#"><img src="assets/img/karafuu/karafuu4.jpg" alt=""
-                                    class="card-img-top img-fluid"></a>
+                            <a href="#"><img src="assets/img/karafuu/karafuu4.jpg" alt="" class="card-img-top img-fluid"></a>
                         </div>
                     </div>
                     <div class="card-body">
@@ -240,7 +231,7 @@
                             Karafuu ni kiungo na dawa muhimu sana yenye thamani kubwa ambacho hutibu matatizo ya
                             kumeng'enya chakula na mfumo wa kupumua kwa binadamu.
                         </p>
-                        <a href="pages/bidhaa.html#karafuu">
+                        <a href="pages/bidhaa.php#karafuu">
                             Soma zaidi
                         </a>
                     </div>
@@ -248,17 +239,16 @@
                 <div class="card">
                     <div class="card-img">
                         <div class="inner">
-                            <a href="#"><img src="assets/img/mzaituni/mzaituni5.jpg" alt=""
-                                    class="card-img-top img-fluid"></a>
+                            <a href="#"><img src="assets/img/mzaituni/mzaituni5.jpg" alt="" class="card-img-top img-fluid"></a>
                         </div>
                     </div>
                     <div class="card-body">
                         <h3>Mafuta ya mzaituni</h3>
                         <p>
                             Ni mafuta mazuri sana kutumika kupikia katika chakula cha mtoto yanakuza ubongo, yanasaidia
-                            kuongeza uzito kwa mtoto, pia  hayana rehemu (zero cholestrol).
+                            kuongeza uzito kwa mtoto, pia hayana rehemu (zero cholestrol).
                         </p>
-                        <a href="pages/bidhaa.html#mzaituni">
+                        <a href="pages/bidhaa.php#mzaituni">
                             Soma zaidi
                         </a>
                     </div>
@@ -275,7 +265,7 @@
                             Mafuta ya nazi ni mafuta yenye faida nyingi sana mwilini ambayo yanasaidia kwa kiasi kikubwa
                             sana kulainisha ngozi na kuipa afya nzuri.
                         </p>
-                        <a href="pages/bidhaa.html#nazi">
+                        <a href="pages/bidhaa.php#nazi">
                             Soma zaidi
                         </a>
                     </div>
@@ -293,8 +283,7 @@
                 <div class="card">
                     <div class="card-img">
                         <div class="inner">
-                            <a href="#"><img src="assets/img/mbilimbi/mbilimbi1.jpg" alt=""
-                                    class="card-img-top img-fluid"></a>
+                            <a href="#"><img src="assets/img/mbilimbi/mbilimbi1.jpg" alt="" class="card-img-top img-fluid"></a>
                         </div>
                     </div>
                     <div class="card-body">
@@ -303,7 +292,7 @@
                             Huu ni mmea unaopatikana sana sehemu za pwani kama Zanzibar, Tanga, Dar es salaam, Kibaha na
                             na maeneo mbalimbali yenye pwani.
                         </p>
-                        <a href="pages/bidhaa.html#mbilimbi">
+                        <a href="pages/bidhaa.php#mbilimbi">
                             Soma zaidi
                         </a>
                     </div>
@@ -320,7 +309,7 @@
                             Mbegu za chia ni moja wapo ya vyakula vyenye kiwango kikubwa cha virutubisho mbali mbali
                             ambavyo ni muhimu kwa afya ya mwili na ubongo.
                         </p>
-                        <a href="pages/bidhaa.html#chia">
+                        <a href="pages/bidhaa.php#chia">
                             Soma zaidi
                         </a>
                     </div>
@@ -328,8 +317,7 @@
                 <div class="card">
                     <div class="card-img">
                         <div class="inner">
-                            <a href="#"><img src="assets/img/mlonge/mlonge2.jpg" alt=""
-                                    class="card-img-top img-fluid"></a>
+                            <a href="#"><img src="assets/img/mlonge/mlonge2.jpg" alt="" class="card-img-top img-fluid"></a>
                         </div>
                     </div>
                     <div class="card-body">
@@ -338,7 +326,7 @@
                             Mlonge ni mmea wenye virutubisho 92, tofauti na mimea mingine na mti mwingine wenye
                             virutubisho vingi baada ya mlonge una virutubisho 28.
                         </p>
-                        <a href="pages/bidhaa.html#mlonge">
+                        <a href="pages/bidhaa.php#mlonge">
                             Soma zaidi
                         </a>
                     </div>
@@ -354,7 +342,7 @@
                         </p>
                         <div class="m2tree">
                             <div class="mtree-link">
-                                <a href="pages/bidhaa.html#mtundula">
+                                <a href="pages/bidhaa.php#mtundula">
                                     Soma zaidi
                                 </a>
                             </div>
@@ -399,11 +387,16 @@
                     </div>
                 </div>
                 <div class="contact-form">
-                    <form action="#" method="post">
-                        <input type="text" name="name" id="name" placeholder="Jina Kamili" required>
-                        <input type="email" name="email" id="email" placeholder="Barua pepe" required>
-                        <input type="text" name="subject" id="subject" placeholder="Mada">
-                        <textarea name="textarea" id="textarea" placeholder="Ujumbe" cols="30" rows="6"></textarea>
+                    <form method="post" id="form">
+                        <div class="successMsg"></div>
+                        <input type="text" name="name" id="name" placeholder="Jina Kamili" required data-index="1">
+                        <div class="nameMsg"></div>
+                        <input type="email" name="email" id="email" placeholder="Barua pepe" required data-index="2">
+                        <div class="emailMsg"></div>
+                        <input type="text" name="subject" id="subject" placeholder="Mada" data-index="3">
+                        <div class="subjectMsg"></div>
+                        <textarea name="message" id="message" placeholder="Ujumbe" cols="30" rows="6" data-index="4"></textarea>
+                        <div class="messageMsg"></div>
                         <input type="submit" value="Tuma Ujumbe" id="submit">
                     </form>
                 </div>
@@ -440,8 +433,7 @@
                     </div>
                 </div>
                 <div class="footer-branding">
-                    <a href="#" class="footer-brand">tumaSpices <img src="assets/img/ginger/ginger5.png" alt=""
-                            class="logo"></a>
+                    <a href="#" class="footer-brand">tumaSpices <img src="assets/img/ginger/ginger5.png" alt="" class="logo"></a>
                     <div class="footer-social">
                         <a href="#" target="_blank" rel="noopener noreferrer">
                             <span class="fab fa-facebook"></span>
@@ -471,11 +463,10 @@
 
     <!-- == Scripts == -->
     <!-- JQuery CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
-        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
     <script src="assets/js/index.js" type="text/javascript"></script>
     <!-- End Scripts -->
+
 </body>
 
 </html>
