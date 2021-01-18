@@ -12,7 +12,7 @@ const formMsg4 = document.querySelector('.messageMsg');
 const formMessage = document.querySelector('.successMsg');
 const submit = document.querySelector('#submit');
 
-submit.addEventListener('click', function (e) {
+submit.addEventListener('click', function(e) {
     e.preventDefault();
 
     // Create new XMLHttpRequest Object
@@ -34,7 +34,7 @@ submit.addEventListener('click', function (e) {
     //     }
     // }
 
-    xhr.onreadystatechange = function () {
+    xhr.onreadystatechange = function() {
         // Ready State
         // 0 = Unsent
         // 1 = Opened
@@ -68,8 +68,7 @@ function checkInputs() {
         formMsg1.classList.add('msg');
         userName.style.border = '2px solid red';
         formMsg1.style.display = 'block';
-    }
-    else if (userNameValue != '') {
+    } else if (userNameValue != '') {
         $('.nameMsg').slideUp();
         userName.style.border = '2px solid green';
     }
@@ -88,8 +87,7 @@ function checkInputs() {
             formMsg2.innerText = 'Barua pepe sio sahihi';
             formMsg2.classList.add('msg');
             userEmail.style.border = '2px solid red';
-        }
-        else if (isValid(userEmailValue)) {
+        } else if (isValid(userEmailValue)) {
             userEmail.style.border = '2px solid green';
             $('.emailMsg').slideUp();
         }
@@ -115,33 +113,26 @@ function checkInputs() {
     }
     if (userNameValue != '' && userEmailValue != '' && subjectValue != '' && messageValue != '' && !isValid(userEmailValue) === false) {
 
-        // $.ajax({
-        //     url: 'pages/emailsSender.php',
-        //     method: 'POST',
-        //     dataType: 'json',
-        //     data: {
-        //         userName : userNameValue,
-        //         userEmail : userEmailValue,
-        //         subject : subjectValue,
-        //         message : messageValue
-        //     },
-        //     success: function (response) {
-        //         // $('#form')[0].reset();
-        //         formMessage.innerText = 'Ujumbe wako umetumwa, Asante kwa kuwasiliana nasi';
-        //         formMessage.classList.add('success');
-        //         setTimeout(() => {
-        //             formMessage.style.display = 'none';
-        //         }, 5000);
-        //         formMessage.style.display = '';
-        //     }
-        // });
-
-        formMessage.innerText = 'Ujumbe wako umetumwa, Asante kwa kuwasiliana nasi.';
-        formMessage.classList.add('success');
-        setTimeout(() => {
-            formMessage.style.display = 'none';
-        }, 5000);
-        formMessage.style.display = '';
+        $.ajax({
+            url: 'pages/emailsSender.php',
+            method: 'POST',
+            dataType: 'json',
+            data: {
+                name: userNameValue,
+                email: userEmailValue,
+                subject: subjectValue,
+                message: messageValue
+            },
+            success: function(response) {
+                $('#cont-form')[0].reset();
+                formMessage.innerText = 'Ujumbe wako umetumwa, Asante kwa kuwasiliana nasi';
+                formMessage.classList.add('success');
+                setTimeout(() => {
+                    formMessage.style.display = 'none';
+                }, 5000);
+                formMessage.style.display = '';
+            }
+        });
 
         // Clear fields
         userName.value = '';
@@ -162,7 +153,7 @@ function checkInputs() {
 }
 
 // Move to the next input field once you press enter
-$('#form').on('keydown', 'input', function (e) {
+$('#cont-form').on('keydown', 'input', function(e) {
     if (e.which === 13) {
         e.preventDefault();
         const $this = $(e.target);
@@ -180,20 +171,19 @@ $('#form').on('keydown', 'input', function (e) {
 =================================================*/
 
 // Toggle Menu bars
-$(document).ready(function () {
-    $('.menu-bars').on('click', function () {
+$(document).ready(function() {
+    $('.menu-bars').on('click', function() {
         $('.navbar-nav').slideToggle(500);
     });
 });
 
 // SlideUp Menu when navLink clicked on mobile version
-$(document).ready(function () {
+$(document).ready(function() {
     if ($(window).width() <= 768) {
-        $('.nav-link').on('click', function () {
+        $('.nav-link').on('click', function() {
             $('.navbar-nav').slideUp(500);
         });
-    }
-    else if ($(window).width() > 768) {
+    } else if ($(window).width() > 768) {
         // $('.navbar-nav').css('display', 'inline-flex');
     }
 });
@@ -203,6 +193,7 @@ const about = document.querySelector('#kuhusu');
 const sectional = document.querySelector('#about');
 
 about.addEventListener('click', section);
+
 function section() {
     sectional.style.paddingTop = '100px';
 }
@@ -212,6 +203,7 @@ const products = document.querySelector('#products');
 const bidhaa = document.querySelector('#bidhaa');
 
 products.addEventListener('click', product);
+
 function product() {
     bidhaa.style.paddingTop = '100px';
 }
@@ -221,12 +213,13 @@ const wasiliana = document.querySelector('#wasiliana');
 const contact = document.querySelector('#contact');
 
 wasiliana.addEventListener('click', contacts);
+
 function contacts() {
     contact.style.paddingTop = '100px';
 }
 
 // Smooth Scroll
-$('.nav a, .go-top a').on('click', function (e) {
+$('.nav a, .go-top a').on('click', function(e) {
     if (this.hash !== '') {
         e.preventDefault();
 
@@ -244,8 +237,7 @@ const toTop = document.querySelector('.go-top');
 window.addEventListener('scroll', () => {
     if (window.pageYOffset > 100) {
         toTop.classList.add('active');
-    }
-    else {
+    } else {
         toTop.classList.remove('active');
     }
 });
@@ -255,6 +247,6 @@ window.addEventListener('scroll', () => {
 =================================================*/
 
 // Get Full Year
-const date = new (Date);
+const date = new(Date);
 let year = date.getFullYear();
 document.querySelector('#year').innerText = year;
