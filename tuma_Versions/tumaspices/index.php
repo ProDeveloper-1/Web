@@ -16,84 +16,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <!-- Main CSS -->
     <link rel="stylesheet" href="assets/css/index.css">
-    <style>
-        #contact .contact-form form .nameEmail-container {
-            display: flex;
-            justify-content: space-between;
-            flex-flow: row nowrap;
-        }
-
-        #contact .contact-form form #name,
-        #contact .contact-form form #email {
-            width: 240px;
-        }
-
-        @media only screen and (max-width: 725px) {
-            #contact .contact-form form .nameEmail-container {
-                display: flex;
-                justify-content: stretch;
-                flex-flow: column wrap;
-            }
-
-            #contact .contact-form form #name,
-            #contact .contact-form form #email {
-                width: 91.5%;
-            }
-        }
-
-        @media only screen and (max-width: 568px) {
-            #contact .contact-form form .nameEmail-container {
-                display: flex;
-                justify-content: stretch;
-                flex-flow: column wrap;
-            }
-
-            #contact .contact-form form #name,
-            #contact .contact-form form #email {
-                width: 88%;
-            }
-        }
-
-        @media only screen and (max-width: 415px) {
-
-            #contact .contact-form form #name,
-            #contact .contact-form form #email {
-                width: 85%;
-            }
-        }
-
-        @media only screen and (max-width: 376px) {
-
-            #contact .contact-form form #name,
-            #contact .contact-form form #email {
-                width: 83%;
-            }
-        }
-
-        @media only screen and (max-width: 365px) {
-
-            #contact .contact-form form #name,
-            #contact .contact-form form #email {
-                width: 82%;
-            }
-        }
-
-        @media only screen and (max-width: 325px) {
-
-            #contact .contact-form form #name,
-            #contact .contact-form form #email {
-                width: 80%;
-            }
-        }
-
-        @media only screen and (max-width: 300px) {
-
-            #contact .contact-form form #name,
-            #contact .contact-form form #email {
-                width: 78%;
-            }
-        }
-    </style>
 </head>
 
 <body id="home">
@@ -467,21 +389,13 @@
                 <div class="contact-form">
                     <form method="post" id="cont-form">
                         <div class="successMsg"></div>
-                        <div class="nameEmail-container">
-                            <div class="u-name">
-                                <input type="text" name="name" id="name" placeholder="Jina Kamili" required data-index="1">
-                                <div class="nameMsg"></div>
-                            </div>
-                            <div class="u-mail">
-                                <input type="email" name="email" id="email" placeholder="Barua pepe" required data-index="2">
-                                <div class="emailMsg"></div>
-                            </div>
-                        </div>
-                        <input type="tel" name="tel" id="tel" placeholder="Namba ya simu" required data-index="3">
-                        <div class="telMsg"></div>
-                        <input type="text" name="subject" id="subject" placeholder="Mada" data-index="4">
+                        <input type="text" name="name" id="name" placeholder="Jina Kamili" required data-index="1">
+                        <div class="nameMsg"></div>
+                        <input type="email" name="email" id="email" placeholder="Barua pepe" required data-index="2">
+                        <div class="emailMsg"></div>
+                        <input type="text" name="subject" id="subject" placeholder="Mada" data-index="3">
                         <div class="subjectMsg"></div>
-                        <textarea name="message" id="message" placeholder="Ujumbe" cols="30" rows="4" data-index="5"></textarea>
+                        <textarea name="message" id="message" placeholder="Ujumbe" cols="30" rows="6" data-index="4"></textarea>
                         <div class="messageMsg"></div>
                         <input type="submit" value="Tuma Ujumbe" id="submit">
                     </form>
@@ -556,14 +470,12 @@
 =================================================*/
         const userName = document.querySelector('#name');
         const userEmail = document.querySelector('#email');
-        const userPhone = document.querySelector('#tel');
         const subject = document.querySelector('#subject');
         const message = document.querySelector('#message');
         const formMsg1 = document.querySelector('.nameMsg');
         const formMsg2 = document.querySelector('.emailMsg');
         const formMsg3 = document.querySelector('.subjectMsg');
         const formMsg4 = document.querySelector('.messageMsg');
-        const formMsg5 = document.querySelector('.telMsg');
         const formMessage = document.querySelector('.successMsg');
         const submit = document.querySelector('#submit');
 
@@ -610,7 +522,6 @@
             // Get the inputs values and remove any white space
             const userNameValue = userName.value.trim();
             const userEmailValue = userEmail.value.trim();
-            const userPhoneValue = userPhone.value.trim();
             const subjectValue = subject.value.trim();
             const messageValue = message.value.trim();
 
@@ -648,15 +559,6 @@
                     $('.emailMsg').slideUp();
                 }
             }
-            if (userPhoneValue === '') {
-                formMsg5.innerText = 'Andika namba ya simu';
-                formMsg5.classList.add('msg');
-                userPhone.style.border = '2px solid red';
-                formMsg5.style.display = 'block';
-            } else if (userPhoneValue != '') {
-                $('.telMsg').slideUp();
-                userPhone.style.border = '2px solid green';
-            }
             if (subjectValue === '') {
                 formMsg3.innerText = 'Andika mada yako';
                 formMsg3.classList.add('msg');
@@ -676,7 +578,7 @@
                 $('.messageMsg').slideUp();
                 message.style.border = '2px solid green';
             }
-            if (userNameValue != '' && userEmailValue != '' && subjectValue != '' && messageValue != '' && !isValid(userEmailValue) === false && userPhoneValue != '') {
+            if (userNameValue != '' && userEmailValue != '' && subjectValue != '' && messageValue != '' && !isValid(userEmailValue) === false) {
 
                 $.ajax({
                     url: 'pages/emailsSender.php',
@@ -685,7 +587,6 @@
                     data: {
                         name: userNameValue,
                         email: userEmailValue,
-                        tel: userPhoneValue,
                         subject: subjectValue,
                         message: messageValue
                     },
@@ -703,18 +604,15 @@
                 // Clear fields
                 userName.value = '';
                 userEmail.value = '';
-                userPhone.value = '';
                 subject.value = '';
                 message.value = '';
                 formMsg1.value = '';
                 formMsg2.value = '';
                 formMsg3.value = '';
                 formMsg4.value = '';
-                formMsg5.value = '';
                 formMessage.value = '';
                 userName.style.border = '';
                 userEmail.style.border = '';
-                userPhone.style.border = '';
                 subject.style.border = '';
                 message.style.border = '';
             }

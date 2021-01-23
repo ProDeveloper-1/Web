@@ -7,7 +7,6 @@ if (isset($_POST['name']) && isset($_POST['email'])) {
     // Collect, CORRECT AND POST values of input fields
     $senderName = trim($_POST['name']);
     $senderEmail = trim($_POST['email']);
-    $senderPhone = trim($_POST['tel']);
     $senderSubject = trim($_POST['subject']);
     $senderMessage = trim($_POST['message']);
 
@@ -23,7 +22,7 @@ if (isset($_POST['name']) && isset($_POST['email'])) {
     $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
     $mail->Username   = 'prospermbuma@gmail.com';                     // SMTP username (Gmail address that you will use as a SMTP server)
-    $mail->Password   = 'ihrqcylmkqdoyokt';                               // SMTP password
+    $mail->Password   = '';                               // SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
     //$mail->Port       = 587;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
     $mail->SMTPSecure = "ssl";
@@ -42,10 +41,9 @@ if (isset($_POST['name']) && isset($_POST['email'])) {
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = ($senderSubject); // Here is the subject
-    $mail->Body =  '<h4>Namba ya simu: </h4>' . $senderPhone . '<h4>Ujumbe: </h4>' . $senderMessage; //  This is the HTML message body
+    $mail->Body = $senderMessage; //  This is the HTML message body
     $mail->Body = wordwrap($mail->Body, 70);
-    $mail->AltBody = 'Namba ya simu: ' . $senderPhone . 'Ujumbe: ' . $senderMessage; // This is the body in plain text for non-HTML mail clients
-    $mail->AltBody = wordwrap($mail->AltBody, 70);
+    $mail->AltBody = $senderMessage; // This is the body in plain text for non-HTML mail clients
 
     // Send email
     

@@ -1,0 +1,31 @@
+Website folder structure
+
+Root:
+
+index.html
+
+Pages:
+
+1. bidhaa.html
+
+2. emailsSender.php
+
+
+Assets:
+
+1. css folder
+
+2. img folder
+
+3. js folder
+
+4. vendor folder
+
+
+Kuhusu Sisi:
+
+Sisi ni wauzaji bora wa bidhaa za asili zenye ubora wa kimataifa hapa nchini Tanzania.
+
+Tumethibitishwa na TFDA na bidhaa zetu zinatumiwa na kufurahiwa na wateja wengi hapa nchini na nje ya nchi. 
+
+Jaribu bidhaa zetu na kamwe hautajutia kutumia bidhaa zetu nzuri zenye viwango na ubora wa hali ya juu.
