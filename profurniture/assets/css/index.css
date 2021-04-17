@@ -24,6 +24,7 @@
     --danger-color: #bd4343;
     --warning-color: #ffd900;
     --gray-color: #808080;
+    --light-gray-color: #e3e3e3;
     --black-color: #000;
 }
 
@@ -45,6 +46,10 @@ html {
     scroll-behavior: smooth;
 }
 
+p {
+    line-height: 1.5em;
+}
+
 /* ==================================================
 # Navigation
 ===================================================*/
@@ -60,6 +65,7 @@ html {
     left: 0;
     right: 0;
     z-index: 1030;
+    border-bottom: 2px solid var(--light-gray-color);
 }
 
 .navbar .nav-brand {
@@ -150,7 +156,7 @@ html {
 }
 
 .dropdown .dropdown-menu .nav-item:hover {
-    background: var(--white-color);
+    background: var(--light-color);
     margin-left: 0px;
     margin-right: 0px;
 }
@@ -165,14 +171,14 @@ html {
 
 .dropdown .dropdown-menu .nav-item.chairs {
     transition: all 0.3s ease;
-    background: var(--secondary-color);
+    background: var(--primary-color);
     margin-left: 0px;
     margin-right: 0px;
     color: var(--white-color);
 }
 
 .dropdown .dropdown-menu .nav-item.chairs:hover {
-    background: var(--dark-color);
+    background: #2d64ac;
 }
 
 .dropdown .dropdown-menu .nav-item.chairs .nav-link {
@@ -376,17 +382,47 @@ html {
 /* ======= End Queries ======== */
 
 /* ==================================================
+# About Us
+===================================================*/
+
+#about {
+    padding: 60px 0;
+}
+
+#about .display-4 {
+    position: relative;
+}
+
+#about .display-4::before {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 3px;
+    margin-left: -116px;
+    margin-top: 40px;
+    background: var(--primary-color);
+}
+
+#about .display-4::after {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 3px;
+    margin-left: 19px;
+    margin-top: 40px;
+    background: var(--primary-color);
+}
+
+/* ==================================================
 # New Arrivals
 ===================================================*/
 
 #new_arrivals {
     padding: 60px 0;
-    background: var(--light-color);
 }
 
 #new_arrivals .display-4 {
     position: relative;
-    color: var(--black-color);
 }
 
 #new_arrivals .display-4::before {
@@ -415,13 +451,10 @@ html {
 
 #best_sellers {
     padding: 60px 0;
-    background: var(--primary-color);
-    color: var(--light-color);
 }
 
 #best_sellers .display-4 {
     position: relative;
-    color: var(--warning-color);
 }
 
 #best_sellers .display-4::before {
@@ -450,12 +483,10 @@ html {
 
 #beds {
     padding: 60px 0;
-    background: var(--light-color);
 }
 
 #beds .display-4 {
     position: relative;
-    color: var(--black-color);
 }
 
 #beds .display-4::before {
@@ -484,13 +515,10 @@ html {
 
 #chairs {
     padding: 60px 0;
-    background: var(--primary-color);
-    color: var(--light-color);
 }
 
 #chairs .display-4 {
     position: relative;
-    color: var(--warning-color);
 }
 
 #chairs .display-4::before {
@@ -519,12 +547,10 @@ html {
 
 #closets {
     padding: 60px 0;
-    background: var(--light-color);
 }
 
 #closets .display-4 {
     position: relative;
-    color: var(--black-color);
 }
 
 #closets .display-4::before {
@@ -545,4 +571,116 @@ html {
     margin-left: 19px;
     margin-top: 40px;
     background: var(--primary-color);
+}
+
+/* ==================================================
+# Contact
+===================================================*/
+
+#contact {
+    padding: 60px 0;
+}
+
+#contact .display-4 {
+    position: relative;
+}
+
+#contact .display-4::before {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 3px;
+    margin-left: -116px;
+    margin-top: 40px;
+    background: var(--light-color);
+}
+
+#contact .display-4::after {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 3px;
+    margin-left: 19px;
+    margin-top: 40px;
+    background: var(--light-color);
+}
+
+/* ==================================================
+# Footer
+===================================================*/
+
+footer .lead {
+    font-size: 16px;
+}
+
+/* == Go-Top == */
+
+.go_top {
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .5s;
+}
+
+.go_top.active {
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.go_top a {
+    background: var(--danger-color);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    font-size: 27px;
+    transition: all .5s;
+    animation: colur 1s infinite alternate;
+}
+
+.go_top .fa-angle-up {
+    margin-top: 12px;
+    margin-left: 17px;
+}
+
+@keyframes colur {
+    from {
+        color: var(--warning-color);
+    }
+    to {
+        color: var(--light-color);
+    }
+}
+
+.go_top a:hover {
+    background: var(--gray-color);
+    color: var(--light-color);
+    transition: all .5s;
+    animation: colour 1s infinite alternate;
+}
+
+@keyframes colour {
+    from {
+        color: var(--light-color);
+    }
+    to {
+        color: var(--warning-color);
+    }
+}
+
+footer .social a {
+    text-decoration: none;
+    color: var(--warning-color);
+    font-size: 24px;
+    margin: 0 5px;
+    transition: color 0.3s ease;
+}
+
+footer .social a:hover {
+    color: var(--gray-color);
 }

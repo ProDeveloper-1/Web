@@ -1,0 +1,54 @@
+/* ==================================================
+# Getting the current year
+===================================================*/
+const today = new Date();
+const year = today.getFullYear();
+const currentYear = document.querySelector('#year');
+currentYear.innerHTML = year;
+
+/* ==================================================
+# Smooth Scroll
+===================================================*/
+$('.navbar a, nav-brand, .go_top a').on('click', function (e) {
+    if (this.hash !== '') {
+        e.preventDefault();
+
+        const hash = this.hash;
+
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 800);
+    }
+});
+
+// const nav = document.querySelector('nav a');
+// const to_top = document.querySelector('.go-top a');
+
+// nav.onclick = () => {
+//     window.addEventListener('scroll', function () {
+//         if (window.pageYOffset < 100) {
+//             PageTransitionEvent
+//         }
+//     })
+// }
+
+// to_top.onclick = () => {
+//     window.addEventListener('scroll', function () {
+//         if (window.pageYOffset < 100) {
+//             PageTransitionEvent();
+//         }
+//     })
+// }
+
+/* ==================================================
+# Back To Top
+===================================================*/
+const goTop = document.querySelector('.go_top');
+
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 100) {
+        goTop.classList.add('active');
+    } else {
+        goTop.classList.remove('active');
+    }
+});
