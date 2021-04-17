@@ -35,7 +35,7 @@ window.addEventListener('scroll', () => {
 });
 
 /* ==================================================
-# Toggling navbar
+# Toggling navbar on scroll
 ===================================================*/
 const navbar = document.querySelector('.navbar');
 const section = document.querySelector('section');
@@ -44,7 +44,7 @@ window.addEventListener('scroll', () => {
     if (window.pageYOffset > section.offsetHeight) {
         navbar.classList.add('toggle');
     }
-     else  if (window.pageYOffset > 50 || window.pageYOffset < section.offsetHeight) {
+    else if (window.pageYOffset > 50 && window.pageYOffset < section.offsetHeight) {
         navbar.classList.remove('toggle');
     }
 });

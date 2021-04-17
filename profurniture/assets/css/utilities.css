@@ -32,11 +32,13 @@
     justify-content: space-around;
     align-items: center;
 }
+
 .flex-space-between {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .flex-space-evenly {
     display: flex;
     justify-content: space-evenly;
@@ -45,10 +47,12 @@
 
 @media only screen and (max-width: 768px) {
     .flex, .flex-space-around, .flex-space-between, .flex-space-evenly {
-       flex-flow: column wrap;
-       justify-content: center;
+        flex-flow: column wrap;
+        justify-content: center;
     }
 }
+
+/* --- Grid --- */
 
 .grid {
     display: grid;
@@ -61,6 +65,33 @@
 
 .grid-3 {
     grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-ish {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.grip-ish>* {
+    flex: 1 1 10em;
+}
+
+/* --- Content Sidebar --- */
+
+.content-sidebar {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content-sidebar>*:nth-child(1) {
+    flex: 1 1 70%;
+    min-width: 25ch;
+}
+
+.content-sidebar>*:nth-child(2) {
+    flex: 1 1 30%;
+    min-width: 15ch;
 }
 
 /* --- Ordering --- */
@@ -133,6 +164,11 @@
     color: var(--dark-color);
 }
 
+.bg-gray, .btn-gray {
+    background: var(--gray-color);
+    color: var(--black-color);
+}
+
 .bg-primary a, .btn-primary a, .bg-secondary a, .btn-secondary a, .bg-dark a, .btn-dark a {
     color: var(--white-color);
 }
@@ -193,7 +229,7 @@
     color: var(--gray-color);
 }
 
-.text-ligh-gray {
+.text-light-gray {
     color: var(--light-gray-color);
 }
 
@@ -205,6 +241,7 @@
     font-size: 20px;
     font-weight: 300;
 }
+
 /* === End Class lead === */
 
 .sm {

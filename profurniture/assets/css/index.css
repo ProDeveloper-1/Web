@@ -2,17 +2,6 @@
 # General
 ===================================================*/
 
-/*----------------------------
-  =======
-# Colors
-  =======
-  #047ead
-  #047aed
-  #333
-  #fff
-  #b4becb
------------------------------*/
-
 /* Custom properties */
 
 :root {
@@ -24,7 +13,7 @@
     --danger-color: #bd4343;
     --warning-color: #ffd900;
     --gray-color: #808080;
-    --light-gray-color: #e3e3e3;
+    --light-gray-color: #d8d3d3;
     --black-color: #000;
 }
 
@@ -46,12 +35,16 @@ html {
     scroll-behavior: smooth;
 }
 
+/* h1, h2, h2, h4, h5, h6, p {
+    max-width: 60ch;
+} */
+
 p {
     line-height: 1.5em;
 }
 
 .toggle {
-    animation: 0.8s toggle ease-in-out;
+    animation: 0.6s toggle ease-in-out;
     opacity: 0;
 }
 
@@ -80,7 +73,7 @@ p {
     right: 0;
     z-index: 1030;
     border-bottom: 2px solid var(--light-gray-color);
-    transition: all 0.8s ease-in-out;
+    transition: all 0.6s ease-in-out;
 }
 
 .navbar .nav-brand {
@@ -123,6 +116,24 @@ p {
     font-size: 18px;
     color: var(--gray-color);
     transition: color 0.3s ease;
+    position: relative;
+}
+
+.navbar .navbar-nav .nav-item .nav-link::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: -5px;
+    height: 3px;
+    width: 100%;
+    background: var(--danger-color);
+    transform: scaleX(0);
+    transition: transform .4s linear;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover::before {
+    transform: scaleX(1);
+    transform-origin: center;
 }
 
 .navbar .navbar-nav .nav-item .nav-link.active {
@@ -184,6 +195,23 @@ p {
     display: block;
 }
 
+.dropdown .dropdown-menu  .nav-item .nav-link::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: var(--danger-color);
+    transform: scaleX(0);
+    transition: transform .4s linear;
+}
+
+.dropdown .dropdown-menu  .nav-item .nav-link:hover::before {
+    transform: scaleX(1);
+    transform-origin: unset;
+}
+
 .dropdown .dropdown-menu .nav-item.chairs {
     transition: all 0.3s ease;
     background: var(--primary-color);
@@ -193,7 +221,7 @@ p {
 }
 
 .dropdown .dropdown-menu .nav-item.chairs:hover {
-    background: #2d64ac;
+    background: #235596;
 }
 
 .dropdown .dropdown-menu .nav-item.chairs .nav-link {
@@ -283,7 +311,6 @@ p {
         margin-bottom: 3px;
     }
 }
-
 
 @media only screen and (max-width: 326px) {
     .navbar .nav-brand {
@@ -518,7 +545,6 @@ p {
     }
 }
 
-
 @media only screen and (max-width: 326px) {
     #about .display-4 {
         font-size: 30px;
@@ -543,8 +569,6 @@ p {
     }
 }
 
-
-
 /* ======= End Queries ======== */
 
 /* ==================================================
@@ -560,6 +584,8 @@ p {
 }
 
 #new_arrivals .display-4::before {
+    position: absolute;
+    content: '';
     width: 100px;
     height: 3px;
     margin-left: -116px;
@@ -568,6 +594,8 @@ p {
 }
 
 #new_arrivals .display-4::after {
+    position: absolute;
+    content: '';
     width: 100px;
     height: 3px;
     margin-left: 19px;
@@ -1045,15 +1073,55 @@ p {
     }
 }
 
-
 /* ======= End Queries ======== */
 
 /* ==================================================
 # Footer
 ===================================================*/
 
+footer {
+    padding-top: 60px;
+    padding-bottom: 90px;
+}
+
 footer .lead {
     font-size: 16px;
+}
+
+footer h2 {
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 2.0em;
+}
+
+footer h3 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 3.0em;
+}
+
+footer p {
+    font-weight: 300;
+    font-size: 17px;
+    color: #d8d3d3;
+}
+
+footer .social a {
+    text-decoration: none;
+    color: var(--warning-color);
+    font-size: 24px;
+    margin: 0 5px;
+    transition: color 0.3s ease;
+}
+
+footer .social a:hover {
+    color: var(--gray-color);
+}
+
+@media only screen and (max-width: 768px) {
+    footer .social {
+        margin-top: 20px;
+    }
 }
 
 /* == Go-Top == */
@@ -1113,35 +1181,5 @@ footer .lead {
     }
     to {
         color: var(--warning-color);
-    }
-}
-
-
-footer h2 {
-    font-weight: 300;
-    font-size: 40px;
-    line-height: 2.0em;
-}
-
-footer p {
-    font-weight: 300;
-    font-size: 17px;
-}
-
-footer .social a {
-    text-decoration: none;
-    color: var(--warning-color);
-    font-size: 24px;
-    margin: 0 5px;
-    transition: color 0.3s ease;
-}
-
-footer .social a:hover {
-    color: var(--gray-color);
-}
-
-@media only screen and (max-width: 768px) {
-    footer .social {
-        margin-top: 20px;
     }
 }
