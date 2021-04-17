@@ -21,25 +21,6 @@ $('.navbar a, nav-brand, .go_top a').on('click', function (e) {
     }
 });
 
-// const nav = document.querySelector('nav a');
-// const to_top = document.querySelector('.go-top a');
-
-// nav.onclick = () => {
-//     window.addEventListener('scroll', function () {
-//         if (window.pageYOffset < 100) {
-//             PageTransitionEvent
-//         }
-//     })
-// }
-
-// to_top.onclick = () => {
-//     window.addEventListener('scroll', function () {
-//         if (window.pageYOffset < 100) {
-//             PageTransitionEvent();
-//         }
-//     })
-// }
-
 /* ==================================================
 # Back To Top
 ===================================================*/
@@ -50,5 +31,20 @@ window.addEventListener('scroll', () => {
         goTop.classList.add('active');
     } else {
         goTop.classList.remove('active');
+    }
+});
+
+/* ==================================================
+# Toggling navbar
+===================================================*/
+const navbar = document.querySelector('.navbar');
+const section = document.querySelector('section');
+
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > section.offsetHeight) {
+        navbar.classList.add('toggle');
+    }
+     else  if (window.pageYOffset > 50 || window.pageYOffset < section.offsetHeight) {
+        navbar.classList.remove('toggle');
     }
 });

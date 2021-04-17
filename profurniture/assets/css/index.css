@@ -50,6 +50,20 @@ p {
     line-height: 1.5em;
 }
 
+.toggle {
+    animation: 0.8s toggle ease-in-out;
+    opacity: 0;
+}
+
+@keyframes toggle {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
 /* ==================================================
 # Navigation
 ===================================================*/
@@ -66,6 +80,7 @@ p {
     right: 0;
     z-index: 1030;
     border-bottom: 2px solid var(--light-gray-color);
+    transition: all 0.8s ease-in-out;
 }
 
 .navbar .nav-brand {
@@ -220,7 +235,7 @@ p {
     }
 }
 
-@media only screen and (max-width: 976px) {
+@media only screen and (max-width: 1025px) {
     .navbar .nav-brand {
         margin-left: 15px;
     }
@@ -266,6 +281,34 @@ p {
     }
     .navbar .menu .menu-bar:last-child {
         margin-bottom: 3px;
+    }
+}
+
+
+@media only screen and (max-width: 326px) {
+    .navbar .nav-brand {
+        margin-left: 15px;
+    }
+    .nav-brand .brand-text {
+        font-size: 16px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    .nav-brand .brand-logo {
+        width: 40px;
+    }
+    .navbar .navbar-nav .nav-item .nav-link {
+        font-size: 17px;
+    }
+    .navbar .menu {
+        background: var(--primary-color);
+        border-radius: 5px;
+        padding: 6px 9px;
+    }
+    .navbar .menu .menu-bar {
+        width: 30px;
+        height: 3px;
+        margin-top: 5px;
     }
 }
 
@@ -366,7 +409,43 @@ p {
         padding-top: 90px;
     }
     .hero-text h2 {
+        font-size: 92px;
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    #hero .container {
+        padding-top: 90px;
+    }
+    .hero-text h2 {
+        font-size: 80px;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    #hero .container {
+        padding-top: 80px;
+    }
+    .hero-text h2 {
+        font-size: 80px;
+    }
+}
+
+@media only screen and (max-width: 366px) {
+    #hero .container {
+        padding-top: 80px;
+    }
+    .hero-text h2 {
         font-size: 70px;
+    }
+}
+
+@media only screen and (max-width: 325px) {
+    #hero .container {
+        padding-top: 70px;
+    }
+    .hero-text h2 {
+        font-size: 60px;
     }
 }
 
@@ -413,6 +492,61 @@ p {
     background: var(--primary-color);
 }
 
+/* ======= Media Queries ======= */
+
+@media only screen and (max-width: 576px) {
+    #about .display-4 {
+        font-size: 35px;
+    }
+    #about .display-4::before {
+        position: absolute;
+        content: '';
+        width: 50px;
+        height: 3px;
+        margin-left: -58px;
+        margin-top: 29px;
+        background: var(--primary-color);
+    }
+    #about .display-4::after {
+        position: absolute;
+        content: '';
+        width: 50px;
+        height: 3px;
+        margin-left: 12px;
+        margin-top: 29px;
+        background: var(--primary-color);
+    }
+}
+
+
+@media only screen and (max-width: 326px) {
+    #about .display-4 {
+        font-size: 30px;
+    }
+    #about .display-4::before {
+        position: absolute;
+        content: '';
+        width: 30px;
+        height: 3px;
+        margin-left: -39px;
+        margin-top: 22px;
+        background: var(--primary-color);
+    }
+    #about .display-4::after {
+        position: absolute;
+        content: '';
+        width: 30px;
+        height: 3px;
+        margin-left: 12px;
+        margin-top: 22px;
+        background: var(--primary-color);
+    }
+}
+
+
+
+/* ======= End Queries ======== */
+
 /* ==================================================
 # New Arrivals
 ===================================================*/
@@ -426,8 +560,6 @@ p {
 }
 
 #new_arrivals .display-4::before {
-    position: absolute;
-    content: '';
     width: 100px;
     height: 3px;
     margin-left: -116px;
@@ -436,14 +568,64 @@ p {
 }
 
 #new_arrivals .display-4::after {
-    position: absolute;
-    content: '';
     width: 100px;
     height: 3px;
     margin-left: 19px;
     margin-top: 40px;
     background: var(--primary-color);
 }
+
+/* ======= Media Queries ======= */
+
+@media only screen and (max-width: 576px) {
+    #new_arrivals .display-4 {
+        font-size: 35px;
+    }
+    #new_arrivals .display-4::before {
+        position: absolute;
+        content: '';
+        width: 50px;
+        height: 3px;
+        margin-left: -58px;
+        margin-top: 29px;
+        background: var(--primary-color);
+    }
+    #new_arrivals .display-4::after {
+        position: absolute;
+        content: '';
+        width: 50px;
+        height: 3px;
+        margin-left: 12px;
+        margin-top: 29px;
+        background: var(--primary-color);
+    }
+}
+
+@media only screen and (max-width: 326px) {
+    #new_arrivals .display-4 {
+        font-size: 30px;
+    }
+    #new_arrivals .display-4::before {
+        position: absolute;
+        content: '';
+        width: 30px;
+        height: 3px;
+        margin-left: -39px;
+        margin-top: 22px;
+        background: var(--primary-color);
+    }
+    #new_arrivals .display-4::after {
+        position: absolute;
+        content: '';
+        width: 30px;
+        height: 3px;
+        margin-left: 12px;
+        margin-top: 22px;
+        background: var(--primary-color);
+    }
+}
+
+/* ======= End Queries ======== */
 
 /* ==================================================
 # Best Sellers
@@ -477,6 +659,58 @@ p {
     background: var(--light-color);
 }
 
+/* ======= Media Queries ======= */
+
+@media only screen and (max-width: 576px) {
+    #best_sellers .display-4 {
+        font-size: 35px;
+    }
+    #best_sellers .display-4::before {
+        position: absolute;
+        content: '';
+        width: 50px;
+        height: 3px;
+        margin-left: -58px;
+        margin-top: 29px;
+        background: var(--light-color);
+    }
+    #best_sellers .display-4::after {
+        position: absolute;
+        content: '';
+        width: 50px;
+        height: 3px;
+        margin-left: 12px;
+        margin-top: 29px;
+        background: var(--light-color);
+    }
+}
+
+@media only screen and (max-width: 326px) {
+    #best_sellers .display-4 {
+        font-size: 30px;
+    }
+    #best_sellers .display-4::before {
+        position: absolute;
+        content: '';
+        width: 30px;
+        height: 3px;
+        margin-left: -39px;
+        margin-top: 22px;
+        background: var(--light-color);
+    }
+    #best_sellers .display-4::after {
+        position: absolute;
+        content: '';
+        width: 30px;
+        height: 3px;
+        margin-left: 12px;
+        margin-top: 22px;
+        background: var(--light-color);
+    }
+}
+
+/* ======= End Queries ======== */
+
 /* ==================================================
 # Beds
 ===================================================*/
@@ -508,6 +742,58 @@ p {
     margin-top: 40px;
     background: var(--primary-color);
 }
+
+/* ======= Media Queries ======= */
+
+@media only screen and (max-width: 576px) {
+    #beds .display-4 {
+        font-size: 35px;
+    }
+    #beds .display-4::before {
+        position: absolute;
+        content: '';
+        width: 50px;
+        height: 3px;
+        margin-left: -58px;
+        margin-top: 29px;
+        background: var(--primary-color);
+    }
+    #beds .display-4::after {
+        position: absolute;
+        content: '';
+        width: 50px;
+        height: 3px;
+        margin-left: 12px;
+        margin-top: 29px;
+        background: var(--primary-color);
+    }
+}
+
+@media only screen and (max-width: 326px) {
+    #beds .display-4 {
+        font-size: 30px;
+    }
+    #beds .display-4::before {
+        position: absolute;
+        content: '';
+        width: 30px;
+        height: 3px;
+        margin-left: -39px;
+        margin-top: 22px;
+        background: var(--primary-color);
+    }
+    #beds .display-4::after {
+        position: absolute;
+        content: '';
+        width: 30px;
+        height: 3px;
+        margin-left: 12px;
+        margin-top: 22px;
+        background: var(--primary-color);
+    }
+}
+
+/* ======= End Queries ======== */
 
 /* ==================================================
 # Chairs
@@ -541,6 +827,58 @@ p {
     background: var(--light-color);
 }
 
+/* ======= Media Queries ======= */
+
+@media only screen and (max-width: 576px) {
+    #chairs .display-4 {
+        font-size: 35px;
+    }
+    #chairs .display-4::before {
+        position: absolute;
+        content: '';
+        width: 50px;
+        height: 3px;
+        margin-left: -58px;
+        margin-top: 29px;
+        background: var(--light-color);
+    }
+    #chairs .display-4::after {
+        position: absolute;
+        content: '';
+        width: 50px;
+        height: 3px;
+        margin-left: 12px;
+        margin-top: 29px;
+        background: var(--light-color);
+    }
+}
+
+@media only screen and (max-width: 326px) {
+    #chairs .display-4 {
+        font-size: 30px;
+    }
+    #chairs .display-4::before {
+        position: absolute;
+        content: '';
+        width: 30px;
+        height: 3px;
+        margin-left: -39px;
+        margin-top: 22px;
+        background: var(--light-color);
+    }
+    #chairs .display-4::after {
+        position: absolute;
+        content: '';
+        width: 30px;
+        height: 3px;
+        margin-left: 12px;
+        margin-top: 22px;
+        background: var(--light-color);
+    }
+}
+
+/* ======= End Queries ======== */
+
 /* ==================================================
 # Closets
 ===================================================*/
@@ -573,6 +911,58 @@ p {
     background: var(--primary-color);
 }
 
+/* ======= Media Queries ======= */
+
+@media only screen and (max-width: 576px) {
+    #closets .display-4 {
+        font-size: 35px;
+    }
+    #closets .display-4::before {
+        position: absolute;
+        content: '';
+        width: 50px;
+        height: 3px;
+        margin-left: -58px;
+        margin-top: 29px;
+        background: var(--primary-color);
+    }
+    #closets .display-4::after {
+        position: absolute;
+        content: '';
+        width: 50px;
+        height: 3px;
+        margin-left: 12px;
+        margin-top: 29px;
+        background: var(--primary-color);
+    }
+}
+
+@media only screen and (max-width: 326px) {
+    #closets .display-4 {
+        font-size: 30px;
+    }
+    #closets .display-4::before {
+        position: absolute;
+        content: '';
+        width: 30px;
+        height: 3px;
+        margin-left: -39px;
+        margin-top: 22px;
+        background: var(--primary-color);
+    }
+    #closets .display-4::after {
+        position: absolute;
+        content: '';
+        width: 30px;
+        height: 3px;
+        margin-left: 12px;
+        margin-top: 22px;
+        background: var(--primary-color);
+    }
+}
+
+/* ======= End Queries ======== */
+
 /* ==================================================
 # Contact
 ===================================================*/
@@ -604,6 +994,59 @@ p {
     margin-top: 40px;
     background: var(--light-color);
 }
+
+/* ======= Media Queries ======= */
+
+@media only screen and (max-width: 576px) {
+    #contact .display-4 {
+        font-size: 35px;
+    }
+    #contact .display-4::before {
+        position: absolute;
+        content: '';
+        width: 50px;
+        height: 3px;
+        margin-left: -58px;
+        margin-top: 29px;
+        background: var(--light-color);
+    }
+    #contact .display-4::after {
+        position: absolute;
+        content: '';
+        width: 50px;
+        height: 3px;
+        margin-left: 12px;
+        margin-top: 29px;
+        background: var(--light-color);
+    }
+}
+
+@media only screen and (max-width: 326px) {
+    #contact .display-4 {
+        font-size: 30px;
+    }
+    #contact .display-4::before {
+        position: absolute;
+        content: '';
+        width: 30px;
+        height: 3px;
+        margin-left: -39px;
+        margin-top: 22px;
+        background: var(--light-color);
+    }
+    #contact .display-4::after {
+        position: absolute;
+        content: '';
+        width: 30px;
+        height: 3px;
+        margin-left: 12px;
+        margin-top: 22px;
+        background: var(--light-color);
+    }
+}
+
+
+/* ======= End Queries ======== */
 
 /* ==================================================
 # Footer
@@ -673,6 +1116,18 @@ footer .lead {
     }
 }
 
+
+footer h2 {
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 2.0em;
+}
+
+footer p {
+    font-weight: 300;
+    font-size: 17px;
+}
+
 footer .social a {
     text-decoration: none;
     color: var(--warning-color);
@@ -683,4 +1138,10 @@ footer .social a {
 
 footer .social a:hover {
     color: var(--gray-color);
+}
+
+@media only screen and (max-width: 768px) {
+    footer .social {
+        margin-top: 20px;
+    }
 }

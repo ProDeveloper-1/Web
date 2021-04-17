@@ -12,6 +12,21 @@
     gap: 3em;
 }
 
+.even-columns {
+    display: flex;
+}
+
+.even-columns>* {
+    flex-basis: 100%;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
 .flex-space-around {
     display: flex;
     justify-content: space-around;
@@ -28,19 +43,11 @@
     align-items: center;
 }
 
-.even-columns {
-    display: flex;
-}
-
-.even-columns>* {
-    flex-basis: 100%;
-}
-
-.flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+@media only screen and (max-width: 768px) {
+    .flex, .flex-space-around, .flex-space-between, .flex-space-evenly {
+       flex-flow: column wrap;
+       justify-content: center;
+    }
 }
 
 .grid {
@@ -54,6 +61,20 @@
 
 .grid-3 {
     grid-template-columns: repeat(3, 1fr);
+}
+
+/* --- Ordering --- */
+
+.order-0 {
+    order: 0;
+}
+
+.order-1 {
+    order: 1;
+}
+
+.order-2 {
+    order: 2;
 }
 
 .card {
