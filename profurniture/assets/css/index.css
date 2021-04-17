@@ -1,0 +1,548 @@
+/* ==================================================
+# General
+===================================================*/
+
+/*----------------------------
+  =======
+# Colors
+  =======
+  #047ead
+  #047aed
+  #333
+  #fff
+  #b4becb
+-----------------------------*/
+
+/* Custom properties */
+
+:root {
+    --primary-color: #244f88;
+    --secondary-color: #002240;
+    --dark-color: #343434;
+    --white-color: #fff;
+    --light-color: #f8f9fa;
+    --danger-color: #bd4343;
+    --warning-color: #ffd900;
+    --gray-color: #808080;
+    --black-color: #000;
+}
+
+/* End Custom properties */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background: var(--white-color);
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ==================================================
+# Navigation
+===================================================*/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--light-color);
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+}
+
+.navbar .nav-brand {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    margin-left: 60px;
+    outline: none;
+}
+
+.nav-brand .brand-text {
+    font-size: 20px;
+    color: var(--primary-color);
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.nav-brand .brand-logo {
+    width: 80px;
+}
+
+.navbar .navbar-nav {
+    display: flex;
+    margin-right: 60px;
+    list-style-type: none;
+}
+
+.navbar .navbar-nav .nav-item {
+    margin: 0 15px;
+}
+
+.navbar .navbar-nav:last-child {
+    margin-right: 50px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--gray-color);
+    transition: color 0.3s ease;
+}
+
+.navbar .navbar-nav .nav-item .nav-link.active {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover, .navbar .navbar-nav .nav-item .nav-link.active:hover {
+    color: var(--danger-color);
+}
+
+.navbar .navbar-nav .nav-item.drop-cat {
+    display: inline-block;
+}
+
+.navbar .navbar-nav .nav-item.drop-cat:hover .dropdown {
+    display: block;
+    animation: 0.3s zoom;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0.9);
+    }
+    to {
+        transform: scale(1.0);
+    }
+}
+
+.dropdown {
+    position: absolute;
+    display: none;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown .dropdown-menu {
+    text-align: center;
+}
+
+.dropdown .dropdown-menu .nav-item {
+    list-style: none;
+    transition: all 0.3s ease;
+}
+
+.dropdown .dropdown-menu .nav-item:hover {
+    background: var(--white-color);
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.dropdown .dropdown-menu .nav-item .nav-link {
+    transition: all 0.3s ease;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown .dropdown-menu .nav-item.chairs {
+    transition: all 0.3s ease;
+    background: var(--secondary-color);
+    margin-left: 0px;
+    margin-right: 0px;
+    color: var(--white-color);
+}
+
+.dropdown .dropdown-menu .nav-item.chairs:hover {
+    background: var(--dark-color);
+}
+
+.dropdown .dropdown-menu .nav-item.chairs .nav-link {
+    color: var(--white-color);
+}
+
+.dropdown .dropdown-menu .nav-item.chairs .nav-link:hover {
+    color: var(--light-color);
+}
+
+.navbar .menu {
+    background: var(--primary-color);
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.navbar #check, .navbar #checkbtn {
+    display: none;
+}
+
+.navbar .menu .menu-bar {
+    width: 30px;
+    background: var(--light-color);
+    height: 3px;
+    margin-top: 5px;
+}
+
+/* ======= Media Queries ======= */
+
+@media only screen and (max-width: 1060px) {
+    .navbar .nav-brand {
+        margin-left: 30px;
+    }
+    .navbar .navbar-nav {
+        margin-right: 30px;
+    }
+    .navbar .navbar-nav:last-child {
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 976px) {
+    .navbar .nav-brand {
+        margin-left: 15px;
+    }
+    .nav-brand .brand-text {
+        font-size: 17px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+    .nav-brand .brand-logo {
+        width: 50px;
+    }
+    .navbar #checkbtn {
+        display: block;
+        margin-right: 15px;
+        cursor: pointer;
+    }
+    .navbar label:hover {
+        cursor: pointer;
+    }
+    .navbar .navbar-nav {
+        display: flex;
+        flex-flow: column nowrap;
+        position: absolute;
+        top: 0;
+        margin-top: 78px;
+        width: 100%;
+        height: 700px;
+        background: var(--light-color);
+        padding-top: 30px;
+        padding-left: 30px;
+        left: -120%;
+        transition: all .5s;
+        margin-right: 0px;
+    }
+    .navbar .navbar-nav .nav-item {
+        margin: 15px 0;
+    }
+    .navbar .navbar-nav .nav-item .nav-link {
+        font-size: 20px;
+    }
+    #check:checked~.navbar-nav {
+        left: 0;
+    }
+    .navbar .menu .menu-bar:last-child {
+        margin-bottom: 3px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .navbar .nav-brand {
+        margin-left: 15px;
+    }
+    .nav-brand .brand-text {
+        font-size: 14px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+    .nav-brand .brand-logo {
+        width: 30px;
+    }
+    .navbar .navbar-nav .nav-item .nav-link {
+        font-size: 15px;
+    }
+    .navbar .menu {
+        background: var(--primary-color);
+        border-radius: 5px;
+        padding: 6px 9px;
+    }
+    .navbar .menu .menu-bar {
+        width: 30px;
+        height: 3px;
+        margin-top: 5px;
+    }
+}
+
+/* ======= End Queries ======== */
+
+/* ==================================================
+# Hero
+===================================================*/
+
+#hero {
+    height: 700px;
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/hero/hero2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: var(--light-color);
+    margin-top: 80px;
+    animation: slider 16s ease-in-out infinite;
+}
+
+.blue-overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin-top: 80px;
+    height: 700px;
+    background: rgba(36, 79, 136, 0.267);
+}
+
+@keyframes slide {
+    0%, 100% {
+        background: linear-gradient(360deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/hero/hero1.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    25% {
+        background: linear-gradient(360deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/hero/hero1.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    50% {
+        background: linear-gradient(360deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/hero/hero2.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    75% {
+        background: linear-gradient(360deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/hero/hero1.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+}
+
+#hero .container {
+    padding-top: 200px;
+}
+
+.hero-text h2 {
+    font-size: 90px;
+    font-weight: 300;
+}
+
+/* ======= Media Queries ======= */
+
+@media only screen and (max-width: 576px) {
+    #hero .container {
+        padding-top: 90px;
+    }
+    .hero-text h2 {
+        font-size: 70px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    #hero .container {
+        padding-top: 90px;
+    }
+    .hero-text h2 {
+        font-size: 55px;
+    }
+}
+
+/* ======= End Queries ======== */
+
+/* ==================================================
+# New Arrivals
+===================================================*/
+
+#new_arrivals {
+    padding: 60px 0;
+    background: var(--light-color);
+}
+
+#new_arrivals .display-4 {
+    position: relative;
+    color: var(--black-color);
+}
+
+#new_arrivals .display-4::before {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 3px;
+    margin-left: -116px;
+    margin-top: 40px;
+    background: var(--primary-color);
+}
+
+#new_arrivals .display-4::after {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 3px;
+    margin-left: 19px;
+    margin-top: 40px;
+    background: var(--primary-color);
+}
+
+/* ==================================================
+# Best Sellers
+===================================================*/
+
+#best_sellers {
+    padding: 60px 0;
+    background: var(--primary-color);
+    color: var(--light-color);
+}
+
+#best_sellers .display-4 {
+    position: relative;
+    color: var(--warning-color);
+}
+
+#best_sellers .display-4::before {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 3px;
+    margin-left: -116px;
+    margin-top: 40px;
+    background: var(--light-color);
+}
+
+#best_sellers .display-4::after {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 3px;
+    margin-left: 19px;
+    margin-top: 40px;
+    background: var(--light-color);
+}
+
+/* ==================================================
+# Beds
+===================================================*/
+
+#beds {
+    padding: 60px 0;
+    background: var(--light-color);
+}
+
+#beds .display-4 {
+    position: relative;
+    color: var(--black-color);
+}
+
+#beds .display-4::before {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 3px;
+    margin-left: -116px;
+    margin-top: 40px;
+    background: var(--primary-color);
+}
+
+#beds .display-4::after {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 3px;
+    margin-left: 19px;
+    margin-top: 40px;
+    background: var(--primary-color);
+}
+
+/* ==================================================
+# Chairs
+===================================================*/
+
+#chairs {
+    padding: 60px 0;
+    background: var(--primary-color);
+    color: var(--light-color);
+}
+
+#chairs .display-4 {
+    position: relative;
+    color: var(--warning-color);
+}
+
+#chairs .display-4::before {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 3px;
+    margin-left: -116px;
+    margin-top: 40px;
+    background: var(--light-color);
+}
+
+#chairs .display-4::after {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 3px;
+    margin-left: 19px;
+    margin-top: 40px;
+    background: var(--light-color);
+}
+
+/* ==================================================
+# Closets
+===================================================*/
+
+#closets {
+    padding: 60px 0;
+    background: var(--light-color);
+}
+
+#closets .display-4 {
+    position: relative;
+    color: var(--black-color);
+}
+
+#closets .display-4::before {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 3px;
+    margin-left: -116px;
+    margin-top: 40px;
+    background: var(--primary-color);
+}
+
+#closets .display-4::after {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 3px;
+    margin-left: 19px;
+    margin-top: 40px;
+    background: var(--primary-color);
+}
