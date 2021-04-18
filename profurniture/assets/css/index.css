@@ -35,12 +35,12 @@ html {
     scroll-behavior: smooth;
 }
 
-/* h1, h2, h2, h4, h5, h6, p {
-    max-width: 60ch;
-} */
-
 p {
     line-height: 1.5em;
+}
+
+section .display-4 {
+    font-weight: 400;
 }
 
 .toggle {
@@ -495,6 +495,10 @@ p {
     padding: 60px 0;
 }
 
+#about .row {
+    gap: 6em;
+}
+
 #about .display-4 {
     position: relative;
 }
@@ -581,6 +585,7 @@ p {
 
 #new_arrivals .display-4 {
     position: relative;
+    font-weight: 400;
 }
 
 #new_arrivals .display-4::before {
@@ -590,7 +595,7 @@ p {
     height: 3px;
     margin-left: -116px;
     margin-top: 40px;
-    background: var(--primary-color);
+    background: var(--secondary-color);
 }
 
 #new_arrivals .display-4::after {
@@ -600,7 +605,7 @@ p {
     height: 3px;
     margin-left: 19px;
     margin-top: 40px;
-    background: var(--primary-color);
+    background: var(--secondary-color);
 }
 
 /* ======= Media Queries ======= */

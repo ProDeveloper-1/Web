@@ -44,7 +44,7 @@ window.addEventListener('scroll', () => {
     if (window.pageYOffset > section.offsetHeight) {
         navbar.classList.add('toggle');
     }
-    else if (window.pageYOffset > 50 && window.pageYOffset < section.offsetHeight) {
+    else {
         navbar.classList.remove('toggle');
     }
 });
