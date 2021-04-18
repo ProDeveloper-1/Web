@@ -14,6 +14,7 @@
     --warning-color: #ffd900;
     --gray-color: #808080;
     --light-gray-color: #d8d3d3;
+    --light-gray-color-2: #e3e3e3;
     --black-color: #000;
 }
 
@@ -576,19 +577,18 @@ section .display-4 {
 /* ======= End Queries ======== */
 
 /* ==================================================
-# New Arrivals
+# Latests
 ===================================================*/
 
-#new_arrivals {
+#latests {
     padding: 60px 0;
 }
 
-#new_arrivals .display-4 {
+#latests .display-4 {
     position: relative;
-    font-weight: 400;
 }
 
-#new_arrivals .display-4::before {
+#latests .display-4::before {
     position: absolute;
     content: '';
     width: 100px;
@@ -598,7 +598,7 @@ section .display-4 {
     background: var(--secondary-color);
 }
 
-#new_arrivals .display-4::after {
+#latests .display-4::after {
     position: absolute;
     content: '';
     width: 100px;
@@ -608,53 +608,247 @@ section .display-4 {
     background: var(--secondary-color);
 }
 
+#latests .img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+#latests .img img {
+    width: 100%;
+    height: 100%;
+}
+
+#latests .flip3D>.back {
+    padding: 30px 30px 55px 30px;
+}
+
+#latests .flip3D, #latests .flip3D>.front, #latests .flip3D>.back {
+    width: 300px;
+    height: 250px;
+}
+
+#latests .flip3D>.front {
+    position: absolute;
+    -webkit-transform: perspective(600px) rotateY(0deg);
+    transform: perspective(600px) rotateY(0deg);
+    background: var(--light-gray-color-2);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    border-radius: 7px;
+    backface-visibility: hidden;
+    transition: -webkit-transform 0.5s linear 0s;
+    transition: transform 0.5s linear 0s;
+}
+
+#latests .flip3D:hover>.front {
+    transform: perspective(600px) rotateY(-180deg);
+}
+
+#latests .flip3D>.back {
+    position: absolute;
+    -webkit-transform: perspective(600px) rotateY(180deg);
+    transform: perspective(600px) rotateY(180deg);
+    background: var(--light-gray-color-2);
+    border-radius: 7px;
+    backface-visibility: hidden;
+    transition: -webkit-transform 0.5s linear 0s;
+    transition: transform 0.5s linear 0s;
+}
+
+#latests .flip3D:hover>.back {
+    transform: perspective(600px) rotateY(0deg);
+    background: var(--secondary-color);
+    color: var(--light-color);
+}
+
+#latests .back p {
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+#latests .back h2 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#latests .add-cart-price {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#latests .btn-cart {
+    border: none;
+    outline: none;
+    background: var(--danger-color);
+    padding: 9px 12px;
+    border-radius: 3px;
+    color: var(--white-color);
+    transition: color 0.3s ease;
+    font-size: 14px;
+}
+
+#latests .btn-cart:hover {
+    cursor: pointer;
+    color: var(--warning-color);
+}
+
+#latests .badge-price {
+    font-weight: 600;
+    color: var(--warning-color);
+    font-size: 16px;
+}
+
 /* ======= Media Queries ======= */
 
+@media only screen and (max-width: 768px) {
+    #latests .flip3D {
+        margin-right: 52px;
+        margin-left: -10px;
+    }
+    #latests .flip3D, #latests .flip3D>.front, #latests .flip3D>.back {
+        width: 80%;
+        height: 350px;
+    }
+    #latests .back p {
+        font-size: 22px;
+        margin-top: 30px;
+    }
+    
+    #latests .back h2 {
+        font-weight: bold;
+        font-size: 40px;
+    }
+    
+    #latests .add-cart-price {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #latests .btn-cart {
+        border: none;
+        outline: none;
+        background: var(--danger-color);
+        padding: 12px 24px;
+        border-radius: 3px;
+        color: var(--white-color);
+        transition: color 0.3s ease;
+        font-size: 20px;
+    }
+    
+    #latests .btn-cart:hover {
+        cursor: pointer;
+        color: var(--warning-color);
+    }
+    
+    #latests .badge-price {
+        font-weight: 600;
+        color: var(--warning-color);
+        font-size: 20px;
+    }
+    
+}
+
 @media only screen and (max-width: 576px) {
-    #new_arrivals .display-4 {
+    #latests .display-4 {
         font-size: 35px;
     }
-    #new_arrivals .display-4::before {
+    #latests .display-4::before {
         position: absolute;
         content: '';
         width: 50px;
         height: 3px;
         margin-left: -58px;
         margin-top: 29px;
-        background: var(--primary-color);
+        background: var(--secondary-color);
     }
-    #new_arrivals .display-4::after {
+    #latests .display-4::after {
         position: absolute;
         content: '';
         width: 50px;
         height: 3px;
         margin-left: 12px;
         margin-top: 29px;
-        background: var(--primary-color);
+        background: var(--secondary-color);
     }
+    #latests .flip3D {
+        margin-right: 52px;
+        margin-left: -10px;
+    }
+    #latests .flip3D, #latests .flip3D>.front, #latests .flip3D>.back {
+        width: 80%;
+        height: 250px;
+    }
+    #latests .back p {
+        font-size: 15px;
+        margin-top: 15px;
+    }
+    
+    #latests .back h2 {
+        font-weight: bold;
+        font-size: 20px;
+    }
+    
+    #latests .add-cart-price {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #latests .btn-cart {
+        border: none;
+        outline: none;
+        background: var(--danger-color);
+        padding: 9px 12px;
+        border-radius: 3px;
+        color: var(--white-color);
+        transition: color 0.3s ease;
+        font-size: 14px;
+    }
+    
+    #latests .btn-cart:hover {
+        cursor: pointer;
+        color: var(--warning-color);
+    }
+    
+    #latests .badge-price {
+        font-weight: 600;
+        color: var(--warning-color);
+        font-size: 16px;
+    }
+    
 }
 
 @media only screen and (max-width: 326px) {
-    #new_arrivals .display-4 {
+    #latests .display-4 {
         font-size: 30px;
     }
-    #new_arrivals .display-4::before {
+    #latests .display-4::before {
         position: absolute;
         content: '';
         width: 30px;
         height: 3px;
         margin-left: -39px;
         margin-top: 22px;
-        background: var(--primary-color);
+        background: var(--secondary-color);
     }
-    #new_arrivals .display-4::after {
+    #latests .display-4::after {
         position: absolute;
         content: '';
         width: 30px;
         height: 3px;
         margin-left: 12px;
         margin-top: 22px;
-        background: var(--primary-color);
+        background: var(--secondary-color);
     }
 }
 
@@ -1136,7 +1330,7 @@ footer .lead {
 }
 
 footer h2 {
-    font-weight: 300;
+    font-weight: 350;
     font-size: 40px;
     line-height: 2.0em;
 }
