@@ -117,6 +117,39 @@
     margin: 10px;
 }
 
+.card-img {
+    width: 100%;
+    border-radius: calc(0.25rem - 1px);
+}
+
+.card-img-top {
+    width: 100%;
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+}
+
+.inner {
+    overflow: hidden;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.card-body {
+    padding: 10px 10px;
+}
+
+.card-body h2 {
+    line-height: 3.0rem;
+    font-weight: 600;
+}
+
+.card-body p, .card-body a {
+    line-height: 1.4em;
+}
+
 .btn {
     display: inline-block;
     padding: 10px 30px;
@@ -166,6 +199,11 @@
 
 .bg-gray, .btn-gray {
     background: var(--gray-color);
+    color: var(--black-color);
+}
+
+.bg-warning, .btn-warning {
+    background: var(--warning-color);
     color: var(--black-color);
 }
 

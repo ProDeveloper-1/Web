@@ -195,7 +195,7 @@ p {
     display: block;
 }
 
-.dropdown .dropdown-menu  .nav-item .nav-link::before {
+.dropdown .dropdown-menu .nav-item .nav-link::before {
     position: absolute;
     content: '';
     top: 0;
@@ -207,7 +207,7 @@ p {
     transition: transform .4s linear;
 }
 
-.dropdown .dropdown-menu  .nav-item .nav-link:hover::before {
+.dropdown .dropdown-menu .nav-item .nav-link:hover::before {
     transform: scaleX(1);
     transform-origin: unset;
 }
@@ -663,6 +663,10 @@ p {
     padding: 60px 0;
 }
 
+#best_sellers .row {
+    gap: 0em;
+}
+
 #best_sellers .display-4 {
     position: relative;
 }
@@ -685,6 +689,11 @@ p {
     margin-left: 19px;
     margin-top: 40px;
     background: var(--light-color);
+}
+
+#best_sellers .btn {
+    text-decoration: none;
+    line-height: 1.6rem;
 }
 
 /* ======= Media Queries ======= */
@@ -747,6 +756,10 @@ p {
     padding: 60px 0;
 }
 
+#beds .row {
+    gap: 6em;
+}
+
 #beds .display-4 {
     position: relative;
 }
@@ -769,6 +782,12 @@ p {
     margin-left: 19px;
     margin-top: 40px;
     background: var(--primary-color);
+}
+
+#beds .btn {
+    text-decoration: none;
+    line-height: 1.8rem;
+    margin-top: 25px;
 }
 
 /* ======= Media Queries ======= */
@@ -831,6 +850,10 @@ p {
     padding: 60px 0;
 }
 
+#chairs .row {
+    gap: 6em;
+}
+
 #chairs .display-4 {
     position: relative;
 }
@@ -853,6 +876,13 @@ p {
     margin-left: 19px;
     margin-top: 40px;
     background: var(--light-color);
+}
+
+#chairs .btn {
+    text-decoration: none;
+    line-height: 1.8rem;
+    margin-top: 25px;
+    color: var(--black-color);
 }
 
 /* ======= Media Queries ======= */
@@ -915,6 +945,10 @@ p {
     padding: 60px 0;
 }
 
+#closets .row {
+    gap: 6em;
+}
+
 #closets .display-4 {
     position: relative;
 }
@@ -937,6 +971,12 @@ p {
     margin-left: 19px;
     margin-top: 40px;
     background: var(--primary-color);
+}
+
+#closets .btn {
+    text-decoration: none;
+    line-height: 1.8rem;
+    margin-top: 25px;
 }
 
 /* ======= Media Queries ======= */
@@ -1085,7 +1125,9 @@ footer {
 }
 
 footer .lead {
-    font-size: 16px;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--gray-color);
 }
 
 footer h2 {
