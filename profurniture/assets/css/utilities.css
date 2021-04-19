@@ -201,6 +201,14 @@
     background: var(--gray-color);
     color: var(--black-color);
 }
+.bg-light-gray, .btn-light-gray {
+    background: var(--light-gray-color);
+    color: var(--black-color);
+}
+.bg-light-gray-2, .btn-light-gray-2 {
+    background: var(--light-gray-color-2);
+    color: var(--black-color);
+}
 
 .bg-warning, .btn-warning {
     background: var(--warning-color);
