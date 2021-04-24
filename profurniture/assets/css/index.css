@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 /* ==================================================
 # General
 ===================================================*/
@@ -24,6 +25,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -1477,6 +1479,52 @@ footer .social a {
 
 footer .social a:hover {
     color: var(--gray-color);
+}
+
+footer .footer-nav {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+footer .footer-nav a {
+    text-decoration: none;
+    margin: 8px 0;
+    font-size: 15px;
+    color: var(--light-gray-color);
+    transition: color 0.3s ease;
+}
+
+footer .footer-nav a:hover {
+    color: var(--gray-color);
+}
+
+footer .newsletters {
+    margin-top: 5px;
+}
+
+footer .newsletters .newsletters-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+}
+
+footer .newsletters .newsletters-form form input {
+    padding: 12px 24px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+}
+
+footer .newsletters .newsletters-form form input[type=submit] {
+    background: var(--danger-color);
+    color: var(--white-color);
+    transition: all 0.3s ease;
+}
+
+footer .newsletters .newsletters-form form input[type=submit]:hover {
+    cursor: pointer;
+    color: var(--warning-color);
 }
 
 @media only screen and (max-width: 768px) {
