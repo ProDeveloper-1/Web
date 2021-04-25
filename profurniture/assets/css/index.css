@@ -39,7 +39,6 @@ html {
 
 p {
     line-height: 1.5em;
-    /* font-family: 'Source Sans Pro', sans-serif; */
 }
 
 section .display-4 {
@@ -104,9 +103,11 @@ section .display-4 {
     font-weight: bold;
     letter-spacing: 5px;
     text-transform: uppercase;
+    transition: all 0.3s ease;
 }
 
 .nav-brand .brand-logo {
+    transition: all 0.3s ease;
     width: 80px;
 }
 
@@ -125,11 +126,13 @@ section .display-4 {
 }
 
 .navbar .navbar-nav .nav-item .nav-link {
+    /* font-family: 'Source Sans Pro', sans-serif; */
     text-decoration: none;
-    font-size: 18px;
+    font-size: 17px;
     color: var(--gray-color);
     transition: color 0.3s ease;
     position: relative;
+    transition: all 0.3s ease;
 }
 
 .navbar .navbar-nav .nav-item .nav-link::before {

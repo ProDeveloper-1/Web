@@ -48,3 +48,35 @@ window.addEventListener('scroll', () => {
         navbar.classList.remove('toggle');
     }
 });
+
+/* ========================================================================
+# Making navbar smaller as the document's height is greater than 100px.
+# And it should only be applied to the big screens with width than 768px.
+=========================================================================*/
+const smaller_navbar = document.querySelector('.navbar');
+const navBrand_text = document.querySelector('.navbar .nav-brand .brand-text');
+const navBrand_logo = document.querySelector('.navbar .nav-brand .brand-logo');
+const nav_links = document.querySelectorAll('.navbar .navbar-nav .nav-item .nav-link');
+
+window.addEventListener('scroll', function () {
+    $(document).ready(function () {
+        if ($(window).width() > 768) {
+            if (window.pageYOffset > 100) {
+                smaller_navbar.style.height = '65px';
+                navBrand_text.style.fontSize = '17px';
+                navBrand_logo.style.width = '55px';
+                nav_links.forEach(navLink => {
+                    navLink.style.fontSize = '16px';
+                });
+            }
+            else {
+                smaller_navbar.style.height = '80px';
+                navBrand_text.style.fontSize = '20px';
+                navBrand_logo.style.width = '80px';
+                nav_links.forEach(navLink => {
+                    navLink.style.fontSize = '17px';
+                });
+            }
+        }
+    });
+});
