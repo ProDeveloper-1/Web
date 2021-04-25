@@ -60,7 +60,7 @@ const nav_links = document.querySelectorAll('.navbar .navbar-nav .nav-item .nav-
 
 window.addEventListener('scroll', function () {
     $(document).ready(function () {
-        if ($(window).width() > 768) {
+        if ($(window).width() > 1060) {
             if (window.pageYOffset > 100) {
                 smaller_navbar.style.height = '65px';
                 navBrand_text.style.fontSize = '17px';
