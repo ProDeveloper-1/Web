@@ -465,7 +465,7 @@ section .display-4 {
 
 @media only screen and (max-width: 576px) {
     #hero .container {
-        padding-top: 90px;
+        padding-top: 120px;
     }
     .hero-text h2 {
         font-size: 80px;
@@ -474,7 +474,7 @@ section .display-4 {
 
 @media only screen and (max-width: 426px) {
     #hero .container {
-        padding-top: 60px;
+        padding-top: 73px;
     }
     .hero-text h2 {
         font-size: 80px;
@@ -483,7 +483,7 @@ section .display-4 {
 
 @media only screen and (max-width: 376px) {
     #hero .container {
-        padding-top: 50px;
+        padding-top: 65px;
     }
     .hero-text h2 {
         font-size: 70px;
@@ -492,7 +492,7 @@ section .display-4 {
 
 @media only screen and (max-width: 366px) {
     #hero .container {
-        padding-top: 40px;
+        padding-top: 53px;
     }
     .hero-text h2 {
         font-size: 70px;
@@ -501,7 +501,7 @@ section .display-4 {
 
 @media only screen and (max-width: 325px) {
     #hero .container {
-        padding-top: 30px;
+        padding-top: 45px;
     }
     .hero-text h2 {
         font-size: 60px;
@@ -1352,13 +1352,13 @@ section .display-4 {
 
 #contact .contact-form form input[type=submit] {
     margin-top: 10px;
-    background: var(--secondary-color);
+    background: var(--black-color);
     color: var(--warning-color);
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 
 #contact .contact-form form input[type=submit]:hover {
-    color: var(--light-color);
+    color: var(--danger-color);
     cursor: pointer;
 }
 
@@ -1517,14 +1517,14 @@ footer .nav-brand .brand-logo {
 
 footer .social a {
     text-decoration: none;
-    color: var(--gray-color);
+    color: var(--warning-color);
     font-size: 24px;
     margin: 0 5px;
     transition: color 0.3s ease;
 }
 
 footer .social a:hover {
-    color: var(--warning-color);
+    color: var(--gray-color);
 }
 
 footer .footer-nav {
